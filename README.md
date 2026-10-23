@@ -1,84 +1,64 @@
 # WoW Imito
 
-Play your own **World of Warcraft: Wrath of the Lich King 3.3.5a (build 12340)** client on an Android phone or tablet, with touch controls. The game runs on the device; a PC is not needed while playing.
+**Your Azeroth. Your character. Now on Android.**
 
-**[Download the APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)**
+## What is WoW Imito?
 
-Maintained by **Mr Anonymz**. This is an unofficial community project and is not affiliated with Blizzard Entertainment.
+WoW Imito brings **World of Warcraft: Wrath of the Lich King** to your **Android phone or tablet**, so you can play on the **same compatible WotLK server as your friends on PC**. Complete quests, explore Azeroth and join your friends using controls designed for a touchscreen. The game runs directly on your device: no PC is needed while you play.
 
-## What it does
+**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** | **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)**
 
-- Adapts movement, camera, action buttons and menus for touch screens.
-- Selects a graphics path from the device's capabilities: Vulkan/DXVK where supported, with an OpenGL fallback.
-- Uses a client folder you select, or downloads and unpacks your own direct ZIP link without keeping a second complete archive.
-- Lets you set your server address. Sign in inside the game; there is no launcher account login or built-in server download.
-- Includes graphics presets, a 30 FPS battery-saving option and optional addons.
-
-**The APK does not include the game client.** You must supply a complete, compatible client and a server account. No particular server is required.
-
-## Requirements
+## What you need
 
 | Requirement | Details |
 | --- | --- |
-| Android | **12 or newer** |
-| CPU / operating system | **ARM64 (`arm64-v8a`)**. A 64-bit chip running a 32-bit Android system is insufficient. |
-| Graphics | Working OpenGL ES 3.0 support. Vulkan support and driver features are checked automatically. |
-| RAM | **6–8 GB recommended** as a starting point. Devices with 4 GB are experimental; this is not a measured universal minimum. |
-| Storage | Room for the unpacked client plus **2 GiB reserve**. If a ZIP's unpacked size cannot be determined, the app initially checks a **20 GiB** budget (about 21.5 GB). Larger clients can require more. |
-| Game files | Complete Windows WoW **3.3.5a, build 12340**, including `Wow.exe` and `Data`. |
-| Connection | Internet access for downloading and connecting to your selected server. |
+| **Android** | **12 or newer** |
+| **Processor** | **ARM64**, with a 64-bit Android system |
+| **Game client** | Your own complete **WoW 3.3.5a (build 12340)** client |
+| **Server account** | An account on a compatible WotLK server and an internet connection |
 
-The runtime needs internal storage even if you keep game files on an SD card. Writable SD folders are supported by the folder selector, but physical SD-card operation has not yet been verified in this public build. Slow cards may increase loading times and stutters.
+The APK does not include the game files or a server account.
 
-Android version and ARM64 support alone do not guarantee compatibility or 60 FPS. Performance also depends on the GPU driver, memory, temperature, resolution and scene. Older devices may need **Low specs** and a lower in-game resolution.
+## Start playing
 
-## Get started
+1. **Install** the APK and open WoW Imito.
+2. Tap **Game files** and select your client folder, or paste a direct ZIP download link to your client.
+3. Open **Settings > Set realm** and enter your server address.
+4. Tap **PLAY**, sign in inside WoW and choose your character.
 
-1. Download `WoW-Imito-Public.apk` from **Releases** and install it. Android may ask you to allow installation from the app you used to download it.
-2. Open **Game files** and choose one option:
-   - **Copy from a PC:** put the complete unpacked client in **Internal storage → WoW-Imito → Client**. Create the folders if needed. `Wow.exe` and `Data` may be directly there or inside one client subfolder. **Choose folder** opens this same location. Use **Storage** to select another writable folder or an SD card; `Documents` is not mandatory.
-   - **Download ZIP:** paste a direct link to a complete ZIP. Allow file access when prompted. The app unpacks into **WoW-Imito/Client**, checks free space and can continue downloading in the background. Use Pause/Resume if needed. Servers without HTTP Range may require rereading the ZIP on resume.
-3. After the client is recognised, **PLAY** and the settings gear become available.
-4. In **Settings → Set realm**, enter your server's login address. If you do not change it, the client's existing realm address is retained.
-5. Tap **PLAY** and sign in inside WoW.
+Movement, camera controls, spells and menus are adapted for touch. **Low specs** helps you reduce graphics settings, and **Eco mode** lets you limit the game to 30 FPS to save battery.
 
-Avoid `Android/data` and `Android/obb` for manually copied clients. Selecting an existing folder does not create a second 18 GB copy. All-files access is needed for the selected client's game files, configuration and addons.
+## Screenshots
 
-The first preparation applies low graphics, **800 × 450** and a 60 FPS cap. Later ordinary player settings are retained; **Defaults** and **Low specs** explicitly reset graphics. Required runtime settings and bundled addon files are repaired when necessary without rewriting identical content. The initial setup also writes the client's EULA/TOS acknowledgement flags automatically.
+![WoW Imito gameplay](assets/screenshots/gameplay-01.png)
 
-## Bundled addons
+![WoW Imito quest dialogue](assets/screenshots/gameplay-02.png)
 
-These optional addons are included but **OFF by default**. Enable only the ones you want:
+![WoW Imito inventory](assets/screenshots/gameplay-03.png)
+
+## Make it your own
+
+These addons are included and **OFF by default**. Turn on the ones you want in **AddOns** on the character-selection screen.
 
 | Addon | What it adds |
 | --- | --- |
-| **Bagnon** | Combines your bags into one inventory window. |
-| **NotPlater** | Customisable unit nameplates; a 3.3.5a-compatible alternative inspired by Plater. |
-| **OmniCC** | Numeric cooldown timers. |
-| **Titan Panel** | Information bar, with mobile battery percentage and FPS integration. |
-| **Immersion** | An alternative quest and NPC dialogue interface. |
-| **AtlasLoot Enhanced** | Browse dungeon, raid and other loot tables. |
-| **GearScoreLite** | Equipment score information. |
-| **Deadly Boss Mods (DBM)** | Boss encounter warnings and timers. |
-| **SexyMap** | Customisable minimap appearance. |
-| **X-Perl UnitFrames** | Alternative player, target, party and raid frames. |
+| **Bagnon** | All your bags in one window |
+| **NotPlater** | Customisable nameplates |
+| **OmniCC** | Cooldown timers on your spells |
+| **Titan Panel** | An information bar, including battery percentage and FPS |
+| **Immersion** | A new look for quest and NPC conversations |
+| **AtlasLoot Enhanced** | Dungeon, raid and other loot tables |
+| **GearScoreLite** | Equipment scores |
+| **Deadly Boss Mods** | Boss warnings and timers |
+| **SexyMap** | Minimap customisation |
+| **X-Perl UnitFrames** | Alternative player, target and party frames |
 
-**MoveAnything** (move and customise UI frames) and **MinimapButtonBag** (organise minimap addon buttons) are **ON by default**. The touch-control integration is also prepared automatically.
+**MoveAnything** and **MinimapButtonBag** are enabled by default to help you arrange the interface and organise minimap buttons. If you change addon activation while playing, type **`/reload`** to apply it.
 
-To enable an optional addon, open **AddOns** on the character-selection screen, tick the addon and its required modules, then enter the game. If you change addon activation while already in the world, **reload the UI** (`/reload`) for the change to take effect. Your saved addon choices are preserved on later launches.
+## Help improve WoW Imito
 
-On lower-powered devices, start with optional addons disabled and enable them gradually; extra UI processing can reduce FPS.
+Found something that does not work? **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)** with your device model, Android version and what happened. A screenshot or short video helps.
 
-## Updates and feedback
+---
 
-Install future public APKs as updates; keep your existing installation and game data. Do not uninstall or clear app data as a routine update step.
-
-Before reporting a problem, search [existing issues](https://github.com/MrAnonymz/WoW-Imito/issues). Include your device model, Android version, APK version and steps to reproduce. Screenshots or a short video help. For performance reports, also include resolution, graphics preset, FPS and what was happening in the scene.
-
-**Do not post passwords, account emails, tokens or unredacted personal logs.** Hide account and character details in screenshots if you do not want them public.
-
-## Release integrity and credits
-
-Releases include a SHA-256 checksum. The public APK package is `pub.wowimito` and its signing certificate subject is **`CN=Mr Anonymz`**. Debugging, USB diagnostics and the benchmark mode are disabled in the distributed APK.
-
-This project builds on WoW Mobile, Winlator, Wine, Box64, DXVK and other components. Their names, authors and licence notices remain intact; they are not claims of authorship by Mr Anonymz. See [third-party notices](THIRD-PARTY-NOTICES.txt) and the notices bundled in the app.
+Maintained by **Mr Anonymz**. Unofficial community project, not affiliated with Blizzard Entertainment. [Third-party credits and licences](THIRD-PARTY-NOTICES.txt).

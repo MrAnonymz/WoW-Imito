@@ -1,24 +1,39 @@
-# WoW Imito 1.0.0-public
+# WoW Imito 1.0.0
 
-First public Android release for using your own WoW 3.3.5a (12340) client with touch controls.
+**Your Azeroth. Your character. Now on Android.**
 
-- Android 12+ and ARM64.
-- Automatic hardware checks and Vulkan/OpenGL selection.
-- Choose an existing client folder or download your own direct ZIP link.
-- Streaming extraction, storage checks, background downloading and pause/resume.
-- Shared default folder: **Internal storage/WoW-Imito/Client**.
-- Set realm in Settings; sign in inside the game.
-- Graphics presets, resolution options, touch controls and optional addons.
+Play **World of Warcraft: Wrath of the Lich King** on your **Android phone or tablet**, on the **same compatible WotLK server as your friends on PC**. Quest, explore and keep your adventure going with touchscreen controls. No PC is needed while you play.
 
-Included but **OFF by default**: Bagnon, NotPlater, OmniCC, Titan Panel, Immersion,
-AtlasLoot Enhanced, GearScoreLite, Deadly Boss Mods, SexyMap and X-Perl UnitFrames.
-Enable desired addons from **AddOns** at character selection; reload the UI after
-changing activation in-game. MoveAnything and MinimapButtonBag are **ON by default**.
+**[Download WoW Imito APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.0.0-public/WoW-Imito-Public.apk)**
 
-Download **WoW-Imito-Public.apk** below. You need your own complete game client; the APK does not contain it. Read the repository README for requirements and setup.
+## Requirements
 
-This is a production build with debugging, USB diagnostics and benchmark mode disabled. Compatibility and performance vary by device; 60 FPS is not guaranteed. Please report reproducible issues using the repository's bug-report form.
+- **Android 12 or newer**
+- **ARM64 processor and a 64-bit Android system**
+- Your own complete **WoW 3.3.5a (build 12340)** client
+- A compatible WotLK server account and an internet connection
 
-Validation includes a full local client transfer and reaching the game login screen on a physical device, plus targeted tests of the final shared-folder and storage-check changes. The public release was not validated in the game world on every device, and physical SD-card testing remains outstanding.
+**Game files are not included in the APK.**
 
-Verify the APK against **SHA256SUMS.txt**. Keep the existing app installed when applying future public updates.
+## Start playing
+
+1. Install the APK and open **Game files**.
+2. Choose your client folder or paste a direct ZIP download link.
+3. Enter your server address in **Settings > Set realm**.
+4. Tap **PLAY** and sign in inside the game.
+
+## Screenshots
+
+![WoW Imito gameplay](https://raw.githubusercontent.com/MrAnonymz/WoW-Imito/main/assets/screenshots/gameplay-01.png)
+
+![WoW Imito quest dialogue](https://raw.githubusercontent.com/MrAnonymz/WoW-Imito/main/assets/screenshots/gameplay-02.png)
+
+![WoW Imito inventory](https://raw.githubusercontent.com/MrAnonymz/WoW-Imito/main/assets/screenshots/gameplay-03.png)
+
+## Included addons
+
+**OFF by default:** Bagnon, NotPlater, OmniCC, Titan Panel, Immersion, AtlasLoot Enhanced, GearScoreLite, Deadly Boss Mods, SexyMap and X-Perl UnitFrames.
+
+Enable the ones you want in **AddOns** on the character-selection screen. If you change addon activation while playing, use **`/reload`**. **MoveAnything** and **MinimapButtonBag** are enabled by default.
+
+**[Learn more](https://github.com/MrAnonymz/WoW-Imito#make-it-your-own)** | **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)**
