@@ -1,0 +1,34 @@
+WOW IMITO — OPEN-SOURCE COMPONENTS
+
+This Android application is based on WoW Mobile and Winlator.
+
+Winlator
+Author/project: brunodev85 and contributors
+https://github.com/brunodev85/winlator
+https://github.com/brunodev85/winlator-app
+License: GNU Lesser General Public License, version 2.1.
+The unmodified upstream license text is included as LGPL-2.1.txt.
+
+WoW Mobile
+Project: marcocastignoli/wow-mobile and contributors
+https://github.com/marcocastignoli/wow-mobile
+License: GNU Lesser General Public License, version 2.1.
+The unmodified upstream license text is included as LGPL-2.1.txt.
+
+ConsolePortLK
+Project: leoaviana/ConsolePortLK and contributors
+https://github.com/leoaviana/ConsolePortLK
+Based on ConsolePort by Sebastian Lindfors and contributors:
+https://github.com/seblindfors/ConsolePort
+License: The Artistic License 2.0.
+Copyright (c) 2015 Sebastian Lindfors
+Copyright (c) 2025 Leandro Araujo Viana
+The original bundled license and copyright notice is included as
+ConsolePort-LICENSE.md and remains inside the bundled addon archive.
+
+Application-specific changes in this build include the Android interface,
+client download and installation, server configuration, and game launch.
+Third-party notices and license texts retain their original wording.
+
+Additional bundled WoW addons and mobile integration changes are documented
+in THIRD-PARTY-ADDONS.txt. Original author notices are retained in each addon.

@@ -1,0 +1,71 @@
+name: Bug or performance problem
+description: Report a problem with WoW Imito on your device.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Please search existing issues first. Never include passwords, account emails, tokens or private download links. Redact personal details in screenshots and logs."
+  - type: dropdown
+    id: category
+    attributes:
+      label: Problem type
+      options:
+        - Installation or startup
+        - Download or game files
+        - Graphics or crash
+        - FPS or stuttering
+        - Touch controls or keyboard
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device model
+      placeholder: "Brand and exact phone/tablet model"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      placeholder: "Android version and manufacturer OS version, if known"
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: APK version
+      placeholder: "For example, 1.0.0-public"
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: RAM and GPU, if known
+      placeholder: "Optional; no serial number or device identifier"
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: "Include the exact error text if one appears."
+      placeholder: "1. Open...\n2. Tap...\n3. The problem occurs..."
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: performance
+    attributes:
+      label: Graphics and performance details
+      description: "For FPS/stuttering: resolution, preset, FPS, scene, movement/camera conditions and whether the device was hot. For graphics bugs: Vulkan/OpenGL if known."
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots, video or redacted logs
+      description: "Optional. Review attachments for personal information before uploading."

@@ -1,0 +1,11 @@
+*.apk
+*.apk.idsig
+*.jks
+*.keystore
+keystore.properties
+local.properties
+*.log
+.gradle/
+build/
+publish-auth/
+*audit.local*

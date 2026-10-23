@@ -1,0 +1,38 @@
+WoW Imito - bundled WoW 3.3.5a add-ons
+
+Each bundled add-on retains its author notices and license files.
+Mobile integration is provided by WoW Imito Touch; upstream modules retain their original names.
+
+Default ON: MoveAnything, MinimapButtonBag.
+Default OFF: Bagnon (including Config), NotPlater, OmniCC (including Config),
+Titan Panel (all modules), Immersion, AtlasLoot Enhanced, GearScoreLite,
+Deadly Boss Mods (all modules), SexyMap and X-Perl UnitFrames (all modules).
+TOC defaults apply to newly discovered add-ons; existing player choices are preserved.
+
+MoveAnything: {"repository": "TrinityCore/wow_335a_addons", "commit": "4c551c5cdb8937ddc8f7c87d936549b3e7dc0b7a"}
+DBM: {"repository": "Zidras/DBM-Warmane", "tag": "10.1.12", "commit": "cb3c96cb944c9ca16a70ac84e0aa60559f3f5ad7"}
+OmniCC: {"repository": "NoM0Re/OmniCC-WotLK", "tag": "11.2.8-Backport", "archiveSha256": "fe9a54b17bf22c1d6ecad5850e4acb4d9e38d6c64e28216dc5d7d7b2e8bebb10"}
+NotPlater: {"repository": "RichSteini/NotPlater", "tag": "v3.2.4", "commit": "ead7571c6d09a0561c846556e55edb6623c03dd8", "archiveSha256": "6bea06c194f37afcf1dacbcea6449da08f48e806d29ce62ebcfa76a8ca8ba34d"}
+MBB: {"repository": "TrinityCore/wow_335a_addons", "commit": "4c551c5cdb8937ddc8f7c87d936549b3e7dc0b7a"}
+AtlasLoot: {"source": "User PC client addon code (no account settings)"}
+AtlasLootFu: {"source": "User PC client addon code (no account settings)"}
+AtlasLoot_BurningCrusade: {"source": "User PC client addon code (no account settings)"}
+AtlasLoot_Crafting: {"source": "User PC client addon code (no account settings)"}
+AtlasLoot_OriginalWoW: {"source": "User PC client addon code (no account settings)"}
+AtlasLoot_WorldEvents: {"source": "User PC client addon code (no account settings)"}
+AtlasLoot_WrathoftheLichKing: {"source": "User PC client addon code (no account settings)"}
+GearScoreLite: {"source": "User PC client addon code (no account settings)"}
+
+Titan Panel 4.3.8.30300: original add-on code with a mobile display preset.
+No account or character data is included in the preset.
+Titan mobile overrides: larger default font, FPS enabled, live Android battery plugin.
+Titan startup version and plugin-registration notices are suppressed; actual plugin errors
+and explicitly requested help/version output remain available.
+Bagnon and AtlasLoot/GearScoreLite: original 3.3.5a add-on code from user PC client.
+Packaging adjustments: DefaultState fields; optional missing MoveAnything UserMods excluded;
+missing NotPlater ptBR NPC data reference excluded (English fallback retained);
+two malformed DBM TOC comment/metadata lines corrected.
+The NotPlater project is a separate Plater-inspired addon, not the original Plater.
+NotPlater LibStub Lua entry uses Script instead of XML Include; documentation-only demo pictures omitted.
+SexyMap v1.2.3p and X-Perl UnitFrames 3.0.9: original 3.3.5a code from the user's PC client.
+All X-Perl modules are included. No PC account settings were imported. DefaultState disabled.
