@@ -6,7 +6,7 @@
 
 WoW Imito brings **World of Warcraft: Wrath of the Lich King** to your **Android phone or tablet**, so you can play on the **same compatible WotLK server as your friends on PC**. Complete quests, explore Azeroth and join your friends with **touchscreen or controller controls**. The game runs directly on your device: no PC is needed while you play.
 
-**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** | **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)**
+**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** | **[Release notes](https://github.com/MrAnonymz/WoW-Imito/releases)** | **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)**
 
 ## What you need
 
@@ -34,27 +34,6 @@ The APK does not include game files or a server account. Storage needs depend on
 4. Tap **PLAY**, sign in inside WoW and choose your character.
 
 Movement, camera controls, spells and menus are adapted for touch. **Low specs** helps you reduce graphics settings, and **Eco mode** lets you limit the game to 30 FPS to save battery.
-
-## New in 1.1.0
-
-- Support for the tested **CoA/Descension** and **Whitemane Frostmourne Rebuffed** clients, with automatic mobile compatibility fixes for recognised builds.
-- **Xbox, PlayStation, Odin 2 and compatible Android controllers**, with optional **ConsolePort** controls and matching button symbols. DualSense touchpad support is included.
-- **LoseControl**, included and **OFF by default**.
-- **Performance improvements**, with further optimizations in active development.
-
-### Tested performance
-
-| Client | Test location | Resolution | Measured FPS on Samsung S26 |
-| --- | --- | --- | --- |
-| Standard WotLK 3.3.5a | Starting location | 1280 × 720 | **~60** |
-| CoA/Descension (local test realm) | Starting location | 800 × 450 | **~52** |
-| Whitemane Frostmourne Rebuffed | Starting location | 800 × 450 | **~45–47** |
-
-### Text rendering
-
-For **Frostmourne Rebuffed**, open **Settings > Text rendering**. Try **Original WoW** for performance; choose **Rebuffed: safe** or **Rebuffed: full** to use its enhanced text renderer. Restart the game after changing it. The Frostmourne results above used **Original WoW**.
-
-Standard WotLK and CoA/Descension need no change here. **Low specs** and **Defaults** preserve this separate choice.
 
 ## Screenshots
 
