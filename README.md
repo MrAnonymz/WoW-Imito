@@ -10,17 +10,21 @@ WoW Imito brings **World of Warcraft: Wrath of the Lich King** to your **Android
 
 ## What you need
 
-| Requirement | Details |
-| --- | --- |
+| Component | Requirement / recommendation |
+| :--- | :--- |
 | **Android** | **12 or newer** |
-| **Processor** | **ARM64**, with a 64-bit Android system |
-| **Recommended CPU performance** | **Snapdragon 888 class or better**; slower chips can run the game at reduced FPS |
-| **RAM** | **6 GB suggested minimum**, **8 GB or more recommended** |
-| **Free storage for installation** | About **22 GB** for standard WotLK, **30 GB** for tested Frostmourne, **50 GB** for tested CoA; varies with your client |
-| **Game client** | Your own complete **WoW 3.3.5a (build 12340)** client |
-| **Server account** | An account on a compatible WotLK server and an internet connection |
+| **Architecture** | **ARM64 processor + 64-bit Android** |
+| **CPU performance** | Suggested starting point: **Snapdragon 888 class or better** |
+| **Memory** | **6 GB RAM** suggested minimum · **8 GB+** recommended |
+| **Storage — standard WotLK** | About **22 GB free** before installation |
+| **Storage — Frostmourne** | About **30 GB free** before installation |
+| **Storage — tested CoA client** | About **50 GB free** before installation |
+| **Game files** | Your own complete **WoW 3.3.5a (build 12340)** client |
+| **Connection** | Internet access and an account on your chosen compatible server |
 
-The APK does not include the game files or a server account. CPU and RAM figures are practical recommendations, not a guarantee of 40–60 FPS.
+The APK does not include game files or a server account. Storage needs depend on your client. CPU and RAM figures are recommendations; slower devices may run the game at reduced FPS.
+
+**Performance varies by device:** CPU, GPU, RAM, graphics settings, resolution, enabled addons, device temperature, battery level and power-saving mode can all affect FPS. Further performance optimizations are in active development.
 
 ## Start playing
 
@@ -36,16 +40,15 @@ Movement, camera controls, spells and menus are adapted for touch. **Low specs**
 - Support for the tested **CoA/Descension** and **Whitemane Frostmourne Rebuffed** clients, with automatic mobile compatibility fixes for recognised builds.
 - **Xbox, PlayStation, Odin 2 and compatible Android controllers**, with optional **ConsolePort** controls and matching button symbols. DualSense touchpad support is included.
 - **LoseControl**, included and **OFF by default**.
+- **Performance improvements**, with further optimizations in active development.
 
 ### Tested performance
 
 | Client | Test location | Resolution | Measured FPS on Samsung S26 |
 | --- | --- | --- | --- |
-| Standard WotLK 3.3.5a | Sunstrider Isle | 1280 × 720 | **~60** |
-| CoA/Descension | Local test realm | 800 × 450 | **~52** |
-| Frostmourne Rebuffed | **Whitemane Frostmourne**, Sunstrider Isle | 800 × 450 | **~45–47** |
-
-These are sample results from different scenes, not guaranteed FPS. Official CoA server login has not been tested. Xbox and DualSense were tested on S26; Odin 2 support has not been tested on physical hardware.
+| Standard WotLK 3.3.5a | Starting location | 1280 × 720 | **~60** |
+| CoA/Descension (local test realm) | Starting location | 800 × 450 | **~52** |
+| Whitemane Frostmourne Rebuffed | Starting location | 800 × 450 | **~45–47** |
 
 ### Text rendering
 
