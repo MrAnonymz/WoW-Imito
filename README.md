@@ -4,7 +4,7 @@
 
 ## What is WoW Imito?
 
-WoW Imito brings **World of Warcraft: Wrath of the Lich King** to your **Android phone or tablet**, so you can play on the **same compatible WotLK server as your friends on PC**. Complete quests, explore Azeroth and join your friends with **touchscreen or controller controls**. The game runs directly on your device: no PC is needed while you play.
+WoW Imito brings **World of Warcraft: Wrath of the Lich King** to your **Android phone or tablet**, so you can play on the **same WotLK server as your friends on PC**. Complete quests, explore Azeroth and join your friends with **touchscreen or controller controls**. The game runs directly on your device: no PC is needed while you play.
 
 **[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** | **[Release notes](https://github.com/MrAnonymz/WoW-Imito/releases)** | **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)**
 
