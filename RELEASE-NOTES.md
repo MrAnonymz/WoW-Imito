@@ -1,39 +1,18 @@
-# WoW Imito 1.0.0
+﻿# WoW Imito 1.1.0
 
-**Your Azeroth. Your character. Now on Android.**
+- **CoA/Descension and Whitemane Frostmourne Rebuffed support**, including automatic fixes for recognised client builds.
+- **Controller support:** Xbox, PlayStation, Odin 2 and compatible Android gamepads; optional ConsolePort UI and DualSense touchpad controls.
+- **LoseControl added — OFF by default.**
+- **Text rendering:** Frostmourne Rebuffed only. Select **Original WoW** for the performance-focused option, or **Rebuffed: safe/full** for enhanced text. Restart the game. Standard WotLK and CoA need no change.
 
-Play **World of Warcraft: Wrath of the Lich King** on your **Android phone or tablet**, on the **same compatible WotLK server as your friends on PC**. Quest, explore and keep your adventure going with touchscreen controls. No PC is needed while you play.
+| Tested client / server | Resolution | FPS on Samsung S26 |
+| --- | --- | --- |
+| Standard WotLK — Sunstrider Isle | 1280 × 720 | **~60** |
+| CoA/Descension — local test realm | 800 × 450 | **~52** |
+| Whitemane Frostmourne — Sunstrider Isle, Original WoW text | 800 × 450 | **~45–47** |
 
-**[Download WoW Imito APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.0.0-public/WoW-Imito-Public.apk)**
+Sample measurements, not guaranteed FPS. Official CoA login and physical Odin 2 testing remain unverified. Xbox and DualSense were tested on S26.
 
-## Requirements
+**Requirements:** Android **12+**, **ARM64 / 64-bit Android**. Suggested starting hardware: **Snapdragon 888 class**, **6 GB RAM** (8 GB+ recommended). Allow about **22 GB** free for standard WotLK, **30 GB** for Frostmourne or **50 GB** for the tested CoA client.
 
-- **Android 12 or newer**
-- **ARM64 processor and a 64-bit Android system**
-- Your own complete **WoW 3.3.5a (build 12340)** client
-- A compatible WotLK server account and an internet connection
-
-**Game files are not included in the APK.**
-
-## Start playing
-
-1. Install the APK and open **Game files**.
-2. Choose your client folder or paste a direct ZIP download link.
-3. Enter your server address in **Settings > Set realm**.
-4. Tap **PLAY** and sign in inside the game.
-
-## Screenshots
-
-![WoW Imito gameplay](https://raw.githubusercontent.com/MrAnonymz/WoW-Imito/main/assets/screenshots/gameplay-01.png)
-
-![WoW Imito quest dialogue](https://raw.githubusercontent.com/MrAnonymz/WoW-Imito/main/assets/screenshots/gameplay-02.png)
-
-![WoW Imito inventory](https://raw.githubusercontent.com/MrAnonymz/WoW-Imito/main/assets/screenshots/gameplay-03.png)
-
-## Included addons
-
-**OFF by default:** Bagnon, NotPlater, OmniCC, Titan Panel, Immersion, AtlasLoot Enhanced, GearScoreLite, Deadly Boss Mods, SexyMap and X-Perl UnitFrames.
-
-Enable the ones you want in **AddOns** on the character-selection screen. If you change addon activation while playing, use **`/reload`**. **MoveAnything** and **MinimapButtonBag** are enabled by default.
-
-**[Learn more](https://github.com/MrAnonymz/WoW-Imito#make-it-your-own)** | **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)**
+**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.1.0/WoW-Imito-Public.apk)** · **[Setup & addons](https://github.com/MrAnonymz/WoW-Imito#start-playing)** · **[Report a problem](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose)**

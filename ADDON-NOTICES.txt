@@ -6,7 +6,7 @@ Mobile integration is provided by WoW Imito Touch; upstream modules retain their
 Default ON: MoveAnything, MinimapButtonBag.
 Default OFF: Bagnon (including Config), NotPlater, OmniCC (including Config),
 Titan Panel (all modules), Immersion, AtlasLoot Enhanced, GearScoreLite,
-Deadly Boss Mods (all modules), SexyMap and X-Perl UnitFrames (all modules).
+Deadly Boss Mods (all modules), SexyMap, X-Perl UnitFrames (all modules), ConsolePort and LoseControl.
 TOC defaults apply to newly discovered add-ons; existing player choices are preserved.
 
 MoveAnything: {"repository": "TrinityCore/wow_335a_addons", "commit": "4c551c5cdb8937ddc8f7c87d936549b3e7dc0b7a"}
@@ -36,3 +36,8 @@ The NotPlater project is a separate Plater-inspired addon, not the original Plat
 NotPlater LibStub Lua entry uses Script instead of XML Include; documentation-only demo pictures omitted.
 SexyMap v1.2.3p and X-Perl UnitFrames 3.0.9: original 3.3.5a code from the user's PC client.
 All X-Perl modules are included. No PC account settings were imported. DefaultState disabled.
+
+LoseControl 3.31: Kouri and contributors; GNU GPL version 3.
+https://github.com/wotlk-addons/LoseControl/tree/c7bb1d6c587772e750f7c75f56ad45582651a88d
+Default disabled; mobile event filtering and lifecycle fixes documented in IMITO-CHANGES.txt.
+Full Lua source and LICENSE.txt are included in the addon.

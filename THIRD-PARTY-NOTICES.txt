@@ -32,3 +32,9 @@ Third-party notices and license texts retain their original wording.
 
 Additional bundled WoW addons and mobile integration changes are documented
 in THIRD-PARTY-ADDONS.txt. Original author notices are retained in each addon.
+
+LoseControl: Kouri and contributors, GNU GPL version 3.
+https://www.curseforge.com/wow/addons/losecontrol
+https://github.com/wotlk-addons/LoseControl
+The Lua source, license and mobile change notice are bundled with the addon.
+See ADDON-NOTICES.txt for the bundled addon list.
