@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Conquest of AzerothCore crest">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7df9a"/>
+      <stop offset="0.48" stop-color="#b98b3c"/>
+      <stop offset="1" stop-color="#6e481e"/>
+    </linearGradient>
+  </defs>
+  <path fill="#101815" stroke="url(#gold)" stroke-width="7" d="M128 12 220 53v67c0 59-36 101-92 124-56-23-92-65-92-124V53z"/>
+  <path fill="none" stroke="url(#gold)" stroke-width="5" d="M128 29 203 62v58c0 47-27 82-75 104-48-22-75-57-75-104V62z" opacity=".65"/>
+  <path fill="url(#gold)" d="M83 76h90l-13 24h-22v68h25l13 24H80l13-24h25v-68H96z"/>
+  <path fill="#d8c284" d="M112 114h32v18h-32z" opacity=".72"/>
+</svg>

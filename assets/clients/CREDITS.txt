@@ -1,0 +1,28 @@
+Client and project logos displayed in the compatibility section
+
+Original artwork is retained without redesign. Display dimensions are set in
+README.md; the files themselves are unchanged. Logos identify the respective
+games/projects and do not imply endorsement of WoW Imito.
+
+wow.gif
+Original World of Warcraft logo from the 3.3.5a client's enUS documentation:
+Data/enUS/Documentation/Images/logo-wow.gif
+World of Warcraft and its logo are trademarks of Blizzard Entertainment.
+
+epoch-reborn.webp
+Project Epoch Reborn
+https://project-epoch.org/assets/project-epoch-reborn-logo-transparent.webp
+https://project-epoch.org/
+
+coa-community.svg
+Conquest of AzerothCore community crest (not the official Ascension logo)
+https://coa-development.org/assets/crest.svg
+https://coa-development.org/
+
+wrath-rebuffed.webp
+Frostmourne / Whitemane realm logo, shown for the tested Wrath Rebuffed client
+https://whitemane.gg/img/realms/frostmourne-logo.webp
+https://whitemane.gg/en
+
+Retrieved 27 October 2026. All third-party artwork remains the property of
+its respective owners; no ownership of the logos is claimed by WoW Imito.
