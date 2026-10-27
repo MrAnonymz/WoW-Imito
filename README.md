@@ -43,7 +43,7 @@ Average FPS at **1280 × 720 (HD)** with **low graphics settings**:
 
 | Client version | Samsung S26 | Samsung S21 FE |
 | :--- | ---: | ---: |
-| **Standard WoW WotLK 3.3.5a** | **~60 FPS** | **~41 FPS** |
+| **Standard WoW WotLK 3.3.5a** | **~60 FPS** | **~51 FPS** |
 | **CoA / Descension** | **~60 FPS** | — |
 | **Wrath Rebuffed** | **~60 FPS** | — |
 | **Project Epoch Reborn (3.3.5a)** | **~60 FPS** | **~52 FPS** |
