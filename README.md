@@ -26,6 +26,10 @@ Play **World of Warcraft: Wrath of the Lich King** on your **Android phone or ta
 <details>
 <summary><strong>Requirements & storage</strong></summary>
 
+![REQUIRED: Android 12+ / ARM64](assets/highlights/requirements.svg)
+
+> **Android 12 or newer + ARM64 with 64-bit Android are required.** Bring your own complete **WoW 3.3.5a client** and check the free storage below before installing.
+
 | Component | Requirement / recommendation |
 | :--- | :--- |
 | **Android** | **12 or newer** |
@@ -59,7 +63,9 @@ Select a section to see the details.
 | <a href="https://whitemane.gg/en"><img src="assets/clients/wrath-rebuffed.webp" width="140" alt="Frostmourne — Wrath Rebuffed"></a><br>**Wrath Rebuffed** | ✅ Tested | Version check + built-in game updater |
 | <a href="https://project-epoch.org/"><img src="assets/clients/epoch-reborn.webp" width="160" alt="Project Epoch Reborn"></a><br>**Project Epoch Reborn (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
 
-Use the **complete client required by your server**. The CoA entry refers to the **community distribution**, not a confirmed test of the official Ascension service. Other modified clients may need additional compatibility work.
+![CLIENT FILES: Match your server](assets/highlights/clients.svg)
+
+> Use the **complete client required by your server**. The CoA entry refers to the **community distribution**, not a confirmed test of the official Ascension service. Other modified clients may need additional compatibility work.
 
 For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for performance. Standard WotLK and CoA / Descension need no change here.
 
@@ -68,14 +74,14 @@ For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for per
 <details>
 <summary><strong>Supported & confirmed devices</strong></summary>
 
-WoW Imito targets **Android 12+ with ARM64 and 64-bit Android**. These devices have been confirmed in-game:
+![CONFIRMED: Tested in-game](assets/highlights/devices.svg)
+
+> WoW Imito targets **Android 12+ with ARM64 and 64-bit Android**. The check marks below confirm successful **in-game testing**, not a guarantee of 60 FPS. Other devices may work too.
 
 | Device | Tested Android | Confirmed working |
 | :--- | :---: | :---: |
 | **Samsung Galaxy S26 (SM-S942B)** | 16 | ✅ |
 | **Samsung Galaxy S21 FE (SM-G990B2)** | 16 | ✅ |
-
-A check mark confirms a successful in-game test; it does **not** guarantee 60 FPS. Other devices may work too.
 
 **[Confirm your device](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml)** to help grow this list. For problems or requests to support another device, use the **in-app report** described at the top of this page.
 
@@ -93,7 +99,9 @@ Average FPS with **low graphics settings**:
 | **Wrath Rebuffed** | **~60 FPS** | — |
 | **Project Epoch Reborn (3.3.5a)** | **~60 FPS** | **~52 FPS** |
 
-FPS was measured in **starting locations**. Crowded cities such as **Dalaran, Orgrimmar and Stormwind** may run at lower FPS. These are measured averages, not guaranteed minimums. **—** means not tested on that device.
+![FPS TESTS: Starting locations / HD](assets/highlights/fps.svg)
+
+> FPS was measured in **starting locations**. Crowded cities such as **Dalaran, Orgrimmar and Stormwind** may run at lower FPS. These are **measured averages, not guaranteed minimums**. **—** means not tested on that device.
 
 Wrath Rebuffed used **Original WoW** text rendering. CoA / Descension was tested on a local test realm.
 
@@ -104,7 +112,9 @@ Wrath Rebuffed used **Original WoW** text rendering. CoA / Descension was tested
 <details>
 <summary><strong>Included addons & controls</strong></summary>
 
-These optional addons are **OFF by default**. Enable the ones you want in **AddOns** on the character-selection screen.
+![DEFAULT: Optional addons OFF](assets/highlights/addons.svg)
+
+> These optional addons are **OFF by default**. Enable the ones you want in **AddOns** on the character-selection screen.
 
 | Addon | What it adds |
 | :--- | :--- |
@@ -130,7 +140,9 @@ Choose **WoW Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Input** e
 <details>
 <summary><strong>Updating your game</strong></summary>
 
-For supported clients, **PLAY** checks for updates automatically. Choose **Update** when prompted, or check manually in **Settings > Update game**.
+![GAME UPDATES: Check with PLAY](assets/highlights/updates.svg)
+
+> For supported clients, **PLAY** checks for updates automatically. Choose **Update** when prompted, or check manually in **Settings > Update game**.
 
 - **Project Epoch Reborn** and the **CoA / Descension community client** download updates directly in the app.
 - **Wrath Rebuffed** uses its built-in game updater.
@@ -141,16 +153,13 @@ Other clients still use their existing update method.
 
 </details>
 
-<details>
-<summary><strong>Gameplay screenshots</strong></summary>
+## Gameplay screenshots
 
 ![WoW Imito gameplay](assets/screenshots/gameplay-01.png)
 
 ![WoW Imito quest dialogue](assets/screenshots/gameplay-02.png)
 
 ![WoW Imito inventory](assets/screenshots/gameplay-03.png)
-
-</details>
 
 ---
 
