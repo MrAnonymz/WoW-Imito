@@ -1,3 +1,5 @@
+![WoW Imito — Your Azeroth. Anywhere.](assets/wow-imito-banner.jpg)
+
 # WoW Imito
 
 **Your Azeroth. Your character. Now on Android.**
