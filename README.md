@@ -37,6 +37,12 @@ The APK does not include game files or a server account. Storage needs depend on
 
 Movement, camera controls, spells and menus are adapted for touch. **Low specs** helps you reduce graphics settings, and **Eco mode** lets you limit the game to 30 FPS to save battery.
 
+### Game updates
+
+For supported clients, **PLAY** checks for game updates automatically. Choose **Update** when prompted, or open **Settings > Update game** to check manually. Downloads can continue in the background and resume after an interruption.
+
+**Project Epoch Reborn** and the **CoA / Descension community client** download updates directly in the app. **Wrath Rebuffed** uses its built-in game updater. Your settings, addons and server address are preserved. Other clients still use their existing update method.
+
 > **ECO mode is strongly recommended for longer play sessions.** Its **30 FPS limit** reduces CPU and GPU workload and helps save battery, so you can play longer on a single charge. The benefit varies by device and game settings.
 
 ## Measured performance
@@ -52,7 +58,7 @@ Average FPS at **1280 × 720 (HD)** with **low graphics settings**:
 
 FPS was measured in **starting locations**. Crowded cities such as **Dalaran, Orgrimmar and Stormwind** may run at lower FPS. These are measured averages, not guaranteed minimums. **—** means not tested on that device.
 
-Wrath Rebuffed used **Settings > Text rendering > Original WoW**. CoA / Descension was tested on a local test realm. For Project Epoch Reborn, use a complete client updated with its official launcher.
+Wrath Rebuffed used **Settings > Text rendering > Original WoW**. CoA / Descension was tested on a local test realm. Project Epoch Reborn requires a complete client; supported updates can now be installed in WoW Imito.
 
 ## Confirmed devices
 
