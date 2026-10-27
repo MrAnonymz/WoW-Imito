@@ -1,0 +1,40 @@
+name: Confirm a working device
+description: Help expand the confirmed-device table.
+title: "Device confirmation: "
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device model
+      description: Include the model number if available, as variants can use different hardware.
+      placeholder: Samsung Galaxy S21 FE (SM-G990B2)
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Android and WoW Imito versions
+      placeholder: Android 16, WoW Imito 1.2.0
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: Game client
+      placeholder: Standard WotLK 3.3.5a, Wrath Rebuffed, Project Epoch Reborn...
+    validations:
+      required: true
+  - type: textarea
+    id: gameplay
+    attributes:
+      label: How does it play?
+      description: Include resolution, graphics settings, approximate FPS if known, controls used, time played and any problems. Do not include account details.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmed
+    attributes:
+      label: Gameplay confirmation
+      options:
+        - label: I entered the game world and played on this device.
+          required: true

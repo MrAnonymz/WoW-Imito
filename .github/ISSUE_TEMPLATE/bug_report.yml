@@ -37,7 +37,7 @@ body:
     id: app_version
     attributes:
       label: APK version
-      placeholder: "For example, 1.0.0-public"
+      placeholder: "For example, 1.2.0"
     validations:
       required: true
   - type: input
