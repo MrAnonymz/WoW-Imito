@@ -29,7 +29,9 @@ CoA / Descension was tested on a local test realm. For Project Epoch Reborn, use
 
 ## ECO mode
 
-**ECO caps the game at 30 FPS** to reduce workload and help save battery. In our Samsung S26 CoA test, CPU load was approximately **31% lower** and GPU load **47% lower** than at 60 FPS. These are workload reductions, not measured battery-life gains.
+> **ECO mode is strongly recommended for longer play sessions.** Its **30 FPS limit** reduces CPU and GPU workload and helps save battery, so you can play longer on a single charge. The benefit varies by device and game settings.
+
+**ECO caps the game at 30 FPS** to reduce workload and help save battery. In Samsung S26 CoA test, CPU load was approximately **31% lower** and GPU load **47% lower** than at 60 FPS. These are workload reductions, not measured battery-life gains.
 
 ## Fixes
 

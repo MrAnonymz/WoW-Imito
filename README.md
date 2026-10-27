@@ -35,6 +35,8 @@ The APK does not include game files or a server account. Storage needs depend on
 
 Movement, camera controls, spells and menus are adapted for touch. **Low specs** helps you reduce graphics settings, and **Eco mode** lets you limit the game to 30 FPS to save battery.
 
+> **ECO mode is strongly recommended for longer play sessions.** Its **30 FPS limit** reduces CPU and GPU workload and helps save battery, so you can play longer on a single charge. The benefit varies by device and game settings.
+
 ## Measured performance
 
 Average FPS at **1280 × 720 (HD)** with **low graphics settings**:
@@ -52,10 +54,10 @@ Wrath Rebuffed used **Settings > Text rendering > Original WoW**. CoA / Descensi
 
 ## Confirmed devices
 
-| Device | Tested Android | Confirmed working | Tested clients |
-| :--- | :---: | :---: | :--- |
-| **Samsung Galaxy S26 (SM-S942B)** | 16 | ✅ | Standard WotLK, CoA / Descension, Wrath Rebuffed, Project Epoch Reborn |
-| **Samsung Galaxy S21 FE (SM-G990B2)** | 16 | ✅ | Standard WotLK, Project Epoch Reborn |
+| Device | Tested Android | Confirmed working |
+| :--- | :---: | :---: |
+| **Samsung Galaxy S26 (SM-S942B)** | 16 | ✅ |
+| **Samsung Galaxy S21 FE (SM-G990B2)** | 16 | ✅ |
 
 A check mark means the listed device has been tested successfully in-game; it does **not** guarantee 60 FPS. Other devices may work too. **[Confirm your device](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml)** to help grow this list.
 
