@@ -1,6 +1,6 @@
 > [!IMPORTANT]
 > **Please send bugs and requests through the app: Settings > Game crash report > Report a problem.**
-> This gives us the device and game details needed to investigate faster and keeps your report properly tracked.
+> This gives info about the device and game details needed to investigate faster and keeps your report properly tracked.
 > For **feature requests, support for another device or another client**, choose **Other** and describe your request before sending.
 > If the app cannot open, [create a GitHub issue](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose) instead.
 
