@@ -75,7 +75,7 @@ For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for per
 > WoW Imito targets **Android 12+ with ARM64 and 64-bit Android**. The check marks below confirm successful **in-game testing**, not a guarantee of 60 FPS. Other devices may work too.
 
 | Device | Confirmed working |
-| :--- | :---: | :---: |
+| :--- | :---: |
 | **Samsung Galaxy S26 (SM-S942B)** | ✅ |
 | **Samsung Galaxy S21 FE (SM-G990B2)** | ✅ |
 | **Samsung Galaxy S23 Ultra** | ✅ |
