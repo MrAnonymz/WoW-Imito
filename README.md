@@ -19,9 +19,11 @@ Play **World of Warcraft: Wrath of the Lich King** on your **Android phone or ta
 **You need Android 12 or newer, an ARM64 processor with 64-bit Android, and your own complete WoW 3.3.5a client.**
 
 1. **Install** the APK and open WoW Imito.
-2. Tap **Game files** and select your client folder, or paste a direct ZIP download link.
-3. Open **Settings > Set realm** and enter your server address.
+2. Copy your client to your phone or SD card, or use **Game files** to download it from a ZIP link.
+3. The app **finds your clients automatically**. Choose one and **confirm or change the server address** when prompted.
 4. Tap **PLAY**, sign in inside WoW and choose your character.
+
+You can still select a folder in **Game files** or change your server in **Settings > Set realm**.
 
 <details>
 <summary><strong>Requirements & storage</strong></summary>
