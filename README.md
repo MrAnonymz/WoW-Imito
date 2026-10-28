@@ -76,6 +76,7 @@ For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for per
 | :--- | :---: | :---: |
 | **Samsung Galaxy S26 (SM-S942B)** | 16 | ✅ |
 | **Samsung Galaxy S21 FE (SM-G990B2)** | 16 | ✅ |
+| **Samsung Galaxy S23 Ultra** | — | ✅ |
 | **Motorola Edge 70 Max** | — | ✅ |
 | **AYN Odin 2** | — | ✅ |
 
