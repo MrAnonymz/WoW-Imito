@@ -76,7 +76,7 @@ For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for per
 | :--- | :---: | :---: |
 | **Samsung Galaxy S26 (SM-S942B)** | 16 | ✅ |
 | **Samsung Galaxy S21 FE (SM-G990B2)** | 16 | ✅ |
-| **Motorola edge 70 max** | — | ✅ |
+| **Motorola Edge 70 Max** | — | ✅ |
 | **AYN Odin 2** | — | ✅ |
 
 Motorola edge 70 max was confirmed by a player, who reported approximately **60 FPS**. Android version was not provided.
