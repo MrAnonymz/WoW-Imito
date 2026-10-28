@@ -80,9 +80,6 @@ For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for per
 | **Motorola Edge 70 Max** | — | ✅ |
 | **AYN Odin 2** | — | ✅ |
 
-Motorola edge 70 max was confirmed by a player, who reported approximately **60 FPS**. Android version was not provided.
-
-AYN Odin 2 was confirmed by a player using **Xbox controller mode**. Android version was not provided.
 
 **[Confirm your device](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml)** to help grow this list. For problems or requests to support another device, use the **in-app report** described at the top of this page.
 
