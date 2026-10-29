@@ -10,7 +10,7 @@
 
 **Your Azeroth. Your character. Now on Android.**
 
-Play **World of Warcraft — Vanilla, The Burning Crusade and Wrath of the Lich King** on your **Android phone or tablet**, on the **same compatible server as your friends on PC**. Explore, quest and play together with **touchscreen or controller controls** — no PC needed while you play.
+Play **World of Warcraft — Vanilla, The Burning Crusade and Wrath of the Lich King** on your **Android phone or tablet**, on the **same server as your friends on PC**. Explore, quest and play together with **touchscreen or controller controls** — no PC needed while you play.
 
 **[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Release notes](https://github.com/MrAnonymz/WoW-Imito/releases)** · **[Community reports](https://github.com/MrAnonymz/WoW-Imito/issues)**
 
