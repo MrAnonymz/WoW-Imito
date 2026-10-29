@@ -10,13 +10,13 @@
 
 **Your Azeroth. Your character. Now on Android.**
 
-Play **World of Warcraft: Wrath of the Lich King** on your **Android phone or tablet**, on the **same WotLK server as your friends on PC**. Explore, quest and play together with **touchscreen or controller controls** — no PC needed while you play.
+Play **World of Warcraft — Vanilla, The Burning Crusade and Wrath of the Lich King** on your **Android phone or tablet**, on the **same compatible server as your friends on PC**. Explore, quest and play together with **touchscreen or controller controls** — no PC needed while you play.
 
 **[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Release notes](https://github.com/MrAnonymz/WoW-Imito/releases)** · **[Community reports](https://github.com/MrAnonymz/WoW-Imito/issues)**
 
 ## Start playing
 
-**You need Android 12 or newer, an ARM64 processor with 64-bit Android, and your own complete WoW 3.3.5a client.**
+**You need Android 12 or newer, an ARM64 processor with 64-bit Android, and your own complete compatible WoW client.**
 
 1. **Install** the APK and open WoW Imito.
 2. Copy your client to your phone or SD card, or use **Game files** to download it from a ZIP link.
@@ -28,7 +28,7 @@ You can still select a folder in **Game files** or change your server in **Setti
 <details>
 <summary><strong>Requirements & storage</strong></summary>
 
-> **Android 12 or newer + ARM64 with 64-bit Android are required.** Bring your own complete **WoW 3.3.5a client** and check the free storage below before installing.
+> **Android 12 or newer + ARM64 with 64-bit Android are required.** Bring the **complete client required by your server** and check the free storage below before installing.
 
 | Component | Requirement / recommendation |
 | :--- | :--- |
@@ -36,10 +36,11 @@ You can still select a folder in **Game files** or change your server in **Setti
 | **Architecture** | **ARM64 processor + 64-bit Android** |
 | **CPU performance** | Suggested starting point: **Snapdragon 888 class or better** |
 | **Memory** | **6 GB RAM** suggested minimum · **8 GB+** recommended |
+| **Storage — Vanilla / TBC** | About **8 GB / 12 GB free** before installation |
 | **Storage — standard WotLK** | About **22 GB free** before installation |
 | **Storage — Wrath Rebuffed** | About **30 GB free** before installation |
 | **Storage — tested CoA client** | About **50 GB free** before installation |
-| **Game files** | Your own complete **WoW 3.3.5a (build 12340)** client |
+| **Game files** | Your own complete **Vanilla 1.12.1**, **TBC 2.4.3** or **WotLK 3.3.5a** client |
 | **Connection** | Internet access and an account on your chosen compatible server |
 
 The APK does not include game files or a server account. Storage needs depend on your client. CPU and RAM figures are recommendations; slower devices may run at reduced FPS.
@@ -47,7 +48,7 @@ The APK does not include game files or a server account. Storage needs depend on
 </details>
 
 > [!TIP]
-> **ECO mode is strongly recommended for longer play sessions.** It limits the game to **30 FPS**, reducing CPU/GPU workload and helping your battery last longer. The benefit varies by device and settings. **Low specs** can also help on slower devices.
+> **ECO mode is strongly recommended for longer play sessions.** It limits the game to **40 FPS**, reducing CPU/GPU workload and helping your battery last longer. The benefit varies by device and settings. **Low specs** can also help on slower devices.
 
 ## Compatibility & features
 
@@ -58,10 +59,13 @@ Select a section to see the details.
 
 | Client | In-game testing | Game updates |
 | :--- | :--- | :--- |
+| **WoW Vanilla 1.12.1** | ✅ Tested on a local test realm | Use your server's usual update method |
+| **The Burning Crusade 2.4.3** | ✅ Tested on a local test realm | Use your server's usual update method |
 | <img src="assets/clients/wow.gif" width="140" alt="World of Warcraft"><br>**Standard WoW WotLK 3.3.5a** | ✅ Tested, including Warmane WotLK | Use your server's usual update method |
 | <a href="https://coa-development.org/"><img src="assets/clients/coa-community.svg" width="60" alt="Conquest of AzerothCore community crest"></a><br>**CoA / Descension community client** | ✅ Tested on a local test realm | Direct updates in WoW Imito |
-| <a href="https://whitemane.gg/en"><img src="assets/clients/wrath-rebuffed.webp" width="140" alt="Frostmourne — Wrath Rebuffed"></a><br>**Wrath Rebuffed** | ✅ Tested | Version check + built-in game updater |
+| <a href="https://whitemane.gg/en"><img src="assets/clients/wrath-rebuffed.webp" width="140" alt="Frostmourne — Wrath Rebuffed"></a><br>**Wrath Rebuffed** | ✅ Tested | Direct updates in WoW Imito |
 | <a href="https://project-epoch.org/"><img src="assets/clients/epoch-reborn.webp" width="160" alt="Project Epoch Reborn"></a><br>**Project Epoch Reborn (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
+| **Grimfall client (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
 
 > Use the **complete client required by your server**. The CoA entry refers to the **community distribution**, not a confirmed test of the official Ascension service. Other modified clients may need additional compatibility work.
 
@@ -94,10 +98,13 @@ Average FPS with **low graphics settings**:
 
 | Client version | Samsung S26 | Samsung S21 FE |
 | :--- | ---: | ---: |
+| **WoW Vanilla 1.12.1** | **~60 FPS** | **~60 FPS** |
+| **The Burning Crusade 2.4.3** | **~60 FPS** | **~56 FPS** |
 | **Standard WoW WotLK 3.3.5a** | **~60 FPS** | **~51 FPS** |
 | **CoA / Descension** | **~60 FPS** | — |
 | **Wrath Rebuffed** | **~60 FPS** | — |
 | **Project Epoch Reborn (3.3.5a)** | **~60 FPS** | **~52 FPS** |
+| **Grimfall client (3.3.5a)** | **~60 FPS** | — |
 
 > FPS was measured in **starting locations**. Crowded cities such as **Dalaran, Orgrimmar and Stormwind** may run at lower FPS. These are **measured averages, not guaranteed minimums**. **—** means not tested on that device.
 
@@ -110,7 +117,7 @@ Wrath Rebuffed used **Original WoW** text rendering. CoA / Descension was tested
 <details>
 <summary><strong>Included addons & controls</strong></summary>
 
-> These optional addons are **OFF by default**. Enable the ones you want in **AddOns** on the character-selection screen.
+> The app includes addons **compatible with your client version**. Availability differs between Vanilla, TBC and Wrath. These optional addons are **OFF by default**; enable the ones you want in **AddOns** on the character-selection screen.
 
 | Addon | What it adds |
 | :--- | :--- |
@@ -129,7 +136,7 @@ Wrath Rebuffed used **Original WoW** text rendering. CoA / Descension was tested
 
 **MoveAnything** and **MinimapButtonBag** are **ON by default** to help arrange the interface and organise minimap buttons. After changing addon activation while playing, type **`/reload`** to apply it.
 
-Choose **WoW Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Input** enabled. The two interfaces are mutually exclusive. Connecting or disconnecting a controller does not automatically enable ConsolePort or change your selection.
+On **Wrath**, choose **WoW Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Input** enabled. The two interfaces are mutually exclusive. Connecting or disconnecting a controller does not automatically enable ConsolePort or change your selection. Vanilla and TBC use their own compatible **WoW Imito Touch UI** addon.
 
 </details>
 
@@ -139,7 +146,7 @@ Choose **WoW Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Input** e
 > For supported clients, **PLAY** checks for updates automatically. Choose **Update** when prompted, or check manually in **Settings > Update game**.
 
 - **Project Epoch Reborn** and the **CoA / Descension community client** download updates directly in the app.
-- **Wrath Rebuffed** uses its built-in game updater.
+- **Wrath Rebuffed** and **Grimfall** update directly in WoW Imito.
 - Downloads can continue **in the background** and **resume after an interruption**.
 - Your **graphics settings, addons and server address** are preserved.
 

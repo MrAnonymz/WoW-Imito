@@ -14,14 +14,14 @@ body:
     id: versions
     attributes:
       label: Android and WoW Imito versions
-      placeholder: Android 16, WoW Imito 1.2.0
+      placeholder: Android 16, WoW Imito 1.3.0
     validations:
       required: true
   - type: input
     id: client
     attributes:
       label: Game client
-      placeholder: Standard WotLK 3.3.5a, Wrath Rebuffed, Project Epoch Reborn...
+      placeholder: Vanilla 1.12.1, TBC 2.4.3, WotLK 3.3.5a, Wrath Rebuffed, Project Epoch Reborn...
     validations:
       required: true
   - type: textarea
