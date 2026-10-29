@@ -1,29 +1,53 @@
-# WoW Imito 1.2.2
+# WoW Imito 1.3.0
 
-28 October 2026
+## New: Vanilla & The Burning Crusade
 
-> **Crash reports #3, #4 and #6:** investigation changes and more detailed reporting are included, but a fix on the affected devices is **not yet confirmed**. These issues are closed with this release. If the game crashes again, update to 1.2.2 and use **Settings → Game crash report** to send a fresh report with the improved diagnostics.
+**Play Vanilla 1.12.1, The Burning Crusade 2.4.3 and Wrath of the Lich King 3.3.5a on Android.** Use the complete client required by your server. Touch controls, inventory actions and the movable interface are available across all three versions.
 
 ## Changes
 
-- Find existing clients in internal storage or on an SD card, then switch between them using the arrow beside **PLAY**. Confirm or change each client's realm before switching.
-- Added action set **C**, with its own spells and three item quick slots. The active set now has a glowing letter.
-- Added **Touch UI size** to the in-game menu, with live preview from **50% to 125%**. The movement stick keeps its original size.
-- Added a dedicated **inventory button** and reordered the in-game menu.
-- Touch controls stay available while the inventory is open.
-- **More detailed in-app reports** help investigate crashes and startup problems. Each report gets a six-digit reference number. The confirmation now includes **Close** and **Open report**.
+- Added **Grimfall client support**, including in-app game updates.
+- Launcher backgrounds and expansion titles now follow your selected **Vanilla, TBC or WotLK** client.
+- **Update WoW Imito from the launcher.** A new-version notice lets you download the update now or leave it for later.
+- **Choose how clients are found.** Automatic search is on by default. Turn it off in Settings to use the small search button instead.
+- **Make the controls your own.** Open **Move Touch UI** in the in-game menu, drag individual controls and save your layout. **Defaults** restores the original layout; **Mirror** swaps its sides.
+- Added compact **pet and class panels**, with visible active commands, stances and modes.
+- Inspect **item stats and compare equipped gear** from the inventory. **Sell** is available while a merchant is open.
+- **ECO mode now limits the game to 40 FPS** to reduce workload and help your battery last longer.
 
 ## Fixes & improvements
 
-- Improved inventory item actions and prevented the menu-opening tap from also picking up the item.
-- Fixed camera dragging while menus or inventory windows are open, including during autorun.
-- Fixed autorun input so it can continue while menus or bags are open.
-- Fixed switching action sets while assigning macros and kept macro-name fields unobstructed.
-- Improved controller detection when changing modes or switching gamepads, including Odin. Fixed native trigger input being ignored when a controller reports both trigger layouts.
-- Updated button frames, spacing and corner alignment when resizing the Touch UI.
-- Cleaned up item-icon edges, slightly enlarged the icons and strengthened their frames. Item cooldown numbers are **40% smaller** and resize correctly with the UI.
-- Improved the readability of game-update progress, filenames and remaining time.
-- Updated owned addon names to **WoW Imito** while preserving existing settings.
-- Improved OpenGL startup error handling.
+- Fixed a memory-access bug associated with reported **Error #132** crashes on Retroid and Warmane clients.
+- Fixed a reproduced crash when entering the world with OpenGL, along with garbled text caused by unsupported graphics features.
+- Improved handling of graphics-memory allocation failures.
+- Improved crash reports so future reports retain more useful details about game errors.
+- Fixed the character-name keyboard for Grimfall and improved login-keyboard detection at lower resolutions.
+- Fixed initial hardware prompts staying hidden behind the loading screen in original and modified clients.
+- Fixed the Wrath Rebuffed update loop and improved interrupted-download recovery. Updates now complete in the launcher before the game starts.
+- Fixed a previous failed update leaving the game on a slower graphics fallback. The app rechecks supported graphics after a completed client update, with protection against repeated failing retries.
+- Preserved player settings between the login screen, entering the world and reloading the UI.
+- Kept touch controls available when using minimap buttons and expanded their support across Vanilla, TBC and WotLK.
+- Added a compact experience bar and removed hidden original buttons that intercepted touches.
+- Improved update-progress readability and reduced flickering between download and installation messages.
 
-**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.2.2/WoW-Imito-Public.apk)**
+Further performance improvements are in active development.
+
+> **For players who reported crashes:** fixes are included, but confirmation on every affected device is still pending. If the problem returns, update to **1.3.0** and send a fresh report through **Settings > Game crash report**.
+
+## Performance — HD 1280 × 720
+
+Average FPS at low graphics settings:
+
+| Client | Samsung Galaxy S26 | Samsung Galaxy S21 FE |
+| --- | ---: | ---: |
+| **Vanilla 1.12.1** | **~60 FPS** | **~60 FPS** |
+| **The Burning Crusade 2.4.3** | **~60 FPS** | **~56 FPS** |
+| **Wrath of the Lich King 3.3.5a** | **~60 FPS** | **~51 FPS** |
+| **CoA / Descension** | **~60 FPS** | — |
+| **Wrath Rebuffed** | **~60 FPS** | — |
+| **Project Epoch Reborn** | **~60 FPS** | **~52 FPS** |
+| **Grimfall client (3.3.5a)** | **~60 FPS** | — |
+
+Measurements were taken in **starting locations**. Crowded cities such as Dalaran, Orgrimmar and Stormwind may run at lower FPS. Results vary with device, temperature, settings and addons; **—** means not measured on that device. Wrath Rebuffed was measured with **Original WoW** text rendering.
+
+**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.3.0/WoW-Imito-Public.apk)**
