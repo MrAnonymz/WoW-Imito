@@ -66,6 +66,8 @@ Select a section to see the details.
 | <a href="https://whitemane.gg/en"><img src="assets/clients/wrath-rebuffed.webp" width="140" alt="Frostmourne — Wrath Rebuffed"></a><br>**Wrath Rebuffed** | ✅ Tested | Direct updates in WoW Imito |
 | <a href="https://project-epoch.org/"><img src="assets/clients/epoch-reborn.webp" width="160" alt="Project Epoch Reborn"></a><br>**Project Epoch Reborn (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
 | **Grimfall client (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
+| **OctoWoW (Vanilla)** | Login screen checked | Direct updates in WoW Imito |
+| **Triumvirate (3.3.5a)** | Login screen checked | Direct updates in WoW Imito |
 
 > Use the **complete client required by your server**. The CoA entry refers to the **community distribution**, not a confirmed test of the official Ascension service. Other modified clients may need additional compatibility work.
 
@@ -86,9 +88,13 @@ For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for per
 | **Samsung Galaxy S26 Ultra** | ✅ |
 | **Motorola Edge 70 Max** | ✅ |
 | **AYN Odin 2** | ✅ |
+| **POCO X7 Pro** | ✅ |
+| **Google Pixel 10 Pro XL** | ✅ |
 
 
 **[Confirm your device](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml)** to help grow this list. For problems or requests to support another device, use the **in-app report** described at the top of this page.
+
+The Pixel 10 Pro XL confirmation used the player's custom graphics settings.
 
 </details>
 
@@ -100,8 +106,8 @@ Average FPS with **low graphics settings**:
 | Client version | Samsung S26 | Samsung S21 FE |
 | :--- | ---: | ---: |
 | **WoW Vanilla 1.12.1** | **~60 FPS** | **~60 FPS** |
-| **The Burning Crusade 2.4.3** | **~60 FPS** | **~56 FPS** |
-| **Standard WoW WotLK 3.3.5a** | **~60 FPS** | **~51 FPS** |
+| **The Burning Crusade 2.4.3** | **~60 FPS** | **~60 FPS** |
+| **Standard WoW WotLK 3.3.5a** | **~60 FPS** | **~58 FPS** |
 | **CoA / Descension** | **~60 FPS** | — |
 | **Wrath Rebuffed** | **~60 FPS** | — |
 | **Project Epoch Reborn (3.3.5a)** | **~60 FPS** | **~52 FPS** |
