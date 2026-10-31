@@ -1,27 +1,20 @@
-# WoW Imito 1.3.3
-
-## Changes
-
-- Smaller future app updates, with a full download if needed. Updating from 1.3.2 still requires one full APK download.
-- Open the new version's **Patch notes** directly from the update window.
-- Added client update support for **OctoWoW** and **Triumvirate**.
+# WoW Imito 1.3.4
 
 ## Fixes
 
-- Fixed controller connection shortcuts that could unexpectedly close the game, including handheld and mobile controllers.
-- Fixed delayed joystick visibility after moving it in the UI editor.
-- Fixed a focus problem that could reduce FPS while interacting with game windows.
-- Kept ConsolePort settings within the visible screen area.
-- Fixed touch controls remaining hidden after changing clients or UI modes.
-- Fixed invalid saved positions and deferred frame movement in MoveAnything.
-- Fixed missing text, backgrounds and transparency on the OpenGL graphics path.
-- Improved texture compatibility and reduced unnecessary graphics work and memory allocations.
-- Fixed graphics selection being affected by an error from an earlier game session.
-- Fixed repeated Wrath Rebuffed updates and repair prompts, including damaged update components.
-- Fixed a download-resume conflict after Android interrupts an update.
-- Fixed startup failures caused by recognised PC graphics files bundled with some clients.
-- Fixed an Android memory-handling fault that could close the game.
+- Added **Edit action slots** for Vanilla and TBC: select a spell or item slot and clear it without using it.
+- Fixed the keyboard for **Script Memory (MB)** in the original AddOns window.
+- Fixed the login keyboard at low game resolutions, including **640 × 360**.
+- Fixed a Vanilla/TBC touch UI error when other UI objects lack a required function.
+- Fixed unsupported low-resolution presets in Vanilla. Supported resolutions and player-selected settings are preserved.
+- Improved game-window focus recovery for the reported **15 FPS / unresponsive controls** problem.
 
-Fixes have been tested with reproduced failures and on available devices. Confirmation on every reporting device is still pending. If a problem continues, use **Settings > Report problem** in **1.3.3**.
+## Reports
 
-**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.3.3/WoW-Imito-Public.apk)**
+Current tickets have been reviewed and closed with their individual findings. **Closure does not mean every reported problem has been confirmed fixed on the player's device.** Some performance reports could not be reproduced or lacked a specific problem description.
+
+If a problem continues, update to **1.3.4** and use **Settings → Report problem**. Add a short description of what happened so the new report can be matched to the current session.
+
+The reported long OctoWoW startup with many third-party addons remains unconfirmed.
+
+**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.3.4/WoW-Imito-Public.apk)**
