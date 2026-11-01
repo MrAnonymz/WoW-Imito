@@ -38,3 +38,10 @@ https://www.curseforge.com/wow/addons/losecontrol
 https://github.com/wotlk-addons/LoseControl
 The Lua source, license and mobile change notice are bundled with the addon.
 See ADDON-NOTICES.txt for the bundled addon list.
+
+Wine
+Wine project and contributors
+https://www.winehq.org/
+https://github.com/wine-mirror/wine/tree/wine-10.10
+License: GNU Lesser General Public License2.1.
+Wine10.10 compatibility source patches: patches/wine/.
