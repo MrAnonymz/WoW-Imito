@@ -147,6 +147,8 @@ Wrath Rebuffed used **Original WoW** text rendering. CoA / Descension was tested
 
 On **Wrath**, choose **WoW Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Input** enabled. The two interfaces are mutually exclusive. Connecting or disconnecting a controller does not automatically enable ConsolePort or change your selection. Vanilla and TBC use their own compatible **WoW Imito Touch UI** addon.
 
+Open **Touch UI** in the in-game menu to resize or move controls and choose the optional **4-way turn joystick**. The original joystick is the default. Use **W/R** to switch between walking and running.
+
 </details>
 
 <details>
