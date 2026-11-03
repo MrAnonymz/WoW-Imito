@@ -25,6 +25,8 @@ Play **World of Warcraft — Vanilla, The Burning Crusade and Wrath of the Lich 
 
 You can still select a folder in **Game files** or change your server in **Settings > Set realm**.
 
+**App updates are offered automatically.** From version **1.3.3 onward**, supported updates download only the changed parts, even if you skipped releases. Android asks you to confirm installation.
+
 <details>
 <summary><strong>Requirements & storage</strong></summary>
 
