@@ -149,6 +149,8 @@ On **Wrath**, choose **WoW Imito Touch UI** or **ConsolePort**, and keep **WoW I
 
 Open **Touch UI** in the in-game menu to resize or move controls and choose the optional **4-way turn joystick**. The original joystick is the default. Use **W/R** to switch between walking and running.
 
+**New to touch controls?** Choose **Show tutorial** when prompted, or start it from **Touch UI**. Follow the highlighted controls to learn movement, spells, items, macros and custom layouts by trying them yourself.
+
 </details>
 
 <details>
