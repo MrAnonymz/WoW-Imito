@@ -27,7 +27,9 @@ You can still select a folder in **Game files** or change your server in **Setti
 
 **App updates are offered automatically.** From version **1.3.3 onward**, supported updates download only the changed parts, even if you skipped releases. Android asks you to confirm installation.
 
-To keep a custom control layout, use **Touch UI > Save & reload** after moving or resizing controls.
+**New to touch controls?** Open **Menu > Touch UI > Show tutorial** for the interactive guide.
+
+In **Touch UI**, move controls or tap one to change its individual size. Choose **Save & reload** to keep your layout. To keep a small chat visible while playing, open **Chat** and turn **Pin** on.
 
 <details>
 <summary><strong>Requirements & storage</strong></summary>
