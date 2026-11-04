@@ -1,21 +1,17 @@
-# WoW Imito 1.3.10
-
-## New
-
-- **Guided Touch UI tutorial:** learn movement, camera controls, spell and item slots, macros, chat, bags and custom layouts by using them. Golden highlights point to the real controls, and practical steps advance when you complete the action.
-- Choose **Show tutorial** or **Later**. You can return to it through the in-game menu under **Touch UI**.
-- **Larger in-game menu** with bigger buttons and clearer labels, including when using a smaller UI scale.
+# WoW Imito 1.3.11
 
 ## Fixes & improvements
 
-- Fixed a touch-control interruption when switching between inventory, menus, maps and text fields.
-- Fixed macro assignment so spell slots become visible before placing a macro, including moved and mirrored layouts.
-- Improved tutorial visibility, pointers and button highlighting; its instructions stay readable over the game.
-- Reduced repeated inventory checks and unnecessary spell-bar refreshes while preserving item counts and cooldowns.
-- Improved **Report problem** details when the game closes unexpectedly.
+- **Keep your Touch UI layout:** the new **Save & reload** button writes moved controls, UI size and layout options to your saved game settings immediately.
+- The tutorial resumes after saving a layout, so you can finish learning the controls without starting again.
+- **Safer app updates:** cancelled installations keep the verified download for another attempt. If Android reports an installation failure, you can retry or download the full update again without removing the installed app.
+- **Report problem** now includes the last installation result when Android provides one, helping investigate failed updates.
+- Small update downloads are available from **every version from 1.3.3 through 1.3.10**, including when you skipped releases.
 
 These changes cover **Vanilla, The Burning Crusade and Wrath of the Lich King** on **Android 12+ ARM64**.
 
-**Still under investigation:** the reported Motorola game exit, Redmi installation failure and Honor texture problems are not confirmed resolved. If a problem persists, use **Settings > Report problem** in the updated app.
+**Missing touch controls?** Enable **WoW Imito Touch UI** in AddOns. Use **ConsolePort** for controller UI instead; leaving both disabled hides both interfaces.
 
-**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.3.10/WoW-Imito-Public.apk)**
+**Still under investigation:** the original S26/Redmi installation failures, Motorola game exit and Honor texture problems are not confirmed resolved on the affected devices. Please keep the installed app and use **Settings > Report problem** if the problem returns.
+
+**[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/download/v1.3.11/WoW-Imito-Public.apk)**
