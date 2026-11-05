@@ -35,7 +35,7 @@ In **Touch UI**, move controls or tap one to change its individual size. Choose 
 > <details>
 > <summary><strong>Requirements & storage</strong></summary>
 !
-> **Android 12 or newer + ARM64 with 64-bit Android are required.** Bring the **complete client required by your server** and check the free storage below before installing.!
+**Android 12 or newer + ARM64 with 64-bit Android are required.** Bring the **complete client required by your server** and check the free storage below before installing.!
 
 
 | Component | Requirement / recommendation |
