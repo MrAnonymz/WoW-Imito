@@ -43,6 +43,7 @@ In **Touch UI**, move controls or tap one to change its individual size. Choose 
 | **Android** | **12 or newer** |
 | **Architecture** | **ARM64 processor + 64-bit Android** |
 | **CPU performance** | Suggested starting point: **Snapdragon 888 class or better** |
+| **GPU performance** | Suggested starting point: **Compatible GPU with a functional Vulkan driver** |
 | **Memory** | **6 GB RAM** suggested minimum · **8 GB+** recommended |
 | **Storage — Vanilla / TBC** | About **8 GB / 12 GB free** before installation |
 | **Storage — standard WotLK** | About **22 GB free** before installation |
