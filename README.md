@@ -31,6 +31,7 @@ You can still select a folder in **Game files** or change your server in **Setti
 
 In **Touch UI**, move controls or tap one to change its individual size. Choose **Save & reload** to keep your layout. To keep a small chat visible while playing, open **Chat** and turn **Pin** on.
 
+[!IMPORTANT]
 <details>
 <summary><strong>Requirements & storage</strong></summary>
 
