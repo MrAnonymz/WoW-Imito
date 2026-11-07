@@ -25,7 +25,11 @@ Play **World of Warcraft — Vanilla, The Burning Crusade and Wrath of the Lich 
 
 You can still select a folder in **Game files** or change your server in **Settings > Set realm**.
 
-**App updates are offered automatically.** From version **1.3.3 onward**, supported updates download only the changed parts, even if you skipped releases. Android asks you to confirm installation.
+**App updates are offered automatically.** From version **1.3.3 onward**, supported updates download only the changed parts, even if you skipped releases.
+
+Enable **Options > Support > Automatically update WoW Imito** for automatic downloads and installation from the launcher. Android may request installation permission or confirmation.
+
+Tap **WoW Imito** or the **version number** at the bottom left of the launcher to read the installed version's release notes offline.
 
 **New to touch controls?** Open **Menu > Touch UI > Show tutorial** for the interactive guide.
 
@@ -57,7 +61,7 @@ The APK does not include game files or a server account. Storage needs depend on
 </details>
 
 > [!TIP]
-> **ECO mode is strongly recommended for longer play sessions.** It limits the game to **40 FPS**, reducing CPU/GPU workload and helping your battery last longer. The benefit varies by device and settings. **Low specs** can also help on slower devices.
+> **ECO mode is strongly recommended for longer play sessions.** Choose **30, 40, 50 or 60 FPS** to reduce CPU/GPU workload and help your battery last longer. The benefit varies by device and settings. **Low specs** can also help on slower devices.
 
 ## Compatibility & features
 
@@ -75,8 +79,8 @@ Select a section to see the details.
 | <a href="https://whitemane.gg/en"><img src="assets/clients/wrath-rebuffed.webp" width="140" alt="Frostmourne — Wrath Rebuffed"></a><br>**Wrath Rebuffed** | ✅ Tested | Direct updates in WoW Imito |
 | <a href="https://project-epoch.org/"><img src="assets/clients/epoch-reborn.webp" width="160" alt="Project Epoch Reborn"></a><br>**Project Epoch Reborn (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
 | **Grimfall client (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
-| **OctoWoW (Vanilla)** | Login screen checked | Direct updates in WoW Imito |
-| **Triumvirate (3.3.5a)** | Login screen checked | Direct updates in WoW Imito |
+| **OctoWoW (Vanilla)** | Tested in game | Direct updates in WoW Imito |
+| **Triumvirate (3.3.5a)** | Tested in game | Direct updates in WoW Imito |
 
 > Use the **complete client required by your server**. The CoA entry refers to the **community distribution**, not a confirmed test of the official Ascension service. Other modified clients may need additional compatibility work.
 
@@ -116,14 +120,14 @@ The Pixel 10 Pro XL confirmation used the player's custom graphics settings.
 
 | Client | S21 | S26 |
 | --- | --- | --- |
-| Vanilla 1.12.1 | 102 / 60.5 | 174.5 / 128.5 |
-| The Burning Crusade 2.4.3 | 100.5 / 66 | 191 / 120 |
+| Vanilla 1.12.1 | 105.5 / 75.5 | 174.5 / 128.5 |
+| The Burning Crusade 2.4.3 | 102 / 77.5 | 191 / 120 |
 | Wrath of The Lich King 3.3.5a | — | 135.5 / 123 |
 | Wrath 3.3.5a (Warmane) | — | 110.5 / 84 |
 | Wrath Rebuffed | — | 100.5 / 73 |
 | Grimfall | — | 150 / 117 |
 | Project Epoch Reborn | — | 95.5 / 84 |
-| OctoWoW | 97 / 92 | 163.5 / 124.5 |
+| OctoWoW | 102 / 92 | 163.5 / 124.5 |
 | Triumvirate | — | 177.5 / 133 |
 | CoA / Descension | — | 102 / 86.5 |
 
@@ -164,14 +168,14 @@ Open **Touch UI** in the in-game menu to resize or move controls and choose the 
 <details>
 <summary><strong>Updating your game</strong></summary>
 
-> For supported clients, **PLAY** checks for updates automatically. Choose **Update** when prompted, or check manually in **Settings > Update game**.
+> For supported clients, **PLAY** checks for updates automatically. Choose **Update** when prompted, or open **Settings** and use **Update** followed by your selected client's name.
 
 - **Project Epoch Reborn** and the **CoA / Descension community client** download updates directly in the app.
 - **Wrath Rebuffed** and **Grimfall** update directly in WoW Imito.
 - Downloads can continue **in the background** and **resume after an interruption**.
 - Your **graphics settings, addons and server address** are preserved.
 
-Other clients still use their existing update method.
+Standard Vanilla, TBC and Wrath clients use your server's usual update method. Their **Update** button in Options is disabled.
 
 </details>
 
