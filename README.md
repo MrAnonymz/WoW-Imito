@@ -110,23 +110,24 @@ The Pixel 10 Pro XL confirmation used the player's custom graphics settings.
 <details>
 <summary><strong>FPS tests — 1280 × 720 (HD)</strong></summary>
 
-Average FPS with **low graphics settings**:
+**WoW Imito 1.4.1 · Low graphics**
 
-| Client version | Samsung S26 | Samsung S21 FE |
-| :--- | ---: | ---: |
-| **WoW Vanilla 1.12.1** | **~60 FPS** | **~60 FPS** |
-| **The Burning Crusade 2.4.3** | **~60 FPS** | **~60 FPS** |
-| **Standard WoW WotLK 3.3.5a** | **~60 FPS** | **~58 FPS** |
-| **CoA / Descension** | **~60 FPS** | — |
-| **Wrath Rebuffed** | **~60 FPS** | — |
-| **Project Epoch Reborn (3.3.5a)** | **~60 FPS** | **~52 FPS** |
-| **Grimfall client (3.3.5a)** | **~60 FPS** | — |
+**FPS: standing / camera movement**
 
-> FPS was measured in **starting locations**. Crowded cities such as **Dalaran, Orgrimmar and Stormwind** may run at lower FPS. These are **measured averages, not guaranteed minimums**. **—** means not tested on that device.
+| Client | S21 | S26 |
+| --- | --- | --- |
+| Vanilla 1.12.1 | 102 / 60.5 | 174.5 / 128.5 |
+| The Burning Crusade 2.4.3 | 100.5 / 66 | 191 / 120 |
+| Wrath of The Lich King 3.3.5a | — | 135.5 / 123 |
+| Wrath 3.3.5a (Warmane) | — | 110.5 / 84 |
+| Wrath Rebuffed | — | 100.5 / 73 |
+| Grimfall | — | 150 / 117 |
+| Project Epoch Reborn | — | 95.5 / 84 |
+| OctoWoW | 97 / 92 | 163.5 / 124.5 |
+| Triumvirate | — | 177.5 / 133 |
+| CoA / Descension | — | 102 / 86.5 |
 
-Wrath Rebuffed used **Original WoW** text rendering. CoA / Descension was tested on a local test realm.
-
-**Performance varies by device:** CPU, GPU, RAM, resolution, graphics settings, enabled addons, temperature, battery level and power-saving mode can all affect FPS. Further performance optimizations are in active development.
+**Performance varies by device:** CPU, GPU, RAM, resolution, graphics settings, enabled addons, temperature, battery level and power-saving mode can all affect FPS.
 
 </details>
 
