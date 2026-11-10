@@ -1,14 +1,14 @@
 <p align="center">
   If you like my work, buy me a coffee, it will help me keep the development active.
-
+<p align="center">
   **BUY ME A COFFEE** - Donation
-
+<p align="center">
   Link:
-
+<p align="center">
   https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01
-
+<p align="center">
    QR:
-
+<p align="center">
   <img width="88" height="105" alt="wowimito" src="https://github.com/user-attachments/assets/0b1f2390-31b0-4ee1-bb1a-51e4b1664813" />
 
 </p>
