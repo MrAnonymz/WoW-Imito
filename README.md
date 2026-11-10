@@ -8,7 +8,8 @@
    QR:
 <p align="center">
   <img width="220" height="220" alt="qr-code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" />
-
+<p align="center">
+  <img width="880" height="1055" alt="wowimito2" src="https://github.com/user-attachments/assets/5fa4f4ed-4d05-4425-9198-6bd32894773e" />
 </p>
 
 
