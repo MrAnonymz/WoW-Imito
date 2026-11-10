@@ -3,11 +3,11 @@
 <p align="center">
   Link:
 <p align="center">
-  https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01
+  [https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01](https://buymeacoffee.com/mranonymz)
 <p align="center">
    QR:
 <p align="center">
-  <img width="176" height="210" alt="wowimito2" src="https://github.com/user-attachments/assets/052243a4-ae0e-45ee-a77b-5b3b080e07ac" />
+  <img width="220" height="220" alt="qr-code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" />
 
 </p>
 
