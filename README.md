@@ -1,3 +1,10 @@
+If you like my work, buy me a coffee, it will help me keep the development active.
+**BUY ME A COFFEE** - Donation
+https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01
+<img width="880" height="1055" alt="wowimito" src="https://github.com/user-attachments/assets/0b1f2390-31b0-4ee1-bb1a-51e4b1664813" />
+
+
+
 > [!IMPORTANT]
 > **Please send bugs and requests through the app: Settings > Report problem.**
 > This gives info about the device and game details needed to investigate faster and keeps your report properly tracked.
