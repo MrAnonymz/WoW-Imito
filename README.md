@@ -1,7 +1,7 @@
 <p align="center">
   If you like my work, buy me a coffee, it will help me keep the development active.
 <p align="center">
-  **BUY ME A COFFEE** - Donation
+  BUY ME A COFFEE**
 <p align="center">
   Link:
 <p align="center">
