@@ -1,7 +1,7 @@
 If you like my work, buy me a coffee, it will help me keep the development active.
 **BUY ME A COFFEE** - Donation
 https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01
-<img width="880" height="1055" alt="wowimito" src="https://github.com/user-attachments/assets/0b1f2390-31b0-4ee1-bb1a-51e4b1664813" />
+<img width="88" height="105" alt="wowimito" src="https://github.com/user-attachments/assets/0b1f2390-31b0-4ee1-bb1a-51e4b1664813" />
 
 
 
