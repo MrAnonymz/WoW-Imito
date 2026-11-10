@@ -1,5 +1,5 @@
 <p align="center">
-  If you like my work, buy me a coffee, it will help me keep the development active.
+  If you like my work, you can buy me a coffee, it will help me keep the development active.
 <p align="center">
   Link:
 <p align="center">
