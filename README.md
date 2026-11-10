@@ -5,7 +5,7 @@
 <p align="center">
   https://buymeacoffee.com/mranonymz
 
-  
+<p align="center">  
   https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01
 <p align="center">
    QR:
