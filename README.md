@@ -1,5 +1,8 @@
+
 If you like my work, buy me a coffee, it will help me keep the development active.
+
 **BUY ME A COFFEE** - Donation
+
 Link:
 https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01
 QR:
