@@ -3,7 +3,7 @@
 <p align="center">
   Link:
 <p align="center">
-  [https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01](https://buymeacoffee.com/mranonymz)
+  [Buy me a coffee](https://buymeacoffee.com/mranonymz)
 <p align="center">
    QR:
 <p align="center">
