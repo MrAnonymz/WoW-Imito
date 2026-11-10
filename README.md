@@ -4,8 +4,11 @@ If you like my work, buy me a coffee, it will help me keep the development activ
 **BUY ME A COFFEE** - Donation
 
 Link:
+
 https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01
+
 QR:
+
 <img width="88" height="105" alt="wowimito" src="https://github.com/user-attachments/assets/0b1f2390-31b0-4ee1-bb1a-51e4b1664813" />
 
 
