@@ -13,16 +13,6 @@
 
 </p>
 
-<script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
-
-<stripe-buy-button
-  buy-button-id="buy_btn_1UaFZUJfGJvPeUMg8xLAqJ15"
-  publishable-key="pk_live_51UZGYpJfGJvPeUMgDNm7JXSqBiG0CJMgRa12H9oyIE1B3NYndBAmXL5eudGGMeofwAh9wH9qUl4aymGWno3PYn1V00RjmC4uYf"
->
-</stripe-buy-button>
-
 
 > [!IMPORTANT]
 > **Please send bugs and requests through the app: Settings > Report problem.**
