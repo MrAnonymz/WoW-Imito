@@ -3,7 +3,7 @@
 <p align="center">
   Link:
 <p align="center">
-  [Buy me a coffee](https://buymeacoffee.com/mranonymz)
+  https://buymeacoffee.com/mranonymz
 <p align="center">
    QR:
 <p align="center">
