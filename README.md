@@ -9,7 +9,7 @@
 <p align="center">
    QR:
 <p align="center">
-  <img width="176" height="210" alt="wowimito" src="https://github.com/user-attachments/assets/0b1f2390-31b0-4ee1-bb1a-51e4b1664813" />
+  <img width="176" height="210" alt="wowimito2" src="https://github.com/user-attachments/assets/052243a4-ae0e-45ee-a77b-5b3b080e07ac" />
 
 </p>
 
