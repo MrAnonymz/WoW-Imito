@@ -4,6 +4,8 @@
   Link:
 <p align="center">
   https://buymeacoffee.com/mranonymz
+
+  
   https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01
 <p align="center">
    QR:
