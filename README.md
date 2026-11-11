@@ -34,6 +34,8 @@ Play **World of Warcraft — Vanilla, The Burning Crusade and Wrath of the Lich 
 
 **[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Release notes](https://github.com/MrAnonymz/WoW-Imito/releases)** · **[Community reports](https://github.com/MrAnonymz/WoW-Imito/issues)**
 
+**New in 1.5.0: World of Warcraft - Forever**, with Imito Touch UI and official Battle.net login, downloads and updates. **Forever requires 8 GB RAM or more.** Select Forever in the client list, tap PLAY and sign in to Battle.net. First setup may take a few minutes. **ECO 30-40 FPS is strongly recommended** to reduce CPU/GPU load and temperatures.
+
 ## Start playing
 
 **You need Android 12 or newer, an ARM64 processor with 64-bit Android, and your own complete compatible WoW client.**
@@ -150,6 +152,12 @@ The Pixel 10 Pro XL confirmation used the player's custom graphics settings.
 | OctoWoW | 102 / 92 | 163.5 / 124.5 |
 | Triumvirate | — | 177.5 / 133 |
 | CoA / Descension | — | 102 / 86.5 |
+
+**WoW Imito 1.5.0 - Forever: HD, Low graphics, 85% render scale, ECO off**
+
+| Client | S26 standing | S26 camera movement |
+| --- | ---: | ---: |
+| World of Warcraft - Forever | 46.0 FPS | 55.9 FPS |
 
 **Performance varies by device:** CPU, GPU, RAM, resolution, graphics settings, enabled addons, temperature, battery level and power-saving mode can all affect FPS.
 
