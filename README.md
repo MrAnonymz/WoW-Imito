@@ -34,7 +34,9 @@ Play **World of Warcraft — Vanilla, The Burning Crusade and Wrath of the Lich 
 
 **[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Release notes](https://github.com/MrAnonymz/WoW-Imito/releases)** · **[Community reports](https://github.com/MrAnonymz/WoW-Imito/issues)**
 
-**New in 1.5.0: World of Warcraft - Forever**, with Imito Touch UI and official Battle.net login, downloads and updates. **Forever requires 8 GB RAM or more.** Select Forever in the client list, tap PLAY and sign in to Battle.net. First setup may take a few minutes. **ECO 30-40 FPS is strongly recommended** to reduce CPU/GPU load and temperatures.
+**New in 1.5.1:** optional **ConsolePort Legacy for Vanilla and TBC**, nine additional app and Touch UI languages, **second-screen controls**, touch gem socketing, per-client addon management, and Battle.net account switching and sign-out.
+
+**World of Warcraft - Forever** includes Imito Touch UI and official Battle.net login, downloads and updates. **Forever requires 8 GB RAM or more.** Select Forever in the client list, tap PLAY and sign in to Battle.net. First setup may take a few minutes. **ECO 30-40 FPS is strongly recommended** to reduce CPU/GPU load and temperatures.
 
 ## Start playing
 
@@ -54,6 +56,8 @@ Enable **Options > Support > Automatically update WoW Imito** for automatic down
 Tap **WoW Imito** or the **version number** at the bottom left of the launcher to read the installed version's release notes offline.
 
 **New to touch controls?** Open **Menu > Touch UI > Show tutorial** for the interactive guide.
+
+Choose **Options > Game > Language** for English, German, Czech, Polish, Russian, Italian, Simplified Chinese, Japanese, Turkish or Arabic. The app and Imito Touch UI use your selection; English is the default. Translations were made with AI and may contain mistakes. Please report incorrect wording through the app or a GitHub issue.
 
 In **Touch UI**, move controls or tap one to change its individual size. Choose **Save & reload** to keep your layout. To keep a small chat visible while playing, open **Chat** and turn **Pin** on.
 
@@ -185,7 +189,9 @@ The Pixel 10 Pro XL confirmation used the player's custom graphics settings.
 
 **MoveAnything** and **MinimapButtonBag** are **ON by default** to help arrange the interface and organise minimap buttons. After changing addon activation while playing, type **`/reload`** to apply it.
 
-On **Wrath**, choose **WoW Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Input** enabled. The two interfaces are mutually exclusive. Connecting or disconnecting a controller does not automatically enable ConsolePort or change your selection. Vanilla and TBC use their own compatible **WoW Imito Touch UI** addon.
+On **Wrath**, choose **WoW Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Input** enabled. The two interfaces are mutually exclusive. Connecting or disconnecting a controller does not automatically enable ConsolePort or change your selection.
+
+Original **Vanilla 1.12.1** and **TBC 2.4.3** also offer optional **ConsolePort Legacy** with four action layers, spell/item/macro assignments, cursor controls and keyboard access. Enable it in **AddOns**, then reload. It is disabled by default; disable it and reload to return to Touch UI.
 
 Open **Touch UI** in the in-game menu to resize or move controls and choose the optional **4-way turn joystick**. The original joystick is the default. Use **W/R** to switch between walking and running.
 
