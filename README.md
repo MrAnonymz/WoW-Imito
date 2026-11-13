@@ -129,6 +129,16 @@ For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for per
 | **AYN Odin 2** | ✅ |
 | **POCO X7 Pro** | ✅ |
 | **Google Pixel 10 Pro XL** | ✅ |
+| **Samsung Galaxy Z Fold7** | ✅ |
+| **Samsung Galaxy S25 (SM-S931B)** | ✅ |
+| **Samsung Galaxy Tab S6 LTE (SM-T865)** | ✅ |
+| **OnePlus Nord CE 3 Lite** | ✅ |
+| **Redmi Note 11 (Snapdragon 680)** | ✅ |
+| **POCO F3** | ✅ |
+| **POCO F8 Ultra** | ✅ |
+| **POCO X6 5G (23122PCD1G)** | ✅ |
+| **HONOR X8d (LNA-LX3)** | ✅ |
+| **AYN Thor** | ✅ |
 
 
 **[Confirm your device](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml)** to help grow this list. For problems or requests to support another device, use the **in-app report** described at the top of this page.
