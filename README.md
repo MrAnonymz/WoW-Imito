@@ -22,9 +22,9 @@
 
 ![WoW Imito — Your Azeroth. Anywhere.](assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**Your Azeroth. Your character. Now on Android.**
+<h3 align="center">Your Azeroth. Your character. Now on Android.</h3>
 
 Run original and custom **World of Warcraft** clients on Android phones, tablets and handhelds — including **WoW Forever with official Battle.net login and updates**. Use **Imito Touch UI or a controller**, with a **live second-screen HUD** on dual-screen handhelds. See the [supported clients](#compatibility) for Vanilla, TBC, WotLK and server-specific versions. No PC is needed while playing.
 
