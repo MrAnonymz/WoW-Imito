@@ -6,6 +6,11 @@
 - Fixed rejection of valid imported Vulkan driver packages.
 - Reused graphics command buffers to reduce repeated memory allocations.
 - Fixed a crash when uploading graphics buffers after a failed memory mapping.
+- Fixed Vanilla resolutions falling back to a narrow image with black bars.
+
+## Touch UI
+
+- Improved Use, Equip and Sell actions in the touch item menu.
 
 ## Startup and reports
 
