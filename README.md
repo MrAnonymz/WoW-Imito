@@ -30,11 +30,11 @@
 
 **Your Azeroth. Your character. Now on Android.**
 
-Play **World of Warcraft — Vanilla, The Burning Crusade and Wrath of the Lich King** on your **Android phone or tablet**, on the **same server as your friends on PC**. Explore, quest and play together with **touchscreen or controller controls** — no PC needed while you play.
+Play **World of Warcraft — Vanilla, The Burning Crusade, Wrath of the Lich King and Forever** on your **Android phone, tablet or handheld**, on the **same server as your friends on PC**. Explore, quest and play together with **touchscreen or controller controls** — no PC needed while you play.
 
 **[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Release notes](https://github.com/MrAnonymz/WoW-Imito/releases)** · **[Community reports](https://github.com/MrAnonymz/WoW-Imito/issues)**
 
-**New in 1.5.1:** optional **ConsolePort Legacy for Vanilla and TBC**, nine additional app and Touch UI languages, **second-screen controls**, touch gem socketing, per-client addon management, and Battle.net account switching and sign-out.
+**New in 1.5.2:** a **live second-screen HUD** with minimap, chat and quests for dual-screen handhelds, a clearer **Touch UI** with movable weapon controls and item/glyph removal, **Spanish** and localized offline patch notes, optional **Vulkan driver imports** for classic clients, automatic discovery of existing **WoW Forever** installations, plus startup, keyboard, graphics synchronization and cache fixes.
 
 **World of Warcraft - Forever** includes Imito Touch UI and official Battle.net login, downloads and updates. **Forever requires 8 GB RAM or more.** Select Forever in the client list, tap PLAY and sign in to Battle.net. First setup may take a few minutes. **ECO 30-40 FPS is strongly recommended** to reduce CPU/GPU load and temperatures.
 
@@ -57,15 +57,17 @@ Tap **WoW Imito** or the **version number** at the bottom left of the launcher t
 
 **New to touch controls?** Open **Menu > Touch UI > Show tutorial** for the interactive guide.
 
-Choose **Options > Game > Language** for English, German, Czech, Polish, Russian, Italian, Simplified Chinese, Japanese, Turkish or Arabic. The app and Imito Touch UI use your selection; English is the default. Translations were made with AI and may contain mistakes. Please report incorrect wording through the app or a GitHub issue.
+Choose **Options > Game > Language** for English, German, Czech, Polish, Russian, Italian, Spanish, Simplified Chinese, Japanese, Turkish or Arabic. The app, Imito Touch UI and offline patch notes use your selection; English is the default. Translations were made with AI and may contain mistakes. Please report incorrect wording through the app or a GitHub issue.
 
 In **Touch UI**, move controls or tap one to change its individual size. Choose **Save & reload** to keep your layout. To keep a small chat visible while playing, open **Chat** and turn **Pin** on.
+
+On Android handhelds with **two separate displays**, enable **Options > Controller > Second-screen controls**, connect the second display before starting the game, and choose it when prompted. The lower HUD shows the minimap, chat, watched quests and player/target information. Switch to target controls, trackpad or keyboard as needed, and use **Displays** to reconnect after cancelling or disconnecting.
 
 
 <details>
 <summary><strong>Requirements & storage</strong></summary>
 
-**Android 12 or newer + ARM64 with 64-bit Android are required.** Bring the **complete client required by your server** and check the free storage below before installing.!
+**Android 12 or newer + ARM64 with 64-bit Android are required.** Bring the **complete client required by your server** and check the free storage below before installing.
 
 
 | Component | Requirement / recommendation |
@@ -74,15 +76,15 @@ In **Touch UI**, move controls or tap one to change its individual size. Choose 
 | **Architecture** | **ARM64 processor + 64-bit Android** |
 | **CPU performance** | Suggested starting point: **Snapdragon 888 class or better** |
 | **GPU performance** | **Compatible GPU with a functional Vulkan driver** |
-| **Memory** | **6 GB RAM** suggested minimum · **8 GB+** recommended |
+| **Memory** | **6 GB RAM** suggested minimum for classic clients · **8 GB+ required for Forever** |
 | **Storage — Vanilla / TBC** | About **8 GB / 12 GB free** before installation |
 | **Storage — standard WotLK** | About **22 GB free** before installation |
 | **Storage — Wrath Rebuffed** | About **30 GB free** before installation |
 | **Storage — tested CoA client** | About **50 GB free** before installation |
-| **Game files** | Your own complete **Vanilla 1.12.1**, **TBC 2.4.3** or **WotLK 3.3.5a** client |
+| **Game files** | Your own complete **Vanilla 1.12.1**, **TBC 2.4.3** or **WotLK 3.3.5a** client; **Forever** downloads through official Battle.net |
 | **Connection** | Internet access and an account on your chosen compatible server |
 
-The APK does not include game files or a server account. Storage needs depend on your client. CPU and RAM figures are recommendations; slower devices may run at reduced FPS.
+The APK does not include game files or a server account. Storage needs depend on your client. CPU and classic-client RAM figures are recommendations; slower devices may run at reduced FPS. Forever requires at least 8 GB RAM.
 
 </details>
 
@@ -98,19 +100,23 @@ Select a section to see the details.
 
 | Client | In-game testing | Game updates |
 | :--- | :--- | :--- |
+| **World of Warcraft - Forever (8 GB+ RAM)** | ✅ Tested | Official Battle.net login, downloads and updates |
 | **WoW Vanilla 1.12.1** | ✅ Tested on a local test realm | Use your server's usual update method |
 | **The Burning Crusade 2.4.3** | ✅ Tested on a local test realm | Use your server's usual update method |
-| <img src="assets/clients/wow.gif" width="140" alt="World of Warcraft"><br>**Standard WoW WotLK 3.3.5a** | ✅ Tested, including Warmane WotLK | Use your server's usual update method |
-| <a href="https://coa-development.org/"><img src="assets/clients/coa-community.svg" width="60" alt="Conquest of AzerothCore community crest"></a><br>**CoA / Descension community client** | ✅ Tested on a local test realm | Direct updates in WoW Imito |
-| <a href="https://whitemane.gg/en"><img src="assets/clients/wrath-rebuffed.webp" width="140" alt="Frostmourne — Wrath Rebuffed"></a><br>**Wrath Rebuffed** | ✅ Tested | Direct updates in WoW Imito |
-| <a href="https://project-epoch.org/"><img src="assets/clients/epoch-reborn.webp" width="160" alt="Project Epoch Reborn"></a><br>**Project Epoch Reborn (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
-| **Grimfall client (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
-| **OctoWoW (Vanilla)** | Tested in game | Direct updates in WoW Imito |
-| **Triumvirate (3.3.5a)** | Tested in game | Direct updates in WoW Imito |
+| **Wrath of the Lich King 3.3.5a** | ✅ Tested | Use your server's usual update method |
+| **Warmane WotLK 3.3.5a** | ✅ Tested | Use your server's usual update method |
+| **[CoA / Descension community client](https://coa-development.org/)** | ✅ Tested on a local test realm | Direct updates in WoW Imito |
+| **[Wrath Rebuffed](https://whitemane.gg/en)** | ✅ Tested | Direct updates in WoW Imito |
+| **[Project Epoch Reborn (3.3.5a)](https://project-epoch.org/)** | ✅ Tested | Direct updates in WoW Imito |
+| **Grimfall (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
+| **OctoWoW (Vanilla)** | ✅ Tested in game | Direct updates in WoW Imito |
+| **Triumvirate (3.3.5a)** | ✅ Tested in game | Direct updates in WoW Imito |
 
 > Use the **complete client required by your server**. The CoA entry refers to the **community distribution**, not a confirmed test of the official Ascension service. Other modified clients may need additional compatibility work.
 
 For **Wrath Rebuffed**, try **Settings > Text rendering > Original WoW** for performance. Standard WotLK and CoA / Descension need no change here.
+
+For classic clients, **Options > Graphics > Graphics driver** can import a compatible Android Vulkan driver from **.zip** or **.wcp**. The app checks compatibility before applying it to the selected client. **Automatic** remains the default, and **Reset to Automatic** restores it.
 
 </details>
 
@@ -215,7 +221,8 @@ Open **Touch UI** in the in-game menu to resize or move controls and choose the 
 > For supported clients, **PLAY** checks for updates automatically. Choose **Update** when prompted, or open **Settings** and use **Update** followed by your selected client's name.
 
 - **Project Epoch Reborn** and the **CoA / Descension community client** download updates directly in the app.
-- **Wrath Rebuffed** and **Grimfall** update directly in WoW Imito.
+- **Wrath Rebuffed**, **Grimfall**, **OctoWoW** and **Triumvirate** update directly in WoW Imito.
+- **WoW Forever** uses official Battle.net for verification, downloads and updates.
 - Downloads can continue **in the background** and **resume after an interruption**.
 - Your **graphics settings, addons and server address** are preserved.
 

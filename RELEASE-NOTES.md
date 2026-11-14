@@ -1,35 +1,46 @@
-# WoW Imito 1.5.1
+# WoW Imito 1.5.2
 
-## Controller support
+## Dual-screen handhelds
 
-- Added optional **ConsolePort Legacy** controls for original **Vanilla 1.12.1** and **The Burning Crusade 2.4.3**.
-- Use four action layers with your selected controller modifiers, assign spells, items and macros, and use the cursor and Android keyboard in game windows.
-- ConsolePort Legacy is disabled by default. Enable it in AddOns; disable it and reload to return to Touch UI.
+- Added a live minimap, chat, quest tracker and player/target information for a separate second display.
+- The HUD adapts to the second screen’s available space, with readable panels and subtle backgrounds.
+- Switch between the HUD, target controls, trackpad and keyboard. Reopen the display chooser after Cancel or Disconnect.
+- Restore the main-screen interface when disconnecting or changing display settings.
+
+## Touch UI
+
+- Moved Draw / sheath weapons from the game menu to a small sword button. Move and resize it in Touch UI, then save your layout.
+- Moved Friends into the game menu and updated the tutorial.
+- Added a gear icon and a wider, responsive game menu with up to three columns to reduce scrolling.
+- Added touch controls for removing glyphs and deleting items, with confirmation before removal.
+- Fixed blank action icons when a macro references a texture unavailable in the selected client.
+
+## WoW Forever
+
+- Added support for selecting an existing WoW Forever installation on internal storage or an SD card. Battle.net handles verification and updates; removing app setup keeps the selected game files.
+- Existing WoW Forever installations now appear in automatic client search.
+
+## Graphics drivers
+
+- Added per-client imports of compatible Android Vulkan drivers (.zip and .wcp) for classic clients, with compatibility checks and an option to return to Automatic.
 
 ## Languages
 
-- Added **German, Czech, Polish, Russian, Italian, Simplified Chinese, Japanese, Turkish and Arabic**. Change the language in Options to translate the app and Imito Touch UI, including the tutorial. English remains the default.
-- Added fonts for all supported languages and right-to-left Arabic text in Touch UI.
-- Translations were made with AI and may contain mistakes. Please report incorrect translations through Report a problem or a GitHub issue.
+- Added Spanish for the app and Imito Touch UI. Select Español in Options; English remains the default.
+- Offline patch notes now follow the language selected in the app.
+- Completed translations for loading messages, dialogs, controller guides and Touch UI across all supported languages.
+- Translations are AI-assisted. Please report incorrect wording through Report a problem or a GitHub issue.
 
-## Controls and convenience
+## Fixes
 
-- Added optional **second-screen controls** for Android handhelds with two separate displays: party targets, trackpad, scrolling and keyboard, with the bottom system bar hidden on the control display.
-- Added **ConsolePort modifiers** in Options: choose LT/RT, LB/LT or LB/RB.
-- Added **Manage add-ons** for each original client and access to Forever addon folders through Android Files.
-- Added **Draw / sheath weapons**, **Link quest** and **Chat language** to the in-game menu.
-- Added **Socket gems** to touch item actions and equipped-item details. Use **LT + X** for Shift + right-click in controller cursor mode without ConsolePort.
-- Added **Switch WoW account** and **Sign out of Battle.net** for Forever. Automatic game launch pauses while you use the official launcher to change accounts.
-
-## Performance and fixes
-
-- Improved original-client graphics defaults and TBC CPU scheduling on phones with different types of CPU cores.
-- Reduced graphics cache, video-memory and compiler-worker budgets for entry-level PowerVR GPUs.
-- Fixed graphics resource cleanup, shared texture lifetime and texture readback in the VirGL compatibility renderer.
-- Fixed overlapping graphics checks and late probe results when starting or resuming the app.
-- Fixed controller camera movement triggering unwanted targeting or interaction.
-- Added visibility controls for ConsolePort L2/R2 icons and fixed their visibility across bar layouts.
-- Updated compatibility with the Wrath Rebuffed diagnostic component and improved startup and native crash reports.
-- Enforced Forever's **8 GB physical RAM minimum** before installation or launch; RAM expansion does not count.
-- Fixed Forever client detection with different executable filename capitalization and removal-button visibility for fresh or incomplete setups.
-- Fixed clipped text on the client setup removal button.
+- Fixed original-client startup when the runtime loader path differs from the current Android app installation or profile.
+- Applied the same loader handling to Wine child processes.
+- Fixed startup failing after disabling optional addons such as NotPlater in Wrath and The Burning Crusade.
+- Detect missing or invalid required client libraries before launching the game.
+- Detect games that exit before their first frame instead of continuing to wait for Wine's desktop.
+- Improved startup reports with loading stages and concise library and graphics failure details.
+- Improved keyboard activation for login and newly created addon text fields. A movable keyboard button starts in the top-left corner when automatic activation is unavailable.
+- Corrected graphics cache paths for original clients and kept startup available when optional cache storage is unavailable.
+- Corrected missing graphics capabilities on devices using the VirGL fallback.
+- Fixed graphics synchronization errors that could leave original clients waiting during startup.
+- Fixed unwanted cursors during touch play while preserving mouse and controller controls.
