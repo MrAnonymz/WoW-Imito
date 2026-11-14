@@ -53,7 +53,7 @@ Run original and custom **World of Warcraft** clients on Android phones, tablets
 
 ## Start playing
 
-**Requires Android 12+, an ARM64 processor and 64-bit Android. Forever requires 8 GB RAM or more.** Game files and server accounts are not included.
+**Requires Android 12+,4 GB RAM, an ARM64 processor, GPU with Vulkan (runs at OpenGL too but its worse) and 64-bit Android. Forever requires 8 GB RAM or more.** Game files and server accounts are not included.
 
 1. Install WoW Imito and open it.
 2. Copy the complete client required by your server to internal storage or an SD card, or download a ZIP through **Game files**. For **Forever**, select it in the client list; official Battle.net handles sign-in, downloads and updates. First setup may take a few minutes.
