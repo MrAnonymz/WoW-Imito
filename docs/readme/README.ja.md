@@ -1,10 +1,10 @@
-[English](../../README.md) · [Deutsch](README.de.md) · [Čeština](README.cs.md) · [Polski](README.pl.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Español](README.es.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md)
+<p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
 メニュー名とボタン名は、アプリの英語表示に合わせています。
 
 ## ☕ 開発を支援する
 
-WoW Imito を楽しんでいただけたなら、開発の継続をご支援いただけます：**[Buy Me a Coffee](https://buymeacoffee.com/mranonymz)** · **[Stripe で寄付](https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01)**
+<p align="center">WoW Imito を楽しんでいただけたなら、開発の継続をご支援いただけます：<strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Stripe で寄付</a></strong></p>
 
 <table align="center">
   <tbody><tr>

@@ -1,10 +1,10 @@
-[English](../../README.md) · [Deutsch](README.de.md) · [Čeština](README.cs.md) · [Polski](README.pl.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Español](README.es.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md)
+<p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
 I nomi dei menu e dei pulsanti corrispondono all’interfaccia inglese dell’app.
 
 ## ☕ Sostieni lo sviluppo
 
-Se ti piace WoW Imito, puoi contribuire a portare avanti lo sviluppo: **[Buy Me a Coffee](https://buymeacoffee.com/mranonymz)** · **[Dona tramite Stripe](https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01)**
+<p align="center">Se ti piace WoW Imito, puoi contribuire a portare avanti lo sviluppo: <strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Dona tramite Stripe</a></strong></p>
 
 <table align="center">
   <tbody><tr>
