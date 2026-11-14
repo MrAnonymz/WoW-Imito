@@ -1,8 +1,6 @@
 <p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
-*Los nombres de los menús y botones corresponden a la interfaz de la aplicación en inglés.*
-
-## ☕ Apoya el desarrollo
+<h3 align="center">☕ Apoya el desarrollo</h3>
 
 <p align="center">Si disfrutas de WoW Imito, puedes ayudar a que el desarrollo continúe: <strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Donar con Stripe</a></strong></p>
 
@@ -22,13 +20,27 @@
   <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
 ![WoW Imito — Tu Azeroth. Donde quieras.](../../assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**Tu Azeroth. Tu personaje. Ahora en Android.**
+<h3 align="center">Tu Azeroth. Tu personaje. Ahora en Android.</h3>
 
 Ejecuta clientes originales y modificados de **World of Warcraft** en móviles, tabletas y consolas portátiles Android, incluido **WoW Forever con inicio de sesión y actualizaciones a través del Battle.net oficial**. Usa **Imito Touch UI o un mando**, con un **HUD en vivo en la segunda pantalla** de las consolas portátiles con dos pantallas. Consulta los [clientes admitidos](#compatibility) para Vanilla, TBC, WotLK y las versiones específicas de cada servidor. No necesitas un PC mientras juegas.
+
+
+
+
+
 
 **[Descargar APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Últimas notas de versión](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Todas las versiones](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
@@ -41,7 +53,7 @@ Ejecuta clientes originales y modificados de **World of Warcraft** en móviles, 
 
 ## Empieza a jugar
 
-**Se necesita Android 12 o posterior, un procesador ARM64 y Android de 64 bits. Forever requiere al menos 8 GB de RAM.** No se incluyen archivos del juego ni cuentas de servidor.
+**Se necesita Android 12 o posterior, 4 GB de RAM, un procesador ARM64, una GPU con Vulkan (también funciona con OpenGL, pero con menor rendimiento) y Android de 64 bits. Forever requiere al menos 8 GB de RAM.** No se incluyen archivos del juego ni cuentas de servidor.
 
 1. Instala WoW Imito y abre la aplicación.
 2. Copia el cliente completo que requiera tu servidor al almacenamiento interno o a una tarjeta SD, o descarga un ZIP mediante **Game files**. Para **Forever**, selecciónalo en la lista de clientes; el Battle.net oficial gestiona el inicio de sesión, las descargas y las actualizaciones. La configuración inicial puede tardar unos minutos.
@@ -53,7 +65,7 @@ Las actualizaciones de la aplicación se ofrecen automáticamente y usan descarg
 <details>
 <summary><strong>Hardware y almacenamiento</strong></summary>
 
-Para los clientes clásicos, se recomienda como punto de partida un **rendimiento similar al Snapdragon 888 y 4 GB de RAM**. El soporte gráfico y el rendimiento dependen del dispositivo.
+Para los clientes clásicos, se recomienda como punto de partida un **rendimiento similar al Snapdragon 640 y 4 GB de RAM**. El soporte gráfico y el rendimiento dependen del dispositivo.
 
 | Cliente | Espacio libre recomendado antes de instalar |
 | --- | --- |

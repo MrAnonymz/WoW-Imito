@@ -1,8 +1,6 @@
 <p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
-I nomi dei menu e dei pulsanti corrispondono all’interfaccia inglese dell’app.
-
-## ☕ Sostieni lo sviluppo
+<h3 align="center">☕ Sostieni lo sviluppo</h3>
 
 <p align="center">Se ti piace WoW Imito, puoi contribuire a portare avanti lo sviluppo: <strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Dona tramite Stripe</a></strong></p>
 
@@ -22,13 +20,27 @@ I nomi dei menu e dei pulsanti corrispondono all’interfaccia inglese dell’ap
   <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
 ![WoW Imito — Il tuo Azeroth. Ovunque.](../../assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**Il tuo Azeroth. Il tuo personaggio. Ora su Android.**
+<h3 align="center">Il tuo Azeroth. Il tuo personaggio. Ora su Android.</h3>
 
-Esegui client originali e personalizzati di World of Warcraft su telefoni, tablet e console portatili Android, incluso WoW Forever con accesso e aggiornamenti tramite il Battle.net ufficiale. Usa Imito Touch UI o un controller. Sulle console portatili a doppio schermo è disponibile anche un HUD in tempo reale sullo schermo secondario. Consulta i [client supportati](#compatibility) per Vanilla, TBC, WotLK e le versioni specifiche dei server. Non serve un PC mentre giochi.
+Esegui client originali e personalizzati di **World of Warcraft** su telefoni, tablet e console portatili Android, incluso **WoW Forever con accesso e aggiornamenti tramite il Battle.net ufficiale**. Usa **Imito Touch UI o un controller**. Sulle console portatili a doppio schermo è disponibile anche un **HUD in tempo reale sullo schermo secondario**. Consulta i [client supportati](#compatibility) per Vanilla, TBC, WotLK e le versioni specifiche dei server. Non serve un PC mentre giochi.
+
+
+
+
+
 
 **[Scarica l’APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Note dell’ultimo aggiornamento](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Tutte le versioni](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
@@ -41,7 +53,7 @@ Esegui client originali e personalizzati di World of Warcraft su telefoni, table
 
 ## Inizia a giocare
 
-**Sono necessari Android 12+, un processore ARM64 e Android a 64 bit. Forever richiede almeno 8 GB di RAM.** I file di gioco e gli account dei server non sono inclusi.
+**Sono necessari Android 12+, 4 GB di RAM, un processore ARM64, una GPU con supporto Vulkan (funziona anche con OpenGL, ma con prestazioni inferiori) e Android a 64 bit. Forever richiede almeno 8 GB di RAM.** I file di gioco e gli account dei server non sono inclusi.
 
 1. Installa WoW Imito e aprilo.
 2. Copia il client completo richiesto dal tuo server nella memoria interna o su una scheda SD, oppure scarica un file ZIP tramite **Game files**. Per **Forever**, selezionalo nell’elenco dei client: il Battle.net ufficiale gestisce accesso, download e aggiornamenti. La prima configurazione può richiedere alcuni minuti.
@@ -53,7 +65,7 @@ Gli aggiornamenti dell’app vengono proposti automaticamente e, quando disponib
 <details>
 <summary><strong>Hardware e spazio di archiviazione</strong></summary>
 
-**Prestazioni paragonabili a quelle di uno Snapdragon 888 e 4 GB di RAM** sono un punto di partenza consigliato per i client classici. Il supporto grafico e le prestazioni variano in base al dispositivo.
+**Prestazioni paragonabili a quelle di uno Snapdragon 640 e 4 GB di RAM** sono un punto di partenza consigliato per i client classici. Il supporto grafico e le prestazioni variano in base al dispositivo.
 
 | Client | Spazio libero consigliato prima dell’installazione |
 | --- | --- |

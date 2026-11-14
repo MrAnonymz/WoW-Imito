@@ -1,8 +1,6 @@
 <p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
-メニュー名とボタン名は、アプリの英語表示に合わせています。
-
-## ☕ 開発を支援する
+<h3 align="center">☕ 開発を支援する</h3>
 
 <p align="center">WoW Imito を楽しんでいただけたなら、開発の継続をご支援いただけます：<strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Stripe で寄付</a></strong></p>
 
@@ -22,13 +20,27 @@
   <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
 ![WoW Imito — あなたのアゼロスを、どこへでも。](../../assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**あなたのアゼロス。あなたのキャラクター。今度は Android で。**
+<h3 align="center">あなたのアゼロス。あなたのキャラクター。今度は Android で。</h3>
 
-Android のスマートフォン、タブレット、携帯型ゲーム機で、オリジナル版やカスタム版の World of Warcraft クライアントを実行できます。公式 Battle.net でログインやアップデートを行う WoW Forever にも対応しています。Imito Touch UI またはコントローラーで操作でき、2 画面の携帯型ゲーム機では第 2 画面の HUD に情報をリアルタイムで表示できます。Vanilla、TBC、WotLK、各サーバー専用のバージョンについては、[対応クライアント](#compatibility)をご覧ください。プレイ中に PC は必要ありません。
+Android のスマートフォン、タブレット、携帯型ゲーム機で、オリジナル版やカスタム版の **World of Warcraft** クライアントを実行できます。**公式 Battle.net でログインやアップデートを行う WoW Forever** にも対応しています。**Imito Touch UI またはコントローラー**で操作でき、2 画面の携帯型ゲーム機では**第 2 画面の HUD** に情報をリアルタイムで表示できます。Vanilla、TBC、WotLK、各サーバー専用のバージョンについては、[対応クライアント](#compatibility)をご覧ください。プレイ中に PC は必要ありません。
+
+
+
+
+
 
 **[APK をダウンロード](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[最新のパッチノート](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[すべてのリリース](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
@@ -41,7 +53,7 @@ Android のスマートフォン、タブレット、携帯型ゲーム機で、
 
 ## プレイを始める
 
-**Android 12 以降、ARM64 プロセッサー、64 ビット版 Android が必要です。Forever には 8 GB 以上の RAM が必要です。** ゲームファイルとサーバーのアカウントは含まれていません。
+**Android 12 以降、4 GB の RAM、ARM64 プロセッサー、Vulkan 対応の GPU（OpenGL でも動作しますが、パフォーマンスは低下します）、64 ビット版 Android が必要です。Forever には 8 GB 以上の RAM が必要です。** ゲームファイルとサーバーのアカウントは含まれていません。
 
 1. WoW Imito をインストールして開きます。
 2. サーバーが指定するクライアントのファイル一式を内部ストレージまたは SD カードにコピーするか、**Game files** から ZIP をダウンロードします。**Forever** はクライアント一覧から選択してください。ログイン、ダウンロード、アップデートは公式 Battle.net が行います。初回のセットアップには数分かかることがあります。
@@ -53,7 +65,7 @@ Android のスマートフォン、タブレット、携帯型ゲーム機で、
 <details>
 <summary><strong>ハードウェアとストレージ</strong></summary>
 
-従来のクライアントでは、**Snapdragon 888 クラスの性能と 4 GB の RAM** が目安です。グラフィックス機能の対応状況や性能はデバイスによって異なります。
+従来のクライアントでは、**Snapdragon 640 クラスの性能と 4 GB の RAM** が目安です。グラフィックス機能の対応状況や性能はデバイスによって異なります。
 
 | クライアント | インストール前に確保しておきたい空き容量 |
 | --- | --- |

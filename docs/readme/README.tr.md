@@ -1,8 +1,6 @@
 <p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
-Menü ve düğme adları, uygulamanın İngilizce arayüzündeki adlarla aynıdır.
-
-## ☕ Geliştirmeyi destekleyin
+<h3 align="center">☕ Geliştirmeyi destekleyin</h3>
 
 <p align="center">WoW Imito’yu seviyorsanız geliştirmenin devam etmesine yardımcı olabilirsiniz: <strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Stripe ile bağış yapın</a></strong></p>
 
@@ -22,13 +20,27 @@ Menü ve düğme adları, uygulamanın İngilizce arayüzündeki adlarla aynıd�
   <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
 ![WoW Imito — Senin Azeroth’un. Her yerde.](../../assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**Senin Azeroth’un. Senin karakterin. Artık Android’de.**
+<h3 align="center">Senin Azeroth’un. Senin karakterin. Artık Android’de.</h3>
 
-Resmî Battle.net üzerinden oturum açma ve güncelleme desteğine sahip WoW Forever dahil, orijinal ve özelleştirilmiş World of Warcraft istemcilerini Android telefon, tablet ve el konsollarında çalıştırın. Imito Touch UI veya bir kontrolcü kullanın; çift ekranlı el konsollarında ikinci ekranda canlı bir HUD da bulunur. Vanilla, TBC, WotLK ve sunuculara özel sürümler için [desteklenen istemcilere](#compatibility) göz atın. Oynarken bir PC’ye ihtiyacınız yok.
+**Resmî Battle.net üzerinden oturum açma ve güncelleme desteğine sahip WoW Forever** dahil, orijinal ve özelleştirilmiş **World of Warcraft** istemcilerini Android telefon, tablet ve el konsollarında çalıştırın. **Imito Touch UI veya bir kontrolcü** kullanın; çift ekranlı el konsollarında **ikinci ekranda canlı bir HUD** da bulunur. Vanilla, TBC, WotLK ve sunuculara özel sürümler için [desteklenen istemcilere](#compatibility) göz atın. Oynarken bir PC’ye ihtiyacınız yok.
+
+
+
+
+
 
 **[APK’yı indir](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Son güncellemenin notları](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Tüm sürümler](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
@@ -41,7 +53,7 @@ Resmî Battle.net üzerinden oturum açma ve güncelleme desteğine sahip WoW Fo
 
 ## Oynamaya başlayın
 
-**Android 12+, ARM64 işlemci ve 64 bit Android gerekir. Forever için en az 8 GB RAM gerekir.** Oyun dosyaları ve sunucu hesapları dahil değildir.
+**Android 12+, 4 GB RAM, ARM64 işlemci, Vulkan destekli GPU (OpenGL ile de çalışır ancak performansı daha düşüktür) ve 64 bit Android gerekir. Forever için en az 8 GB RAM gerekir.** Oyun dosyaları ve sunucu hesapları dahil değildir.
 
 1. WoW Imito’yu yükleyip açın.
 2. Sunucunuzun gerektirdiği oyun istemcisinin tamamını dahili depolamaya veya bir SD karta kopyalayın ya da **Game files** üzerinden bir ZIP dosyası indirin. **Forever** için istemci listesinden bu seçeneği seçin; oturum açma, indirme ve güncellemeleri resmî Battle.net yönetir. İlk kurulum birkaç dakika sürebilir.
@@ -53,7 +65,7 @@ Uygulama güncellemeleri otomatik olarak sunulur; mevcut olduğunda daha küçü
 <details>
 <summary><strong>Donanım ve depolama</strong></summary>
 
-Klasik istemciler için başlangıç noktası olarak **Snapdragon 888 düzeyinde performans ve 4 GB RAM** önerilir. Grafik desteği ve performans cihaza göre değişir.
+Klasik istemciler için başlangıç noktası olarak **Snapdragon 640 düzeyinde performans ve 4 GB RAM** önerilir. Grafik desteği ve performans cihaza göre değişir.
 
 | İstemci | Kurulum öncesi önerilen boş depolama alanı |
 | --- | --- |

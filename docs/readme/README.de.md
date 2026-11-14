@@ -1,8 +1,6 @@
 <p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
-Die Menü- und Schaltflächennamen entsprechen der englischen Benutzeroberfläche der App.
-
-## ☕ Entwicklung unterstützen
+<h3 align="center">☕ Entwicklung unterstützen</h3>
 
 <p align="center">Wenn dir WoW Imito gefällt, kannst du helfen, die Entwicklung fortzuführen: <strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Über Stripe spenden</a></strong></p>
 
@@ -22,13 +20,27 @@ Die Menü- und Schaltflächennamen entsprechen der englischen Benutzeroberfläch
   <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
 ![WoW Imito — Dein Azeroth. Überall.](../../assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**Dein Azeroth. Dein Charakter. Jetzt auf Android.**
+<h3 align="center">Dein Azeroth. Dein Charakter. Jetzt auf Android.</h3>
 
-Starte originale und angepasste World of Warcraft-Clients auf Android-Smartphones, Tablets und Handhelds — einschließlich WoW Forever mit Anmeldung und Updates über das offizielle Battle.net. Nutze Imito Touch UI oder einen Controller. Auf Handhelds mit zwei Bildschirmen steht dir ein Live-HUD auf dem zweiten Bildschirm zur Verfügung. Unter den [unterstützten Clients](#compatibility) findest du Vanilla, TBC, WotLK und serverspezifische Versionen. Während des Spielens brauchst du keinen PC.
+Starte originale und angepasste **World of Warcraft**-Clients auf Android-Smartphones, Tablets und Handhelds — einschließlich **WoW Forever mit Anmeldung und Updates über das offizielle Battle.net**. Nutze **Imito Touch UI oder einen Controller**. Auf Handhelds mit zwei Bildschirmen steht dir ein **Live-HUD auf dem zweiten Bildschirm** zur Verfügung. Unter den [unterstützten Clients](#compatibility) findest du Vanilla, TBC, WotLK und serverspezifische Versionen. Während des Spielens brauchst du keinen PC.
+
+
+
+
+
 
 **[APK herunterladen](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Neueste Versionshinweise](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Alle Versionen](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
@@ -41,7 +53,7 @@ Starte originale und angepasste World of Warcraft-Clients auf Android-Smartphone
 
 ## Losspielen
 
-**Vorausgesetzt werden Android 12+, ein ARM64-Prozessor und ein 64-Bit-Android-System. Forever benötigt mindestens 8 GB RAM.** Spieldateien und Serverkonten sind nicht enthalten.
+**Vorausgesetzt werden Android 12+, 4 GB RAM, ein ARM64-Prozessor, eine GPU mit Vulkan-Unterstützung (OpenGL funktioniert ebenfalls, bietet aber weniger Leistung) und ein 64-Bit-Android-System. Forever benötigt mindestens 8 GB RAM.** Spieldateien und Serverkonten sind nicht enthalten.
 
 1. Installiere WoW Imito und öffne die App.
 2. Kopiere den vollständigen Client, den dein Server voraussetzt, in den internen Speicher oder auf eine SD-Karte, oder lade über **Game files** eine ZIP-Datei herunter. Für **Forever** wählst du den Eintrag in der Clientliste aus; das offizielle Battle.net übernimmt Anmeldung, Downloads und Updates. Die erste Einrichtung kann einige Minuten dauern.
@@ -53,7 +65,7 @@ App-Updates werden automatisch angeboten. Falls verfügbar, werden kleinere Delt
 <details>
 <summary><strong>Hardware und Speicherplatz</strong></summary>
 
-**Leistung auf dem Niveau eines Snapdragon 888 und 4 GB RAM** sind empfohlene Ausgangspunkte für klassische Clients. Grafikunterstützung und Leistung unterscheiden sich je nach Gerät.
+**Leistung auf dem Niveau eines Snapdragon 640 und 4 GB RAM** sind empfohlene Ausgangspunkte für klassische Clients. Grafikunterstützung und Leistung unterscheiden sich je nach Gerät.
 
 | Client | Empfohlener freier Speicherplatz vor der Installation |
 | --- | --- |

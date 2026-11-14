@@ -1,8 +1,6 @@
 <p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
-Nazwy menu i przycisków odpowiadają angielskiemu interfejsowi aplikacji.
-
-## ☕ Wesprzyj rozwój
+<h3 align="center">☕ Wesprzyj rozwój</h3>
 
 <p align="center">Jeśli lubisz WoW Imito, możesz pomóc w dalszym rozwoju projektu: <strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Wesprzyj przez Stripe</a></strong></p>
 
@@ -22,13 +20,27 @@ Nazwy menu i przycisków odpowiadają angielskiemu interfejsowi aplikacji.
   <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
 ![WoW Imito — Twój Azeroth. Gdziekolwiek jesteś.](../../assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**Twój Azeroth. Twoja postać. Teraz na Androidzie.**
+<h3 align="center">Twój Azeroth. Twoja postać. Teraz na Androidzie.</h3>
 
-Uruchamiaj oryginalne i zmodyfikowane klienty World of Warcraft na telefonach, tabletach i konsolach przenośnych z Androidem — w tym WoW Forever z oficjalnym logowaniem i aktualizacjami przez Battle.net. Korzystaj z Imito Touch UI lub kontrolera, a na konsolach przenośnych z dwoma ekranami także z aktualizowanego na bieżąco HUD-u na drugim ekranie. Wersje Vanilla, TBC, WotLK oraz klienty poszczególnych serwerów znajdziesz na [liście obsługiwanych klientów](#compatibility). Podczas gry nie potrzebujesz komputera.
+Uruchamiaj oryginalne i zmodyfikowane klienty **World of Warcraft** na telefonach, tabletach i konsolach przenośnych z Androidem — w tym **WoW Forever z oficjalnym logowaniem i aktualizacjami przez Battle.net**. Korzystaj z **Imito Touch UI lub kontrolera**, a na konsolach przenośnych z dwoma ekranami także z **aktualizowanego na bieżąco HUD-u na drugim ekranie**. Wersje Vanilla, TBC, WotLK oraz klienty poszczególnych serwerów znajdziesz na [liście obsługiwanych klientów](#compatibility). Podczas gry nie potrzebujesz komputera.
+
+
+
+
+
 
 **[Pobierz APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Opis najnowszej aktualizacji](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Wszystkie wydania](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
@@ -41,7 +53,7 @@ Uruchamiaj oryginalne i zmodyfikowane klienty World of Warcraft na telefonach, t
 
 ## Zacznij grać
 
-**Wymagany jest Android 12 lub nowszy, procesor ARM64 i 64-bitowy Android. Forever wymaga co najmniej 8 GB RAM.** Aplikacja nie zawiera plików gry ani kont na serwerach.
+**Wymagane są Android 12 lub nowszy, 4 GB RAM, procesor ARM64, układ graficzny z obsługą interfejsu Vulkan (aplikacja działa również z OpenGL, ale z niższą wydajnością) i 64-bitowy Android. Forever wymaga co najmniej 8 GB RAM.** Aplikacja nie zawiera plików gry ani kont na serwerach.
 
 1. Zainstaluj WoW Imito i uruchom aplikację.
 2. Skopiuj pełnego klienta wymaganego przez Twój serwer do pamięci wewnętrznej lub na kartę SD albo pobierz plik ZIP przez **Game files**. W przypadku **Forever** wybierz go z listy klientów; logowaniem, pobieraniem i aktualizacjami zajmuje się oficjalny Battle.net. Pierwsza konfiguracja może potrwać kilka minut.
@@ -53,7 +65,7 @@ Aktualizacje aplikacji są proponowane automatycznie. Gdy to możliwe, pobierane
 <details>
 <summary><strong>Sprzęt i miejsce na dane</strong></summary>
 
-Dla klasycznych klientów sugerowany punkt wyjścia to **wydajność klasy Snapdragon 888 i 4 GB RAM**. Obsługa grafiki i wydajność zależą od urządzenia.
+Dla klasycznych klientów sugerowany punkt wyjścia to **wydajność klasy Snapdragon 640 i 4 GB RAM**. Obsługa grafiki i wydajność zależą od urządzenia.
 
 | Klient | Zalecane wolne miejsce przed instalacją |
 | --- | --- |

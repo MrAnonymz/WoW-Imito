@@ -1,8 +1,6 @@
 <p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
-菜单和按钮名称采用应用英文界面中的名称。
-
-## ☕ 支持开发
+<h3 align="center">☕ 支持开发</h3>
 
 <p align="center">如果你喜欢 WoW Imito，可以帮助项目继续开发：<strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">通过 Stripe 捐赠</a></strong></p>
 
@@ -22,13 +20,27 @@
   <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
 ![WoW Imito — 随时随地，畅游你的艾泽拉斯。](../../assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**你的艾泽拉斯，你的角色，如今尽在 Android。**
+<h3 align="center">你的艾泽拉斯，你的角色，如今尽在 Android。</h3>
 
-在 Android 手机、平板电脑和掌机上运行原版及定制版 World of Warcraft 客户端，包括通过官方 Battle.net 登录和更新的 WoW Forever。你可以使用 Imito Touch UI 或游戏手柄，并在双屏掌机上使用实时第二屏 HUD。Vanilla、TBC、WotLK 及各服务器专用版本，请参阅[支持的客户端](#compatibility)。游玩时无需 PC。
+在 Android 手机、平板电脑和掌机上运行原版及定制版 **World of Warcraft** 客户端，包括**通过官方 Battle.net 登录和更新的 WoW Forever**。你可以使用 **Imito Touch UI 或游戏手柄**，并在双屏掌机上使用**实时第二屏 HUD**。Vanilla、TBC、WotLK 及各服务器专用版本，请参阅[支持的客户端](#compatibility)。游玩时无需 PC。
+
+
+
+
+
 
 **[下载 APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[最新更新说明](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[所有版本](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
@@ -41,7 +53,7 @@
 
 ## 开始游戏
 
-**需要 Android 12 或更高版本、ARM64 处理器和 64 位 Android 系统。Forever 需要至少 8 GB RAM。** 本应用不包含游戏文件或服务器账号。
+**需要 Android 12 或更高版本、4 GB RAM、ARM64 处理器、支持 Vulkan 的 GPU（也可以使用 OpenGL，但性能较低）和 64 位 Android 系统。Forever 需要至少 8 GB RAM。** 本应用不包含游戏文件或服务器账号。
 
 1. 安装并打开 WoW Imito。
 2. 将服务器要求的完整客户端复制到内部存储或 SD 卡，或通过 **Game files** 下载 ZIP 文件。如需游玩 **Forever**，请在客户端列表中选择它；登录、下载和更新由官方 Battle.net 处理。首次设置可能需要几分钟。
@@ -53,7 +65,7 @@
 <details>
 <summary><strong>硬件与存储空间</strong></summary>
 
-对于经典客户端，建议以 **Snapdragon 888 级别的性能和 4 GB RAM** 作为参考起点。图形功能支持情况和性能因设备而异。
+对于经典客户端，建议以 **Snapdragon 640 级别的性能和 4 GB RAM** 作为参考起点。图形功能支持情况和性能因设备而异。
 
 | 客户端 | 建议在安装前预留的可用空间 |
 | --- | --- |

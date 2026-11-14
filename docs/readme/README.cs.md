@@ -1,8 +1,6 @@
 <p align="center"><a href="../../README.md">English</a> · <a href="README.de.md">Deutsch</a> · <a href="README.cs.md">Čeština</a> · <a href="README.pl.md">Polski</a> · <a href="README.ru.md">Русский</a> · <a href="README.it.md">Italiano</a> · <a href="README.es.md">Español</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.tr.md">Türkçe</a> · <a href="README.ar.md">العربية</a></p>
 
-Názvy nabídek a tlačítek odpovídají anglickému rozhraní aplikace.
-
-## ☕ Podpořte vývoj
+<h3 align="center">☕ Podpořte vývoj</h3>
 
 <p align="center">Pokud vás WoW Imito baví, můžete pomoci s jeho dalším vývojem: <strong><a href="https://buymeacoffee.com/mranonymz">Buy Me a Coffee</a></strong> · <strong><a href="https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01">Přispět přes Stripe</a></strong></p>
 
@@ -22,13 +20,27 @@ Názvy nabídek a tlačítek odpovídají anglickému rozhraní aplikace.
   <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
 ![WoW Imito — Váš Azeroth. Kdekoli.](../../assets/wow-imito-banner.jpg)
 
-# WoW Imito
+<h1 align="center">WoW Imito</h1>
 
-**Váš Azeroth. Vaše postava. Nyní na Androidu.**
+<h3 align="center">Váš Azeroth. Vaše postava. Nyní na Androidu.</h3>
 
-Spouštějte původní i upravené klienty World of Warcraft na telefonech, tabletech a herních handheldech s Androidem — včetně WoW Forever s oficiálním přihlášením a aktualizacemi přes Battle.net. Používejte Imito Touch UI nebo herní ovladač a na handheldech se dvěma displeji také průběžně aktualizovaný HUD na druhém displeji. Verze Vanilla, TBC, WotLK a klienty jednotlivých serverů najdete v [seznamu podporovaných klientů](#compatibility). Při hraní počítač nepotřebujete.
+Spouštějte původní i upravené klienty **World of Warcraft** na telefonech, tabletech a herních handheldech s Androidem — včetně **WoW Forever s oficiálním přihlášením a aktualizacemi přes Battle.net**. Používejte **Imito Touch UI nebo herní ovladač** a na handheldech se dvěma displeji také **průběžně aktualizovaný HUD na druhém displeji**. Verze Vanilla, TBC, WotLK a klienty jednotlivých serverů najdete v [seznamu podporovaných klientů](#compatibility). Při hraní počítač nepotřebujete.
+
+
+
+
+
 
 **[Stáhnout APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Nejnovější poznámky k vydání](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Všechna vydání](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
@@ -41,7 +53,7 @@ Spouštějte původní i upravené klienty World of Warcraft na telefonech, tabl
 
 ## Jak začít hrát
 
-**Je vyžadován Android 12 nebo novější, procesor ARM64 a 64bitový Android. Forever vyžaduje alespoň 8 GB RAM.** Herní soubory ani účty na serverech nejsou součástí aplikace.
+**Je vyžadován Android 12 nebo novější, 4 GB RAM, procesor ARM64, GPU s podporou Vulkanu (funguje také přes OpenGL, ale s nižším výkonem) a 64bitový Android. Forever vyžaduje alespoň 8 GB RAM.** Herní soubory ani účty na serverech nejsou součástí aplikace.
 
 1. Nainstalujte WoW Imito a otevřete jej.
 2. Zkopírujte kompletního klienta požadovaného vaším serverem do interního úložiště nebo na SD kartu, případně stáhněte ZIP přes **Game files**. Pro **Forever** jej vyberte v seznamu klientů; přihlášení, stahování a aktualizace zajišťuje oficiální Battle.net. První nastavení může trvat několik minut.
@@ -53,7 +65,7 @@ Aktualizace aplikace se nabízejí automaticky a využívají menší rozdílov�
 <details>
 <summary><strong>Hardware a úložiště</strong></summary>
 
-Pro klasické klienty doporučujeme jako výchozí úroveň **výkon na úrovni čipu Snapdragon 888 a 4 GB RAM**. Podpora grafiky i výkon se liší podle zařízení.
+Pro klasické klienty doporučujeme jako výchozí úroveň **výkon na úrovni čipu Snapdragon 640 a 4 GB RAM**. Podpora grafiky i výkon se liší podle zařízení.
 
 | Klient | Doporučené volné místo před instalací |
 | --- | --- |
