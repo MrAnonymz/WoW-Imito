@@ -11,6 +11,15 @@
    QR:
 <p align="center">
   <img width="220" height="220" alt="qr-code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" />
+</p>
+
+## ☕ Supporter thanks
+
+Thank you for supporting WoW Imito! A good latte makes fixing bugs a little more enjoyable and a little less stressful.
+
+| Supporter | Thanks |
+| --- | --- |
+| **Amunkyinatuxedo9** | Thank you for your donation and support! |
 
 
 <p align="center">
