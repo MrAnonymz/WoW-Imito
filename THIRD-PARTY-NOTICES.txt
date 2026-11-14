@@ -45,3 +45,14 @@ https://www.winehq.org/
 https://github.com/wine-mirror/wine/tree/wine-10.10
 License: GNU Lesser General Public License2.1.
 Wine10.10 compatibility source patches: patches/wine/.
+
+Mesa PanVK Android driver
+Mesa/PanVK contributors and zenithblue-oss/panvk-kbase-android contributors
+https://github.com/zenithblue-oss/panvk-kbase-android/tree/panvk-kbase-v26.3.1
+The original pinned Android library is distributed without modifications.
+Exact release, hashes, source/build instructions and notices: patches/panvk/.
+The same notices and license texts are included in the Android package.
+
+VirGL renderer
+VirGL renderer contributors, MIT license (retained in the source).
+The reusable command-buffer change is in patches/virgl/.

@@ -1,0 +1,76 @@
+--- a/server/virgl_server.h
++++ b/server/virgl_server.h
+@@ -59,6 +59,8 @@
+ 
+ struct virgl_client {
+    int fd;
++   uint32_t *command_buffer;
++   size_t command_capacity;
+    struct virgl_server_renderer *renderer;
+    struct vrend_state *vrend_state;
+    struct util_hash_table *res_hash;
+--- a/server/virgl_server.c
++++ b/server/virgl_server.c
+@@ -57,6 +57,7 @@
+ {
+    virgl_server_destroy_renderer(*client);
+ 
++   free((*client)->command_buffer);
+    free(*client);
+    *client = NULL;
+ }
+--- a/server/virgl_server_renderer.c
++++ b/server/virgl_server_renderer.c
+@@ -511,20 +511,44 @@
+    uint32_t *cbuf;
+    int cbuf_len, ret;
+ 
+-   cbuf_len = length * 4;
+-   cbuf = malloc(cbuf_len);
+-   if (!cbuf)
+-      return -1;
+-
+-   ret = virgl_block_read(client->fd, cbuf, cbuf_len);
++   /* The protocol counts dwords, while socket I/O takes signed byte counts.
++    * Reject overflow before allocation or reading a truncated command stream. */
++   if (length > INT_MAX / sizeof(uint32_t))
++      return -EINVAL;
++   cbuf_len = (int)(length * sizeof(uint32_t));
++
++   /* Normal Mesa batches reuse a small client-owned scratch buffer. Decode is
++    * synchronous and consumes the packet before the next request. Retain at
++    * most 256 KiB; exceptional larger packets keep their old temporary lifetime.
++    * No fence, flush, guest resource or GPU synchronization is skipped. */
++   bool temporary = cbuf_len > 256 * 1024;
++   if (temporary) {
++      cbuf = malloc(cbuf_len);
++      if (!cbuf)
++         return -ENOMEM;
++   } else {
++      if ((size_t)cbuf_len > client->command_capacity) {
++         size_t capacity = 4096;
++         while (capacity < (size_t)cbuf_len)
++            capacity *= 2;
++         uint32_t *grown = realloc(client->command_buffer, capacity);
++         if (!grown)
++            return -ENOMEM;
++         client->command_buffer = grown;
++         client->command_capacity = capacity;
++      }
++      cbuf = client->command_buffer;
++   }
++
++   ret = cbuf_len ? virgl_block_read(client->fd, cbuf, cbuf_len) : 0;
+    if (ret != cbuf_len) {
+-      free(cbuf);
++      if (temporary) free(cbuf);
+       return -1;
+    }
+ 
+    ret = vrend_decode_block(client, client->renderer->ctx_id, cbuf, length);
+ 
+-   free(cbuf);
++   if (temporary) free(cbuf);
+    if (ret)
+       return ret < 0 ? ret : -ret;
+    return virgl_server_renderer_create_fence(client);

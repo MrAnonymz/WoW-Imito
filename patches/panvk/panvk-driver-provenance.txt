@@ -1,0 +1,28 @@
+Optional Mesa PanVK Android ICD
+
+Project: zenithblue-oss/panvk-kbase-android and Mesa/PanVK contributors
+Release: panvk-kbase-v26.3.1, build 122i, 2026-10-31
+Source and patch/build instructions:
+https://github.com/zenithblue-oss/panvk-kbase-android/tree/panvk-kbase-v26.3.1
+Release and original checksums:
+https://github.com/zenithblue-oss/panvk-kbase-android/releases/tag/panvk-kbase-v26.3.1
+
+Original Android arm64 library: libvulkan_panfrost-android-aarch64.so
+Packaged as: libimito_panvk.so (unchanged bytes)
+SHA-256: 62c2b3f98ca987d5ab50b6f01e2d2c1c5b3ee995fe93666aa5da9415f65c3348
+Archive: Mesa-PanVK-Android-v26.3.1-795ca7ff-adrenotools.zip
+SHA-256: 7e2e9987bbebefb06f52b2570e61e6208503d4d3a10a395b97aea9b6e1fad9e4
+
+Mesa upstream licenses and notices are in mesa-licenses/.
+Additional upstream project/UAPI notices are in panvk-licenses/.
+GPL-2.0 text for the UAPI headers is in mesa-licenses/GPL-2.0-only.txt;
+the Linux-syscall-note exception is in panvk-licenses/Linux-syscall-note.txt.
+
+This library is used only inside this application. It does not replace the
+Android system driver. System Vulkan has priority; a separate process checks
+the alternative's device creation, DXVK features, transfer and display sharing
+before selecting it. A failed check retains the available fallback. Device
+family detection alone does not enable the driver. No game executable is patched.
+
+Upstream device tests are not WoW Imito device tests. Mali game performance
+and rendering correctness require confirmation on the affected hardware.
