@@ -65,7 +65,7 @@ App updates are offered automatically, using smaller delta downloads when availa
 <details>
 <summary><strong>Hardware & storage</strong></summary>
 
-**Snapdragon 888-class performance and 6 GB RAM** are suggested starting points for classic clients. Graphics support and performance vary by device.
+**Snapdragon 640-class performance and 4 GB RAM** are suggested starting points for classic clients. Graphics support and performance vary by device.
 
 | Client | Suggested free storage before installation |
 | --- | --- |
