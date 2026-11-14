@@ -53,7 +53,7 @@ Las actualizaciones de la aplicación se ofrecen automáticamente y usan descarg
 <details>
 <summary><strong>Hardware y almacenamiento</strong></summary>
 
-Para los clientes clásicos, se recomienda como punto de partida un **rendimiento similar al Snapdragon 888 y 6 GB de RAM**. El soporte gráfico y el rendimiento dependen del dispositivo.
+Para los clientes clásicos, se recomienda como punto de partida un **rendimiento similar al Snapdragon 888 y 4 GB de RAM**. El soporte gráfico y el rendimiento dependen del dispositivo.
 
 | Cliente | Espacio libre recomendado antes de instalar |
 | --- | --- |

@@ -53,7 +53,7 @@ Gli aggiornamenti dell’app vengono proposti automaticamente e, quando disponib
 <details>
 <summary><strong>Hardware e spazio di archiviazione</strong></summary>
 
-**Prestazioni paragonabili a quelle di uno Snapdragon 888 e 6 GB di RAM** sono un punto di partenza consigliato per i client classici. Il supporto grafico e le prestazioni variano in base al dispositivo.
+**Prestazioni paragonabili a quelle di uno Snapdragon 888 e 4 GB di RAM** sono un punto di partenza consigliato per i client classici. Il supporto grafico e le prestazioni variano in base al dispositivo.
 
 | Client | Spazio libero consigliato prima dell’installazione |
 | --- | --- |

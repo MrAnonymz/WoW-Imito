@@ -55,4 +55,10 @@ The same notices and license texts are included in the Android package.
 
 VirGL renderer
 VirGL renderer contributors, MIT license (retained in the source).
-The reusable command-buffer change is in patches/virgl/.
+The reusable command-buffer and presentation resource-lifetime changes are in patches/virgl/.
+
+Vortek Vulkan relay
+brunodev85 and contributors, GNU Lesser General Public License, version 2.1.
+https://github.com/brunodev85/vortek/tree/b1730c5
+The paired queue/presentation protocol changes, modified guest and host source,
+build provenance, retained licenses and verification scope are in patches/vortek/.

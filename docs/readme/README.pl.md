@@ -53,7 +53,7 @@ Aktualizacje aplikacji są proponowane automatycznie. Gdy to możliwe, pobierane
 <details>
 <summary><strong>Sprzęt i miejsce na dane</strong></summary>
 
-Dla klasycznych klientów sugerowany punkt wyjścia to **wydajność klasy Snapdragon 888 i 6 GB RAM**. Obsługa grafiki i wydajność zależą od urządzenia.
+Dla klasycznych klientów sugerowany punkt wyjścia to **wydajność klasy Snapdragon 888 i 4 GB RAM**. Obsługa grafiki i wydajność zależą od urządzenia.
 
 | Klient | Zalecane wolne miejsce przed instalacją |
 | --- | --- |

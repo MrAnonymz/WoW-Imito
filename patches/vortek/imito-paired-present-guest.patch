@@ -1,0 +1,67 @@
+--- a/src/vulkan_calls.c
++++ b/src/vulkan_calls.c
+@@ -1882,6 +1882,9 @@
+ }
+ 
+ VkResult vt_call_vkGetSwapchainImagesKHR(VkDevice device, VkSwapchainKHR swapchain, uint32_t* pSwapchainImageCount, VkImage* pSwapchainImages) {
++    // The legacy wire encodes a count query as zero. Preserve the distinct
++    // non-null, zero-capacity case locally; every created swapchain has images.
++    if (pSwapchainImages && *pSwapchainImageCount == 0) return VK_INCOMPLETE;
+     VT_CALL_LOCK();
+     if (!pSwapchainImages) *pSwapchainImageCount = 0;
+     VkObject* deviceObject = VkObject_fromHandle(device);
+@@ -1918,18 +1921,22 @@
+ 
+ VkResult vt_call_vkQueuePresentKHR(VkQueue queue, const VkPresentInfoKHR* pPresentInfo) {
+     VT_CALL_LOCK();
+-    
+-    VT_SERIALIZE_CMD(VkPresentInfoKHR, pPresentInfo);
+-    VT_SEND_CHECKED(REQUEST_CODE_VK_QUEUE_PRESENT_KHR, VT_RETURN);
++    VkObject* queueObject = VkObject_fromHandle(queue);
++    VT_SERIALIZE_CMD(vkQueuePresentKHR, (VkQueue)&queueObject->id, pPresentInfo);
++    // Unlike the legacy one-way opcode, this paired host returns completion or
++    // the exact failure. Fill pResults even when that result is DEVICE_LOST.
++    int sent = vt_send(serverRing, REQUEST_CODE_VK_QUEUE_PRESENT_KHR_NATIVE, outputBuffer, bufferSize);
++    char* inputBuffer = NULL;
++    int result = sent == bufferSize ? vt_recv(clientRing, &inputBuffer, NULL, &globalMemoryPool) : VK_ERROR_DEVICE_LOST;
+     
+     if (pPresentInfo->pResults) {
+         for (int i = 0; i < pPresentInfo->swapchainCount; i++) {
+-            pPresentInfo->pResults[i] = VK_SUCCESS;
++            pPresentInfo->pResults[i] = result;
+         }
+     }
+     
+     VT_CALL_UNLOCK();
+-    return VK_SUCCESS;
++    return (VkResult)result;
+ }
+ 
+ VkResult vt_call_vkCreateXlibSurfaceKHR(VkInstance instance, const VkXlibSurfaceCreateInfoKHR* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface) {
+--- a/include/request_codes.h
++++ b/include/request_codes.h
+@@ -7,7 +7,7 @@
+ #define REQUEST_CODE_SEND_EXTRA_DATA 2
+ 
+ #define REQUEST_CODE_VK_CALL_START 100
+-#define REQUEST_CODE_VK_CALL_COUNT 255
++#define REQUEST_CODE_VK_CALL_COUNT 256
+ 
+ #define REQUEST_CODE_VK_CREATE_INSTANCE 100
+ #define REQUEST_CODE_VK_DESTROY_INSTANCE 101
+@@ -264,6 +264,7 @@
+ #define REQUEST_CODE_VK_GET_SHADER_MODULE_IDENTIFIER_EXT 352
+ #define REQUEST_CODE_VK_GET_SHADER_MODULE_CREATE_INFO_IDENTIFIER_EXT 353
+ #define REQUEST_CODE_VK_WAIT_FOR_FENCES_NATIVE 354
++#define REQUEST_CODE_VK_QUEUE_PRESENT_KHR_NATIVE 355
+ 
+ #if DEBUG_MODE
+ static const char* requestCodeStrings[] = {
+@@ -522,6 +523,7 @@
+     "vkGetShaderModuleIdentifierEXT",
+     "vkGetShaderModuleCreateInfoIdentifierEXT",
+     "vkWaitForFencesNative",
++    "vkQueuePresentKHRNative",
+ };
+ 
+ static inline const char* requestCodeToString(short requestCode) {

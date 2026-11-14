@@ -53,7 +53,7 @@ App-Updates werden automatisch angeboten. Falls verfügbar, werden kleinere Delt
 <details>
 <summary><strong>Hardware und Speicherplatz</strong></summary>
 
-**Leistung auf dem Niveau eines Snapdragon 888 und 6 GB RAM** sind empfohlene Ausgangspunkte für klassische Clients. Grafikunterstützung und Leistung unterscheiden sich je nach Gerät.
+**Leistung auf dem Niveau eines Snapdragon 888 und 4 GB RAM** sind empfohlene Ausgangspunkte für klassische Clients. Grafikunterstützung und Leistung unterscheiden sich je nach Gerät.
 
 | Client | Empfohlener freier Speicherplatz vor der Installation |
 | --- | --- |

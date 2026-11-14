@@ -53,7 +53,7 @@ Aktualizace aplikace se nabízejí automaticky a využívají menší rozdílov�
 <details>
 <summary><strong>Hardware a úložiště</strong></summary>
 
-Pro klasické klienty doporučujeme jako výchozí úroveň **výkon na úrovni čipu Snapdragon 888 a 6 GB RAM**. Podpora grafiky i výkon se liší podle zařízení.
+Pro klasické klienty doporučujeme jako výchozí úroveň **výkon na úrovni čipu Snapdragon 888 a 4 GB RAM**. Podpora grafiky i výkon se liší podle zařízení.
 
 | Klient | Doporučené volné místo před instalací |
 | --- | --- |

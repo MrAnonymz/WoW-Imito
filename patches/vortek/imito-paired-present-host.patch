@@ -1,0 +1,287 @@
+--- a/app/src/main/cpp/vortekrenderer/include/xwindow_swapchain.h
++++ b/app/src/main/cpp/vortekrenderer/include/xwindow_swapchain.h
+@@ -18,6 +18,10 @@
+     VkExtent2D imageExtent;
+     VkImageUsageFlags imageUsage;
+     VkQueue queue;
++    VkDevice device;
++    VkFence presentFence;
++    bool presentFencePending;
++    bool presentFailureReported;
+     JMethods* jmethods;
+     bool firstPresentReported;
+     bool acquireFailureReported;
+@@ -28,7 +32,9 @@
+     SWAPCHAIN_IMAGE=3, SWAPCHAIN_AHB_PROPERTIES=4, SWAPCHAIN_MEMORY_TYPE=5,
+     SWAPCHAIN_MEMORY_ALLOCATE=6, SWAPCHAIN_MEMORY_BIND=7,
+     SWAPCHAIN_READY=8, SWAPCHAIN_FIRST_PRESENT=9, SWAPCHAIN_EXTENT=10,
+-    SWAPCHAIN_ACQUIRE_SUBMIT=12 };
++    SWAPCHAIN_ACQUIRE_SUBMIT=12, SWAPCHAIN_PRESENT_SUBMIT=13,
++    SWAPCHAIN_PRESENT_WAIT=14, SWAPCHAIN_PRESENT_INDEX=15,
++    SWAPCHAIN_PRESENT_FENCE=16, SWAPCHAIN_PRESENT_TIMEOUT=17 };
+ extern void reportSwapchainStartup(JMethods* methods, int stage, VkResult result,
+         VkFormat format, VkExtent2D extent, int windowId);
+ 
+@@ -40,5 +46,7 @@
+ extern void XWindowSwapchain_destroy(VkDevice device, XWindowSwapchain* swapchain);
+ extern VkResult XWindowSwapchain_acquireNextImage(XWindowSwapchain* swapchain, uint64_t timeout, VkSemaphore signalSemaphore, VkFence fence, uint32_t* imageIndex);
+ extern void XWindowSwapchain_presentImage(XWindowSwapchain* swapchain);
++extern VkResult XWindowSwapchain_waitForPresent(VkQueue queue, const VkPresentInfoKHR* presentInfo,
++        const _Atomic VkResult* contextStatus);
+ 
+ #endif
+--- a/app/src/main/cpp/vortekrenderer/include/request_codes.h
++++ b/app/src/main/cpp/vortekrenderer/include/request_codes.h
+@@ -7,7 +7,7 @@
+ #define REQUEST_CODE_SEND_EXTRA_DATA 2
+ 
+ #define REQUEST_CODE_VK_CALL_START 100
+-#define REQUEST_CODE_VK_CALL_COUNT 255
++#define REQUEST_CODE_VK_CALL_COUNT 256
+ 
+ #define REQUEST_CODE_VK_CREATE_INSTANCE 100
+ #define REQUEST_CODE_VK_DESTROY_INSTANCE 101
+@@ -264,6 +264,7 @@
+ #define REQUEST_CODE_VK_GET_SHADER_MODULE_IDENTIFIER_EXT 352
+ #define REQUEST_CODE_VK_GET_SHADER_MODULE_CREATE_INFO_IDENTIFIER_EXT 353
+ #define REQUEST_CODE_VK_WAIT_FOR_FENCES_NATIVE 354
++#define REQUEST_CODE_VK_QUEUE_PRESENT_KHR_NATIVE 355
+ 
+ #if DEBUG_MODE
+ static const char* requestCodeStrings[] = {
+@@ -522,6 +523,7 @@
+     "vkGetShaderModuleIdentifierEXT",
+     "vkGetShaderModuleCreateInfoIdentifierEXT",
+     "vkWaitForFencesNative",
++    "vkQueuePresentKHRNative",
+ };
+ 
+ static inline const char* requestCodeToString(short requestCode) {
+--- a/app/src/main/cpp/vortekrenderer/include/request_handler.h
++++ b/app/src/main/cpp/vortekrenderer/include/request_handler.h
+@@ -151,6 +151,7 @@
+ extern void vt_handle_vkGetSwapchainImagesKHR(VkContext* context);
+ extern void vt_handle_vkAcquireNextImageKHR(VkContext* context);
+ extern void vt_handle_vkQueuePresentKHR(VkContext* context);
++extern void vt_handle_vkQueuePresentKHRNative(VkContext* context);
+ extern void vt_handle_vkGetPhysicalDeviceFeatures2(VkContext* context);
+ extern void vt_handle_vkGetPhysicalDeviceProperties2(VkContext* context);
+ extern void vt_handle_vkGetPhysicalDeviceFormatProperties2(VkContext* context);
+--- a/app/src/main/cpp/vortekrenderer/include/vk_context.h
++++ b/app/src/main/cpp/vortekrenderer/include/vk_context.h
+@@ -32,6 +32,9 @@
+     RingBuffer* clientRing;
+     RingBuffer* serverRing;
+     _Atomic VkResult status;
++    // Terminal presentation wait failed after submission. The virtual context
++    // stops, but pending GPU resources remain owned until process retirement.
++    bool gpuWorkRetired;
+ 
+     int graphicsQueueIndex;
+ 
+--- a/app/src/main/cpp/vortekrenderer/src/xwindow_swapchain.c
++++ b/app/src/main/cpp/vortekrenderer/src/xwindow_swapchain.c
+@@ -143,6 +143,7 @@
+ 
+ XWindowSwapchain* XWindowSwapchain_create(VkDevice device, uint32_t graphicsQueueIndex, VkSwapchainCreateInfoKHR* swapchainInfo, JMethods* jmethods, int windowId) {
+     XWindowSwapchain* swapchain = calloc(1, sizeof(XWindowSwapchain));
++    swapchain->device = device;
+     swapchain->windowId = windowId;
+     swapchain->imageCount = swapchainInfo->minImageCount;
+     swapchain->images = calloc(swapchain->imageCount, sizeof(XWindowSwapchain_Image));
+@@ -169,6 +170,10 @@
+ 
+ void XWindowSwapchain_destroy(VkDevice device, XWindowSwapchain* swapchain) {
+     if (!swapchain) return;
++    // A relay timeout/host allocation error is not proof of hardware device
++    // loss. Terminal contexts retain all pending objects until process exit.
++    if (swapchain->presentFencePending) return;
++    if (swapchain->presentFence) vulkanWrapper.vkDestroyFence(device, swapchain->presentFence, NULL);
+     for (int i = 0; i < swapchain->imageCount; i++) {
+         vulkanWrapper.vkDestroyImage(device, swapchain->images[i].image, NULL);
+         vulkanWrapper.vkFreeMemory(device, swapchain->images[i].memory, NULL);
+@@ -212,6 +217,67 @@
+     return result;
+ }
+ 
++static VkResult failedPresentStep(XWindowSwapchain* swapchain, int stage, VkResult result) {
++    if (!swapchain->presentFailureReported) {
++        swapchain->presentFailureReported = true;
++        failedSwapchainStep(swapchain, stage, result);
++    }
++    return result;
++}
++
++VkResult XWindowSwapchain_waitForPresent(VkQueue queue, const VkPresentInfoKHR* presentInfo,
++        const _Atomic VkResult* contextStatus) {
++    if (!queue || !presentInfo->swapchainCount || !presentInfo->pSwapchains ||
++            !presentInfo->pImageIndices || (presentInfo->waitSemaphoreCount && !presentInfo->pWaitSemaphores))
++        return VK_ERROR_INITIALIZATION_FAILED;
++    XWindowSwapchain* first = (XWindowSwapchain*)presentInfo->pSwapchains[0];
++    if (!first) return VK_ERROR_INITIALIZATION_FAILED;
++    // All images currently alias the window's one AHB; acquire only returns0.
++    // Validate every entry before consuming semaphores or publishing any window.
++    for (uint32_t i=0; i<presentInfo->swapchainCount; ++i) {
++        XWindowSwapchain* swapchain = (XWindowSwapchain*)presentInfo->pSwapchains[i];
++        if (!swapchain || swapchain->device != first->device || !swapchain->imageCount ||
++                presentInfo->pImageIndices[i] != 0)
++            return failedPresentStep(first, SWAPCHAIN_PRESENT_INDEX, VK_ERROR_OUT_OF_DATE_KHR);
++    }
++    if (*contextStatus < 0 || first->presentFencePending) return VK_ERROR_DEVICE_LOST;
++    VkResult result;
++    if (!first->presentFence) {
++        VkFenceCreateInfo info = { .sType = VK_STRUCTURE_TYPE_FENCE_CREATE_INFO };
++        result = vulkanWrapper.vkCreateFence(first->device, &info, NULL, &first->presentFence);
++    } else result = vulkanWrapper.vkResetFences(first->device, 1, &first->presentFence);
++    if (result != VK_SUCCESS) return failedPresentStep(first, SWAPCHAIN_PRESENT_FENCE, result);
++
++    VkPipelineStageFlags* stages = presentInfo->waitSemaphoreCount ?
++            calloc(presentInfo->waitSemaphoreCount, sizeof(*stages)) : NULL;
++    if (presentInfo->waitSemaphoreCount && !stages) return VK_ERROR_OUT_OF_HOST_MEMORY;
++    for (uint32_t i=0; i<presentInfo->waitSemaphoreCount; ++i) stages[i] = VK_PIPELINE_STAGE_ALL_COMMANDS_BIT;
++    VkSubmitInfo submit = { .sType = VK_STRUCTURE_TYPE_SUBMIT_INFO,
++        .waitSemaphoreCount = presentInfo->waitSemaphoreCount,
++        .pWaitSemaphores = presentInfo->pWaitSemaphores, .pWaitDstStageMask = stages };
++    // Consume each binary render-finished semaphore exactly once for the entire
++    // present batch. Otherwise its next signal is invalid (VUID00067).
++    // The context's single request thread also owns all normal queue submits.
++    result = vulkanWrapper.vkQueueSubmit(queue, 1, &submit, first->presentFence);
++    free(stages);
++    if (result != VK_SUCCESS) return failedPresentStep(first, SWAPCHAIN_PRESENT_SUBMIT, result);
++    first->presentFencePending = true;
++    // GLES cannot import this VkFence. Publish only after the submitted waits
++    // complete, without draining unrelated later work with QueueWaitIdle.
++    // Fifty-ms slices let session shutdown interrupt a never-signalled present;
++    // a five-second watchdog retires this virtual device instead of hanging it.
++    for (unsigned slice=0; slice<100; ++slice) {
++        if (*contextStatus < 0) return VK_ERROR_DEVICE_LOST;
++        result = vulkanWrapper.vkWaitForFences(first->device, 1, &first->presentFence, VK_TRUE, 50000000ULL);
++        if (result == VK_SUCCESS) { first->presentFencePending=false; return VK_SUCCESS; }
++        if (result != VK_TIMEOUT) return failedPresentStep(first, SWAPCHAIN_PRESENT_WAIT, result);
++    }
++    // A pending fence is retained until normal swapchain/device teardown. Never
++    // reset/free it while its submission can still be in flight. The distinct
++    // stage identifies our watchdog, not a driver-returned DEVICE_LOST.
++    return failedPresentStep(first, SWAPCHAIN_PRESENT_TIMEOUT, VK_ERROR_DEVICE_LOST);
++}
++
+ void XWindowSwapchain_presentImage(XWindowSwapchain* swapchain) {
+     if (!swapchain->firstPresentReported) {
+         swapchain->firstPresentReported = true;
+--- a/app/src/main/cpp/vortekrenderer/src/request_handler.c
++++ b/app/src/main/cpp/vortekrenderer/src/request_handler.c
+@@ -196,6 +196,7 @@
+ }
+ 
+ void vt_handle_vkDestroyDevice(VkContext* context) {
++    if (context->gpuWorkRetired) return;
+     uint64_t deviceId;
+ 
+     vt_unserialize_vkDestroyDevice((VkDevice)&deviceId, NULL, context->inputBuffer, &context->memoryPool);
+@@ -2089,6 +2090,7 @@
+ }
+ 
+ void vt_handle_vkDestroySwapchainKHR(VkContext* context) {
++    if (context->gpuWorkRetired) return;
+     uint64_t deviceId;
+     uint64_t swapchainId;
+ 
+@@ -2108,16 +2110,20 @@
+     VkDevice device = VkObject_fromId(deviceId);
+     XWindowSwapchain* swapchain = VkObject_fromId(swapchainId);
+ 
+-    VkImage* swapchainImages = swapchainImageCount > 0 ? calloc(swapchain->imageCount, sizeof(XWindowSwapchain)) : NULL;
+-    if (swapchainImages) {
+-        for (int i = 0; i < swapchain->imageCount; i++) {
+-            swapchainImages[i] = swapchain->images[i].image;
+-        }
+-    }
+-    else swapchainImageCount = swapchain->imageCount;
++    uint32_t capacity = swapchainImageCount;
++    uint32_t available = swapchain->imageCount;
++    VkResult result = VK_SUCCESS;
++    VkImage* swapchainImages = NULL;
++    if (capacity > 0) {
++        swapchainImageCount = capacity < available ? capacity : available;
++        result = capacity < available ? VK_INCOMPLETE : VK_SUCCESS;
++        swapchainImages = calloc(swapchainImageCount, sizeof(VkImage));
++        if (!swapchainImages) { result=VK_ERROR_OUT_OF_HOST_MEMORY; swapchainImageCount=0; }
++        else for (uint32_t i=0; i<swapchainImageCount; ++i) swapchainImages[i] = swapchain->images[i].image;
++    } else swapchainImageCount = available;
+ 
+     VT_SERIALIZE_CMD(vkGetSwapchainImagesKHR, NULL, VK_NULL_HANDLE, &swapchainImageCount, swapchainImages);
+-    vt_send(context->clientRing, VK_SUCCESS, outputBuffer, bufferSize);
++    vt_send(context->clientRing, result, outputBuffer, bufferSize);
+ 
+     MEMFREE(swapchainImages);
+ }
+@@ -2142,12 +2148,39 @@
+     vt_send(context->clientRing, result == VK_SUCCESS ? imageIndex : result, NULL, 0);
+ }
+ 
++static VkResult prepareWindowPresent(VkContext* context, VkQueue queue, VkPresentInfoKHR* info) {
++    VkResult result = XWindowSwapchain_waitForPresent(queue, info, &context->status);
++    XWindowSwapchain* first = info->swapchainCount && info->pSwapchains ?
++            (XWindowSwapchain*)info->pSwapchains[0] : NULL;
++    if (result != VK_SUCCESS && first && first->presentFencePending) context->gpuWorkRetired = true;
++    return result;
++}
++
+ void vt_handle_vkQueuePresentKHR(VkContext* context) {
++    // Preserve the old, one-way guest protocol while still consuming its waits.
+     VkPresentInfoKHR presentInfo = {0};
+     vt_unserialize_VkPresentInfoKHR(&presentInfo, context->inputBuffer, &context->memoryPool);
+-
+-    for (int i = 0; i < presentInfo.swapchainCount; i++) {
++    XWindowSwapchain* first = presentInfo.swapchainCount && presentInfo.pSwapchains ?
++            (XWindowSwapchain*)presentInfo.pSwapchains[0] : NULL;
++    VkResult result = prepareWindowPresent(context, first ? first->queue : VK_NULL_HANDLE, &presentInfo);
++    if (result == VK_SUCCESS) for (uint32_t i=0; i<presentInfo.swapchainCount; ++i)
+         XWindowSwapchain_presentImage((XWindowSwapchain*)presentInfo.pSwapchains[i]);
++    else { context->gpuWorkRetired=true; failVkContext(context, result); }
++}
++
++void vt_handle_vkQueuePresentKHRNative(VkContext* context) {
++    uint64_t queueId = 0;
++    VkPresentInfoKHR presentInfo = {0};
++    vt_unserialize_vkQueuePresentKHR((VkQueue)&queueId, &presentInfo, context->inputBuffer, &context->memoryPool);
++    VkQueue queue = VkObject_fromId(queueId);
++    VkResult result = prepareWindowPresent(context, queue, &presentInfo);
++
++    if (result == VK_SUCCESS) for (uint32_t i=0; i<presentInfo.swapchainCount; ++i)
++        XWindowSwapchain_presentImage((XWindowSwapchain*)presentInfo.pSwapchains[i]);
++    vt_send(context->clientRing, result, NULL, 0);
++    if (result == VK_ERROR_DEVICE_LOST || context->gpuWorkRetired) {
++        context->gpuWorkRetired=true;
++        failVkContext(context, result);
+     }
+ }
+ 
+@@ -3821,6 +3854,7 @@
+     vt_handle_vkGetShaderModuleIdentifierEXT,
+     vt_handle_vkGetShaderModuleCreateInfoIdentifierEXT,
+     vt_handle_vkWaitForFencesNative,
++    vt_handle_vkQueuePresentKHRNative,
+ };
+ 
+ HandleRequestFunc getHandleRequestFunc(short requestCode) {
+--- a/app/src/main/cpp/vortekrenderer/src/vk_context.c
++++ b/app/src/main/cpp/vortekrenderer/src/vk_context.c
+@@ -196,10 +196,14 @@
+ 
+     context->graphicsQueueIndex = 0;
+ 
+-    if (context->textureDecoder) {
++    if (context->textureDecoder && !context->gpuWorkRetired) {
+         TextureDecoder_destroy(context->textureDecoder);
+-        context->textureDecoder = NULL;
+-    }
++    }
++    // A cancelled/failed fence wait does not prove GPU completion, even if the
++    // relay returns DEVICE_LOST. Keep staging allocations and imported images
++    // alive on this terminal path; do not free them under pending GPU work or
++    // hang shutdown in an unbounded DeviceWaitIdle. Process exit retires them.
++    context->textureDecoder = NULL;
+ 
+     ArrayList_free(context->exposedDeviceExtensions, true);
+     MEMFREE(context->exposedDeviceExtensions);

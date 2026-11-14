@@ -1,0 +1,16 @@
+--- a/server/virgl_server_renderer.c
++++ b/server/virgl_server_renderer.c
+@@ -413,6 +413,13 @@
+    vrend_renderer_resource_detach_iov(client, handle, NULL, NULL);
+    util_hash_table_remove(client->renderer->iovec_hash, intptr_to_pointer(handle));
+ 
++   /* Guest handles can be reused after resource destruction. The presentation
++    * FBO still references the old GL texture, even if that texture's name is
++    * later recycled. Mark its cache key invalid without touching context-local
++    * GL objects here; the next flush rebuilds it in its owning scratch ctx0. */
++   if ((uint32_t)client->renderer->handle == handle)
++      client->renderer->handle = 0;
++
+    vrend_renderer_resource_unref(client, handle);
+    return 0;
+ }

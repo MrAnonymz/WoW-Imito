@@ -53,7 +53,7 @@ Uygulama güncellemeleri otomatik olarak sunulur; mevcut olduğunda daha küçü
 <details>
 <summary><strong>Donanım ve depolama</strong></summary>
 
-Klasik istemciler için başlangıç noktası olarak **Snapdragon 888 düzeyinde performans ve 6 GB RAM** önerilir. Grafik desteği ve performans cihaza göre değişir.
+Klasik istemciler için başlangıç noktası olarak **Snapdragon 888 düzeyinde performans ve 4 GB RAM** önerilir. Grafik desteği ve performans cihaza göre değişir.
 
 | İstemci | Kurulum öncesi önerilen boş depolama alanı |
 | --- | --- |

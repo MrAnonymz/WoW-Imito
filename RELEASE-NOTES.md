@@ -1,20 +1,25 @@
-# WoW Imito 1.5.3
+# WoW Imito 1.5.4
 
-## Graphics
+## Graphics and performance
 
-- Automatic graphics selection now prefers Vulkan for classic clients, including the bundled PanVK driver on eligible Mali GPUs. Another graphics path is used if the required checks fail.
-- Fixed rejection of valid imported Vulkan driver packages.
-- Reused graphics command buffers to reduce repeated memory allocations.
-- Fixed a crash when uploading graphics buffers after a failed memory mapping.
-- Fixed Vanilla resolutions falling back to a narrow image with black bars.
-- Reduced redundant interface layout work and repeated redraws of the same game frame.
+- Fixed Vulkan frame synchronization and graphics-resource handling that could freeze the login screen or game while audio continued.
+- Fixed stale graphics textures after a rendering surface was recreated.
+- Improved Vulkan selection and recovery on eligible Mali devices while retaining graphics capability checks.
+- Classic clients now choose a lighter starting resolution on devices with less RAM. Existing graphics settings are preserved.
+- Reduced unnecessary Touch UI geometry checks and background chat processing.
 
 ## Touch UI
 
-- Improved Use, Equip and Sell actions in the touch item menu.
+- Added a movable Map button, matching the size of the Bags, Game Menu and Chat buttons.
+- Restored the Map toolbar in Forever, including Zoom in, Zoom out, Reset and Close.
+- Improved the fit and readability of Talents and other game windows.
+- Updated the Map, Game Menu, Chat, Sheathe Weapon and Bags icons with a consistent design.
+- Improved the default control layout, including Walk/Run and Sheathe Weapon on the bottom edge. Controls stay aligned when the resolution changes.
+- Completed missing translations in Touch UI controls, layout settings, spell slots and inventory actions across all supported languages.
+- Fixed controls disappearing while dead, near a corpse or at instance entrances.
 
-## Startup and reports
+## Reports
 
-- Leftover processes from a previous game session no longer interrupt a new launch.
-- Improved DXVK startup recovery without interrupting retries handled by DXVK itself.
-- Crash reports now identify the failing runtime module more precisely.
+- Added clearer graphics probe and startup diagnostics to exported reports.
+- Preserved automatic report submission when the report service uses an older diagnostics format.
+- Fixed stale launch diagnostics and mismatched settings in problem reports.
