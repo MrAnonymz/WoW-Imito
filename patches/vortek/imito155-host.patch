@@ -1,0 +1,398 @@
+--- /dev/null
++++ b/app/src/main/cpp/vortekrenderer/include/swapchain_layout.h
+@@ -0,0 +1,14 @@
++#ifndef VORTEK_SWAPCHAIN_LAYOUT_H
++#define VORTEK_SWAPCHAIN_LAYOUT_H
++
++/* Vortek's guest owns a virtual swapchain. The Android host imports ordinary
++ * AHardwareBuffer-backed VkImages with vkCreateImage; it never obtains these
++ * images from the native driver's vkGetSwapchainImagesKHR. Native PRESENT is
++ * therefore not their layout. Keep the wire protocol unchanged and translate
++ * both directions of guest layout transitions, including render-pass initial
++ * and final layouts, to GENERAL at the host deserialization boundary. */
++static inline VkImageLayout vt_nativeImageLayout(VkImageLayout layout) {
++    return layout == VK_IMAGE_LAYOUT_PRESENT_SRC_KHR ? VK_IMAGE_LAYOUT_GENERAL : layout;
++}
++
++#endif
+--- a/app/src/main/cpp/vortekrenderer/include/vortek_serializer.h
++++ b/app/src/main/cpp/vortekrenderer/include/vortek_serializer.h
+@@ -2,6 +2,7 @@
+ #define VORTEK_SERIALIZER_H
+ 
+ #include "vortek.h"
++#include "swapchain_layout.h"
+ 
+ #ifdef VT_SERVER
+ extern bool vortekSerializerCastVkObject;
+@@ -1114,7 +1115,7 @@
+     int bufferOffset = 0;
+     val->attachment = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+-    val->layout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->layout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ }
+ 
+@@ -1426,9 +1427,9 @@
+     bufferOffset += 4;
+     val->stencilStoreOp = *(VkAttachmentStoreOp*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+-    val->initialLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
+-    bufferOffset += 4;
+-    val->finalLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->initialLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
++    bufferOffset += 4;
++    val->finalLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ }
+ 
+@@ -1526,7 +1527,7 @@
+     val->imageView = VkObject_toHandle(imageViewObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImageView(val->imageView);
+-    val->imageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->imageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ }
+ 
+@@ -5298,9 +5299,9 @@
+ #ifdef VT_SERVER
+     val->pNext = NULL;
+ #endif
+-    val->stencilInitialLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
+-    bufferOffset += 4;
+-    val->stencilFinalLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->stencilInitialLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
++    bufferOffset += 4;
++    val->stencilFinalLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ }
+ 
+@@ -5326,7 +5327,7 @@
+ #ifdef VT_SERVER
+     val->pNext = NULL;
+ #endif
+-    val->stencilLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->stencilLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ }
+ 
+@@ -5491,7 +5492,7 @@
+     if (pNextIsNULL) val->pNext = invertVkStructuresChain(pNext);
+     val->attachment = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+-    val->layout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->layout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->aspectMask = *(VkImageAspectFlags*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -6163,9 +6164,9 @@
+     bufferOffset += 4;
+     val->stencilStoreOp = *(VkAttachmentStoreOp*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+-    val->initialLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
+-    bufferOffset += 4;
+-    val->finalLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->initialLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
++    bufferOffset += 4;
++    val->finalLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ }
+ 
+@@ -11407,7 +11408,7 @@
+     val->imageView = VkObject_toHandle(imageViewObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImageView(val->imageView);
+-    val->imageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->imageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->resolveMode = *(VkResolveModeFlagBits*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -11421,7 +11422,7 @@
+     val->resolveImageView = VkObject_toHandle(resolveImageViewObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImageView(val->resolveImageView);
+-    val->resolveImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->resolveImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->loadOp = *(VkAttachmentLoadOp*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -18802,9 +18803,9 @@
+     bufferOffset += 8;
+     val->dstAccessMask = *(VkAccessFlags2*)(inputBuffer + bufferOffset);
+     bufferOffset += 8;
+-    val->oldLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
+-    bufferOffset += 4;
+-    val->newLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->oldLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
++    bufferOffset += 4;
++    val->newLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->srcQueueFamilyIndex = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -24251,7 +24252,7 @@
+         val->pQueueFamilyIndices = arrValues;
+     }
+     else val->pQueueFamilyIndices = NULL;
+-    val->initialLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->initialLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ }
+ 
+@@ -27551,9 +27552,9 @@
+     bufferOffset += 4;
+     val->dstAccessMask = *(VkAccessFlags*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+-    val->oldLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
+-    bufferOffset += 4;
+-    val->newLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->oldLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
++    bufferOffset += 4;
++    val->newLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->srcQueueFamilyIndex = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -28951,7 +28952,7 @@
+     val->srcImage = VkObject_toHandle(srcImageObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImage(val->srcImage);
+-    val->srcImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->srcImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     uint64_t dstImageId;
+@@ -28963,7 +28964,7 @@
+     val->dstImage = VkObject_toHandle(dstImageObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImage(val->dstImage);
+-    val->dstImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->dstImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->regionCount = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -29069,7 +29070,7 @@
+     val->srcImage = VkObject_toHandle(srcImageObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImage(val->srcImage);
+-    val->srcImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->srcImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     uint64_t dstImageId;
+@@ -29081,7 +29082,7 @@
+     val->dstImage = VkObject_toHandle(dstImageObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImage(val->dstImage);
+-    val->dstImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->dstImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->regionCount = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -29193,7 +29194,7 @@
+     val->dstImage = VkObject_toHandle(dstImageObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImage(val->dstImage);
+-    val->dstImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->dstImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->regionCount = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -29293,7 +29294,7 @@
+     val->srcImage = VkObject_toHandle(srcImageObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImage(val->srcImage);
+-    val->srcImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->srcImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     uint64_t dstBufferId;
+@@ -29406,7 +29407,7 @@
+     val->srcImage = VkObject_toHandle(srcImageObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImage(val->srcImage);
+-    val->srcImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->srcImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     uint64_t dstImageId;
+@@ -29418,7 +29419,7 @@
+     val->dstImage = VkObject_toHandle(dstImageObject);
+ #endif
+     bufferOffset += vt_sizeof_VkImage(val->dstImage);
+-    val->dstImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    val->dstImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     val->regionCount = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -36782,7 +36783,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (srcImageLayout) *srcImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (srcImageLayout) *srcImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     if (inputBuffer[bufferOffset++]) {
+@@ -36792,7 +36793,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (dstImageLayout) *dstImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (dstImageLayout) *dstImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     if (regionCount) *regionCount = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -36904,7 +36905,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (srcImageLayout) *srcImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (srcImageLayout) *srcImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     if (inputBuffer[bufferOffset++]) {
+@@ -36914,7 +36915,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (dstImageLayout) *dstImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (dstImageLayout) *dstImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     if (regionCount) *regionCount = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -37030,7 +37031,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (dstImageLayout) *dstImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (dstImageLayout) *dstImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     if (regionCount) *regionCount = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+@@ -37136,7 +37137,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (srcImageLayout) *srcImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (srcImageLayout) *srcImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     if (inputBuffer[bufferOffset++]) {
+@@ -37395,7 +37396,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (imageLayout) *imageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (imageLayout) *imageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     int dataSize4 = *(int*)(inputBuffer + bufferOffset);
+@@ -37514,7 +37515,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (imageLayout) *imageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (imageLayout) *imageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     int dataSize4 = *(int*)(inputBuffer + bufferOffset);
+@@ -37751,7 +37752,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (srcImageLayout) *srcImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (srcImageLayout) *srcImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+ 
+     if (inputBuffer[bufferOffset++]) {
+@@ -37761,7 +37762,7 @@
+         }
+         else bufferOffset += vt_sizeof_VkImage(VK_NULL_HANDLE);
+     }
+-    if (dstImageLayout) *dstImageLayout = *(VkImageLayout*)(inputBuffer + bufferOffset);
++    if (dstImageLayout) *dstImageLayout = vt_nativeImageLayout(*(VkImageLayout*)(inputBuffer + bufferOffset));
+     bufferOffset += 4;
+     if (regionCount) *regionCount = *(uint32_t*)(inputBuffer + bufferOffset);
+     bufferOffset += 4;
+--- a/app/src/main/cpp/vortekrenderer/include/xwindow_swapchain.h
++++ b/app/src/main/cpp/vortekrenderer/include/xwindow_swapchain.h
+@@ -34,7 +34,8 @@
+     SWAPCHAIN_READY=8, SWAPCHAIN_FIRST_PRESENT=9, SWAPCHAIN_EXTENT=10,
+     SWAPCHAIN_ACQUIRE_SUBMIT=12, SWAPCHAIN_PRESENT_SUBMIT=13,
+     SWAPCHAIN_PRESENT_WAIT=14, SWAPCHAIN_PRESENT_INDEX=15,
+-    SWAPCHAIN_PRESENT_FENCE=16, SWAPCHAIN_PRESENT_TIMEOUT=17 };
++    SWAPCHAIN_PRESENT_FENCE=16, SWAPCHAIN_PRESENT_TIMEOUT=17,
++    VULKAN_DEVICE_CREATE=18 };
+ extern void reportSwapchainStartup(JMethods* methods, int stage, VkResult result,
+         VkFormat format, VkExtent2D extent, int windowId);
+ 
+--- a/app/src/main/cpp/vortekrenderer/src/request_handler.c
++++ b/app/src/main/cpp/vortekrenderer/src/request_handler.c
+@@ -187,6 +187,13 @@
+ 
+     result = vulkanWrapper.vkCreateDevice(physicalDevice, &createInfo, NULL, &device);
+     if (result == VK_SUCCESS) initVulkanDevice(context, physicalDevice, device);
++    else {
++        // DXVK's terminal exception omits VkResult. Retain the native failure
++        // through the existing bounded startup callback, before a swapchain or
++        // window exists. This evidence must not change recovery/driver choice.
++        reportSwapchainStartup(&context->jmethods, VULKAN_DEVICE_CREATE, result,
++                VK_FORMAT_UNDEFINED, (VkExtent2D){0, 0}, 0);
++    }
+ 
+ device_response:
+     if (result != VK_SUCCESS) __android_log_print(ANDROID_LOG_ERROR, "WrathRTVortek",
+--- a/app/src/main/cpp/vortekrenderer/src/vulkan_helper.c
++++ b/app/src/main/cpp/vortekrenderer/src/vulkan_helper.c
+@@ -329,6 +329,23 @@
+     }
+ }
+ 
++static bool isNativeSwapchainExtension(const char* name) {
++    // Vortek owns the guest swapchain and strips VK_KHR_swapchain before
++    // creating the native device. Native present IDs, waits and maintenance
++    // cannot operate on XWindowSwapchain handles; none are implemented by
++    // this bridge. DXVK enables advertised optional extension names even
++    // when their feature structs are absent from the wire protocol.
++    static const char* unsupported[] = {
++        "VK_KHR_present_id", "VK_KHR_present_wait",
++        "VK_KHR_present_id2", "VK_KHR_present_wait2",
++        "VK_EXT_swapchain_maintenance1", "VK_KHR_swapchain_maintenance1",
++        "VK_GOOGLE_display_timing"
++    };
++    for (uint32_t i = 0; i < ARRAY_SIZE(unsupported); i++)
++        if (strcmp(name, unsupported[i]) == 0) return true;
++    return false;
++}
++
+ VkExtensionProperties* getExposedDeviceExtensionProperties(VkContext* context, VkPhysicalDevice physicalDevice, uint32_t* propertyCount) {
+     uint32_t srcPropertyCount;
+     VkResult result = vulkanWrapper.vkEnumerateDeviceExtensionProperties(physicalDevice, NULL, &srcPropertyCount, NULL);
+@@ -359,6 +376,7 @@
+         }
+         else srcProperty = &srcProperties[i];
+         if (!expose) continue;
++        if (isNativeSwapchainExtension(srcProperty->extensionName)) continue;
+         // A caller's module identifier cannot identify our pipeline-specific
+         // SPIR-V variants. Module-less pipeline creation would bypass their
+         // required vertex/fragment adaptation. Keep normal pipeline caches.
+--- a/app/src/main/cpp/vortekrenderer/src/xwindow_swapchain.c
++++ b/app/src/main/cpp/vortekrenderer/src/xwindow_swapchain.c
+@@ -77,6 +77,16 @@
+ 
+     AHardwareBuffer_Desc ahbDesc = {0};
+     AHardwareBuffer_describe(hardwareBuffer, &ahbDesc);
++
++    // Validate the real allocation before creating/importing a native image.
++    // Reusing an existing window texture across a BGRA/RGBA swapchain change
++    // used to bind mismatched channel formats. Report the original boundary
++    // rather than sending invalid image metadata to the driver.
++    const uint32_t expectedAhbFormat = useHALPixelFormatBGRA8888 ? 5 : AHARDWAREBUFFER_FORMAT_R8G8B8A8_UNORM;
++    if (ahbDesc.format != expectedAhbFormat || ahbDesc.layers != 1 ||
++            ahbDesc.width != swapchain->imageExtent.width ||
++            ahbDesc.height != swapchain->imageExtent.height)
++        return failedSwapchainStep(swapchain, SWAPCHAIN_AHB_PROPERTIES, VK_ERROR_INVALID_EXTERNAL_HANDLE);
+ 
+     VkExternalFormatANDROID externalFormatAndroid = {0};
+     externalFormatAndroid.sType = VK_STRUCTURE_TYPE_EXTERNAL_FORMAT_ANDROID;

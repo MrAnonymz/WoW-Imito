@@ -62,3 +62,16 @@ brunodev85 and contributors, GNU Lesser General Public License, version 2.1.
 https://github.com/brunodev85/vortek/tree/b1730c5
 The paired queue/presentation protocol changes, modified guest and host source,
 build provenance, retained licenses and verification scope are in patches/vortek/.
+The additional 1.5.5 host capability filtering, image-layout and Android
+hardware-buffer changes are in vortek-imito6-1.5.5-source.zip in that directory.
+provenance155.json identifies the complete modified host/guest source,
+Java integration and diagnostic files, and the incremental patch base.
+
+Winlator/WoW Mobile X11 output and connection handling
+brunodev85, marcocastignoli and contributors; LGPL version 2.1.
+https://github.com/brunodev85/winlator
+https://github.com/marcocastignoli/wow-mobile
+The 1.5.5 nonblocking output, partial-write preservation, Java buffer-slice
+and failed-connection cleanup changes are in patches/x11/.
+That directory contains complete modified source, supporting headers/interfaces,
+portable regression fixtures, original license text and source provenance.

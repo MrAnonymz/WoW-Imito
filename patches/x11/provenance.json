@@ -1,0 +1,151 @@
+{
+  "component": "Winlator/WoW Mobile X11 output and connection handling",
+  "releaseVersion": "1.5.5",
+  "license": "LGPL-2.1",
+  "upstream": [
+    "https://github.com/brunodev85/winlator",
+    "https://github.com/brunodev85/winlator-app",
+    "https://github.com/marcocastignoli/wow-mobile"
+  ],
+  "scope": "Complete changed production files and required fixture support files from the application integration; not a pristine upstream checkout or full APK project.",
+  "publicSourceTransformation": "Same prepare.py transform and neutral operations: CRLF-to-LF, Enorial/enorial/ENORIAL to WrathRT/wrathrt/WRATHRT, it.wowmobile to pub.wowimito. Existing source notices retained.",
+  "productionInputs": {
+    "app/src/main/cpp/winlator/src/xoutput_stream.c": {
+      "canonicalSha256": "d6c322ac6f136b5d9505a462ce1bad4a4a7c071a36996084599e164b82eac386",
+      "publicSha256": "d260bed29066824cf4a8bc9aed06d4d46feae241f7be793d37725949c770da08",
+      "modifiedFor155": true
+    },
+    "app/src/main/cpp/winlator/src/xconnector_epoll.c": {
+      "canonicalSha256": "424a91e129f0072a2d51687db21f25627a001b78776be06072dc6d4afd869259",
+      "publicSha256": "ac74b5ac7ebfeb198054f7ed344421bee5d42ac57dbaea59d354e2eee4f1d568",
+      "modifiedFor155": true
+    },
+    "app/src/main/java/com/winlator/xconnector/XOutputStream.java": {
+      "canonicalSha256": "30a1b9e2e19fbbd5b108b4ed22f8411704aa0a9ea1b3d5efe3878e709929dfd1",
+      "publicSha256": "f4525c777e56ef324849bdd602115aae430ee5c5b59e56a84ad27b9b06874044",
+      "modifiedFor155": true
+    },
+    "app/src/main/java/com/winlator/xconnector/XConnectorEpoll.java": {
+      "canonicalSha256": "06133a9502576b587ea0dc524d296f318bd6007f7f7af048dd9184f786d37a08",
+      "publicSha256": "3ac6d5b8aa1efb4e2cb61160016bd27daa634f093893a24e984265846120e858",
+      "modifiedFor155": true
+    },
+    "app/src/main/cpp/winlator/include/winlator.h": {
+      "canonicalSha256": "aafd39d8e42ed32c2385c5a4798587ed09d9b4d602b425bf0f52c2738c2f6cd1",
+      "publicSha256": "198be80c2eefeb90e88c17ad0a041302a75d8c4996847232c7357c451b441bfa",
+      "modifiedFor155": false
+    },
+    "app/src/main/cpp/winlator/include/socket_utils.h": {
+      "canonicalSha256": "e535cb9bac90e5a0fd20fc4a446d1c06c603420565f2967f9164cad0b4dc8d69",
+      "publicSha256": "431f58510da2aba33e01e00d6ce93e6770732499d7a6436742e87d2ef9fa701a",
+      "modifiedFor155": false
+    },
+    "app/src/main/cpp/winlator/include/socket_io.h": {
+      "canonicalSha256": "8a66fac6a81103bbb3f5175ba1b309eba2bcc310e13fcc306f2445efde902054",
+      "publicSha256": "23fb71b9050d0ac469f0fdd8fcca8716fdce0a49e4b92837d1ac8a24635c3efc",
+      "modifiedFor155": false
+    },
+    "app/src/main/cpp/winlator/include/jni_utils.h": {
+      "canonicalSha256": "10b3091fa12903cbd8d1f2168d8aca10b33a49592f2b565f9cd4658266801a77",
+      "publicSha256": "203b1a07809782fd70f6707f03bf2daea008cdb3edc91a8939503a44fb185bbd",
+      "modifiedFor155": false
+    },
+    "app/src/main/java/com/winlator/xconnector/ConnectedClient.java": {
+      "canonicalSha256": "be436e4cee6fe78dab125a2cfd0bdc01fa2cf25fd45eec414cd26cb03ab6edfb",
+      "publicSha256": "a8f88c27f8253517335baac7624b21897ea01be8148abc8bbc8acfed6c27ffb3",
+      "modifiedFor155": false
+    },
+    "app/src/main/java/com/winlator/xconnector/ConnectionHandler.java": {
+      "canonicalSha256": "a925c84dd84c43d4ec6e2e45c588f63196a206be01a50a3b5cab3e6cfa197fe4",
+      "publicSha256": "2584365a8f0907c7bd0398a5b83c1e4f4218819dd6b6f543e312fd4846f61a2c",
+      "modifiedFor155": false
+    },
+    "app/src/main/java/com/winlator/xconnector/RequestHandler.java": {
+      "canonicalSha256": "98801e326e8a64a90699a06ca310ac08dc9fdca4536afc1f5636eaa921f44388",
+      "publicSha256": "9b80c1291750ced367b94afcc4497820d522b8f2a6721e35cdaa9f84a9786e99",
+      "modifiedFor155": false
+    },
+    "app/src/main/java/com/winlator/xconnector/XStreamLock.java": {
+      "canonicalSha256": "5a4c56f199106e5f592febb015732f0f83ea67fa0db97e9cf5df16cf9599b93e",
+      "publicSha256": "51f509d6e723d9850c9fe3f51ee71d80a9470982c4387d03b208ab81713b7233",
+      "modifiedFor155": false
+    }
+  },
+  "files": {
+    "LICENSE-LGPL-2.1.txt": {
+      "bytes": 27030,
+      "sha256": "7ffe1954587c77dfba1cf8eb9b2ea743671fa6e63f9e7a2f258119d42e14eefe"
+    },
+    "README.md": {
+      "bytes": 4053,
+      "sha256": "552e36eb21d5f4668e33b98508739db7cec9c8db7bd4f0276761c9b709ff5cd6"
+    },
+    "source/app/src/main/cpp/winlator/include/jni_utils.h": {
+      "bytes": 3283,
+      "sha256": "203b1a07809782fd70f6707f03bf2daea008cdb3edc91a8939503a44fb185bbd"
+    },
+    "source/app/src/main/cpp/winlator/include/socket_io.h": {
+      "bytes": 2064,
+      "sha256": "23fb71b9050d0ac469f0fdd8fcca8716fdce0a49e4b92837d1ac8a24635c3efc"
+    },
+    "source/app/src/main/cpp/winlator/include/socket_utils.h": {
+      "bytes": 2896,
+      "sha256": "431f58510da2aba33e01e00d6ce93e6770732499d7a6436742e87d2ef9fa701a"
+    },
+    "source/app/src/main/cpp/winlator/include/winlator.h": {
+      "bytes": 1621,
+      "sha256": "198be80c2eefeb90e88c17ad0a041302a75d8c4996847232c7357c451b441bfa"
+    },
+    "source/app/src/main/cpp/winlator/src/xconnector_epoll.c": {
+      "bytes": 11867,
+      "sha256": "ac74b5ac7ebfeb198054f7ed344421bee5d42ac57dbaea59d354e2eee4f1d568"
+    },
+    "source/app/src/main/cpp/winlator/src/xoutput_stream.c": {
+      "bytes": 15771,
+      "sha256": "d260bed29066824cf4a8bc9aed06d4d46feae241f7be793d37725949c770da08"
+    },
+    "source/app/src/main/java/com/winlator/xconnector/ConnectedClient.java": {
+      "bytes": 1685,
+      "sha256": "a8f88c27f8253517335baac7624b21897ea01be8148abc8bbc8acfed6c27ffb3"
+    },
+    "source/app/src/main/java/com/winlator/xconnector/ConnectionHandler.java": {
+      "bytes": 317,
+      "sha256": "2584365a8f0907c7bd0398a5b83c1e4f4218819dd6b6f543e312fd4846f61a2c"
+    },
+    "source/app/src/main/java/com/winlator/xconnector/RequestHandler.java": {
+      "bytes": 169,
+      "sha256": "9b80c1291750ced367b94afcc4497820d522b8f2a6721e35cdaa9f84a9786e99"
+    },
+    "source/app/src/main/java/com/winlator/xconnector/XConnectorEpoll.java": {
+      "bytes": 6750,
+      "sha256": "3ac6d5b8aa1efb4e2cb61160016bd27daa634f093893a24e984265846120e858"
+    },
+    "source/app/src/main/java/com/winlator/xconnector/XOutputStream.java": {
+      "bytes": 3963,
+      "sha256": "f4525c777e56ef324849bdd602115aae430ee5c5b59e56a84ad27b9b06874044"
+    },
+    "source/app/src/main/java/com/winlator/xconnector/XStreamLock.java": {
+      "bytes": 155,
+      "sha256": "51f509d6e723d9850c9fe3f51ee71d80a9470982c4387d03b208ab81713b7233"
+    },
+    "tests/run_xoutput_queue.py": {
+      "bytes": 1880,
+      "sha256": "54aa5179cd7a941baab94642d57f51e5ce516113e7c8293d1dc01f32ffd0c856"
+    },
+    "tests/test_xconnector_initialization.py": {
+      "bytes": 12220,
+      "sha256": "137fd44a175379b3582a90b834fe5b0b800f35662cc3b2602b643d148bc7634b"
+    },
+    "tests/test_xoutput_slices.py": {
+      "bytes": 7709,
+      "sha256": "158fe724c59b15b75d768ac7995abf018541e35a41ad55df7c3805367c487746"
+    },
+    "tests/xoutput-queue-fixture.c": {
+      "bytes": 11094,
+      "sha256": "136e242245832ff14ea9c13ea1a821107121d2fff3395eab8b0260d8a4fae745"
+    }
+  },
+  "testScope": "Production Java method and native initialization-body fixtures; isolated Android socket queue fixture. No device credentials, identifiers, player files or report payloads included.",
+  "sourceArchiveSha256": "a8aff95411646c3800fdce9d0a579c431812c249477ce5353536d488962ca31e",
+  "sourceArchiveBytes": 41048
+}

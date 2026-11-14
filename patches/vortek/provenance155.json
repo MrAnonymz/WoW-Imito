@@ -1,0 +1,761 @@
+{
+  "component": "Vortek host WSI capabilities, presentation image metadata and Android hardware buffers",
+  "releaseVersion": "1.5.5",
+  "license": "LGPL-2.1",
+  "runtimeRevision": "2.1-wrathrt6",
+  "upstream": [
+    "https://github.com/brunodev85/vortek/tree/b1730c5",
+    "https://github.com/brunodev85/winlator",
+    "https://github.com/marcocastignoli/wow-mobile"
+  ],
+  "previousSourceArchive": "vortek-imito6-source.zip",
+  "previousSourceArchiveSha256": "4fcb7fe376d2cb558335031fe80be6a810557bea6af98351ddfd72b730bf67ab",
+  "guestUnchanged": true,
+  "guestFileCount": 26,
+  "publicSourceTransformation": "prepare.py transform then neutral; CRLF-to-LF, Enorial/enorial/ENORIAL to WrathRT/wrathrt/WRATHRT, it.wowmobile to pub.wowimito. Guest uses neutral only and is otherwise byte-identical to the previous snapshot.",
+  "productionInputs": {
+    "app/src/main/cpp/vortekrenderer/CMakeLists.txt": {
+      "canonicalSha256": "e5fb80704d933f90110f6e0b5b481a1c1d71c6eb11736f20fb9f272fadbd6078",
+      "publicSha256": "69435fb9f798089b8a9d8d701574eb9226617387a0076bd1a19042060e2799ba"
+    },
+    "app/src/main/cpp/vortekrenderer/include/async_pipeline_creator.h": {
+      "canonicalSha256": "58901bfb2fa7a6d00fa532cbe4fe79089cbcdffc0d9f44763a0021c8f7d65b5a",
+      "publicSha256": "bc4ea88e2a4ecc92b2a9a50021c2d6fc7294fe0986fa1468864f2dba7d3b2b15"
+    },
+    "app/src/main/cpp/vortekrenderer/include/bc_decoder.h": {
+      "canonicalSha256": "18ac38d1cb92a5ab4edfe4b6ef99729ec6b2c7ce28b34c1495682c08462cf57d",
+      "publicSha256": "44c601971d1711b0b5855bf0a55833fe95a29be3342a58452b5fa7ada6e82a6e"
+    },
+    "app/src/main/cpp/vortekrenderer/include/extension_filter.h": {
+      "canonicalSha256": "12c95f380c267cd8e70716f7539f69cf35012ce617aca378957fcb0b9c7c084f",
+      "publicSha256": "12c95f380c267cd8e70716f7539f69cf35012ce617aca378957fcb0b9c7c084f"
+    },
+    "app/src/main/cpp/vortekrenderer/include/request_codes.h": {
+      "canonicalSha256": "f78a181f96541e3fef0246cae960d52624865887a6d46fc69e0212b27e4cea78",
+      "publicSha256": "836f9dbb5024d04d45bc32859f71fc2b9b483b084f0f280b992aafd1e6acf622"
+    },
+    "app/src/main/cpp/vortekrenderer/include/request_handler.h": {
+      "canonicalSha256": "8aa26c1e876645b1fc062c8d27def46485e3eba7fa744454ee1109782f14c4e6",
+      "publicSha256": "e8d8bce64a4cc17dc16b9a87765a553d7546f8bdf5074f9422ba8b6fcc1d7e83"
+    },
+    "app/src/main/cpp/vortekrenderer/include/resource_memory.h": {
+      "canonicalSha256": "a1bcb58374ebd4002d96903b295931d4e93bee71e61088eade73308f1d892845",
+      "publicSha256": "e63337949d70b34260bda53136b8690f0086e038a7f3e994517e8df44db574b1"
+    },
+    "app/src/main/cpp/vortekrenderer/include/shader_inspector.h": {
+      "canonicalSha256": "af0746dd99a82b2459fd14c1fb3faf0c8229926ca254e0da045d65201f9a4bbf",
+      "publicSha256": "6cd2bb5ecfefb32f12b27687b532a0be8d19687a34ff4f94b1eec59056bfe13d"
+    },
+    "app/src/main/cpp/vortekrenderer/include/spirv.h": {
+      "canonicalSha256": "27eff9ef6dd8b68fe73620aea321ae17ec54da746e3dfe71ddbd1620112a8a15",
+      "publicSha256": "2d5012f7c72d90550f288d9a8f7d8bf4fab85522d42b9e25240d68bac5bbda7b"
+    },
+    "app/src/main/cpp/vortekrenderer/include/swapchain_layout.h": {
+      "canonicalSha256": "2c4e333c806a4255a987a88df5c6465433464b2132b2fcd628ab7964333af707",
+      "publicSha256": "2c4e333c806a4255a987a88df5c6465433464b2132b2fcd628ab7964333af707"
+    },
+    "app/src/main/cpp/vortekrenderer/include/texture_copy_layout.h": {
+      "canonicalSha256": "367b45bd7e704776255c85ca964ac1c0641e38fb4664d76751a19842f4350a41",
+      "publicSha256": "25d3e363d02eaa917b04d8cf0532e893667d52ee8e0bd2c233d582fcedc5d854"
+    },
+    "app/src/main/cpp/vortekrenderer/include/texture_decoder.h": {
+      "canonicalSha256": "fa0b779bfadcce34189b5b4c6bf756f54c279e5a02dab35d2be3cdad9d2684eb",
+      "publicSha256": "280f1fd4d58c39f4100a2d08a9d538f47791eaa3ae9541d5fc8be1380718b447"
+    },
+    "app/src/main/cpp/vortekrenderer/include/timeline_semaphore.h": {
+      "canonicalSha256": "8f025f70a440611b51390c4b79c54aef112b2b34df67da5ce0c1e2074500acdc",
+      "publicSha256": "908080d5189c75d2fa0f8465e3a4e6a989c233b3c5d670cd9a4d9d0a15bc3683"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_context.h": {
+      "canonicalSha256": "e16879a41d63153eb843f90d0a912eb7d6f8e6d65ecc1339e4bb1ad898e42389",
+      "publicSha256": "76f554064d37f0ef76fb4fba1533996f43a3cc1a0412c760ec2dba56d99a067b"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_object.h": {
+      "canonicalSha256": "95920f208b4c823190eede14e444f7656643081f9095cc580e28c15702d1de44",
+      "publicSha256": "dd59f38487c8a8d31728fbfeb8df81e017f3e41b7add3f23779c5cbf6c076297"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_av1std.h": {
+      "canonicalSha256": "74f1249ccf6fb660a38534c9ddb964562f9a1a991fc197e1f8d518d436e849cc",
+      "publicSha256": "2cb85e3e1e12b79d67986202031f903be99af372831c29cf83386d329f47c78d"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_av1std_decode.h": {
+      "canonicalSha256": "6c741f73c24d3ca66fbc19104e6b535619a2b01730f9c7fa1ac935d2e7e332f8",
+      "publicSha256": "96f923dc01cd3e266c081d88fa020525a20d63ffe4ce09a4c807a04ef3aaf97e"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_av1std_encode.h": {
+      "canonicalSha256": "c1ff3ee503f2986f3b68606cb148665e5123f559d409fc04bd83f37433e61867",
+      "publicSha256": "27d12241ff1659f764a075f738905fcc00f0fff7291b7492e9f9c9dec503ca99"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_h264std.h": {
+      "canonicalSha256": "93d504082380ce45d8aea5e8313fb1dc40630c7ab2584561864f452d0a192881",
+      "publicSha256": "072ee6eac80e73d93bb4bfe0059f99e581fc8b55b1437236185bb4ff377914b1"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_h264std_decode.h": {
+      "canonicalSha256": "a0678462f9ec0d9992aab6a816126c7abd98cd9bc4128c71a87d9e1fe7d5ff59",
+      "publicSha256": "e1708b3996a740eeedb79f51d0f0e379f9bcae13566538375acaf73301023b58"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_h264std_encode.h": {
+      "canonicalSha256": "b358694caa9f9686e0422ff6b0df71d8f52cb1a23ea03512f244d69626684525",
+      "publicSha256": "052a6e357be8d88bf4be0db1b3da5a9cc1a6011cf4b3533759ff588e1e26f9f1"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_h265std.h": {
+      "canonicalSha256": "dd0c3a84a028801d236f81025248377a9605ebf765ab963c27fa28f657a88548",
+      "publicSha256": "0cbdfd6c45ee8ca902e9c961cd7e49a4d601d443ea0ef2a60a8496b127ed397c"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_h265std_decode.h": {
+      "canonicalSha256": "9b579cf23b58986b41e1708d9b85f418fc498665605925264218fe85ddab61cf",
+      "publicSha256": "800946aa19d83d305d504e2e4141bc938f989e0cf8872cef97480238eefef1ea"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codec_h265std_encode.h": {
+      "canonicalSha256": "2a2c9dea4010f96c71b6cadd89b96d4d9fc858149c4025e25549e1619b2fabab",
+      "publicSha256": "7239f9f4e811546639111e562a8be1ec73ad5bef1c23d5fad80889f35e125e9c"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vk_video/vulkan_video_codecs_common.h": {
+      "canonicalSha256": "88f23fea24528a74bc0b71f62a2e765d40ef7b7ae37a59cff35bb042c980b4b6",
+      "publicSha256": "78cf3c99d3d57afa7ab1782ec6018b4bcdbe273f2843d76e3375282db875b71e"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vortek.h": {
+      "canonicalSha256": "38ffaace86290662697ebe60ee29dbf1deb642857bd32f790937f5af90a3985b",
+      "publicSha256": "e4ab88d7a94d8fd6e59e9deb9ea6b224df7c9ead0fe79f974aa45fef548771f0"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vortek_serializer.h": {
+      "canonicalSha256": "2dc49d06a6ccbbfdf3820cd19ee6093bea7206e2fa3f38a1dc18a5752bfec6b2",
+      "publicSha256": "0b331998bafafb77eb7ccf743e679e320764537f471d3773b2c72f120fb55baf"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vulkan/vk_platform.h": {
+      "canonicalSha256": "0203277669ea011533591278939c6af5d965cb65e7b05f98e462171e82f38ec3",
+      "publicSha256": "c4cabbcf699c90cde344095ae54da9435d117951aad114ba3a540c5997d7906f"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vulkan/vulkan.h": {
+      "canonicalSha256": "be88e132e5419ef18c95ef4245ae663e46d300dd5713fd13bdc2c7b95c4acdb8",
+      "publicSha256": "52297513cc6b6cc8db2921aa849f72e3f55d678b3a58a2c3eb297c02ded7a837"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vulkan/vulkan_android.h": {
+      "canonicalSha256": "abdc7fb21351bcb2cb491e0eb6f088e9a4452582fdccda3769573cf0c5ca089c",
+      "publicSha256": "f815593b7d20f291850b8d85e21e3d47fb123932805ba3606df631bdff4cb1e7"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vulkan/vulkan_core.h": {
+      "canonicalSha256": "1632b10fdabbdc84c6cc0785990043273e02bdceb93903dddab5e90afd53cc10",
+      "publicSha256": "c274cdac1e77755ad2c9e12a1d4d24a91e1f72dad138bfcd8b4a54279b9c2e71"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vulkan_helper.h": {
+      "canonicalSha256": "ab0c9020a35ff2c6c514cd0b58c4d939f0c54494f61a9e9902cf04b56a6e0d6c",
+      "publicSha256": "500262fbe3ff0be271509741cba182337ad25f695402102d66c1399c7bcc17b8"
+    },
+    "app/src/main/cpp/vortekrenderer/include/vulkan_wrapper.h": {
+      "canonicalSha256": "ef71531b526b5ccfaec19241594b4af017df4d6f12c770ff15cbfefdbdcad460",
+      "publicSha256": "14a9315ecf96e00fce969c2dad483a1c112bf1bf2de3682b2787ccacfc70b664"
+    },
+    "app/src/main/cpp/vortekrenderer/include/xwindow_swapchain.h": {
+      "canonicalSha256": "e2e8d85f630e40de9f9bd18a489cb4247df48724f08c78836e4d17a830ea0636",
+      "publicSha256": "898815b04edfe3b781cc03a3398a8c26ef2deadc87eff85fc974925ec491e3af"
+    },
+    "app/src/main/cpp/vortekrenderer/src/async_pipeline_creator.c": {
+      "canonicalSha256": "849930b23d5c35bdbd906a0d4318dd05b239730bbc7e6acb54ef8dedc9d39f68",
+      "publicSha256": "f69e67f91e6729900314d265808482fc04edcff7ceda357a1357f4a2a1c84997"
+    },
+    "app/src/main/cpp/vortekrenderer/src/main.c": {
+      "canonicalSha256": "9a79746806b320728e25ca7753e6bc5f7e5ccd1a81b71a50d31b14fda01268ff",
+      "publicSha256": "3ccd6498287a69a12f83c26385dda0ec515d67c71037d2dc4570547fffe358d7"
+    },
+    "app/src/main/cpp/vortekrenderer/src/request_handler.c": {
+      "canonicalSha256": "650a30a2a698656dcb17af8fe9500937fe3f78c711a58d726e4ca19aecdf3c93",
+      "publicSha256": "66c2f6cadbbf469e1abfa945b0e17106e11ec60738f09b5e85644706d223aaa2"
+    },
+    "app/src/main/cpp/vortekrenderer/src/resource_memory.c": {
+      "canonicalSha256": "af87ff4047e155060c0cae3df5e466eb0fb120cf25d1f359f2f77a5521d2f618",
+      "publicSha256": "a8d4a2bc6bec30520ba11c9321f75f6cbf7e5924853928e62fdd28c059e2ce3d"
+    },
+    "app/src/main/cpp/vortekrenderer/src/shader_inspector.c": {
+      "canonicalSha256": "6549940426194346ef5467cf8ed7ba4d2e65bffd2135bd75a5b29f8a8cd39587",
+      "publicSha256": "5a6b01a54762fae4ad95284952d3f62cc415f63ed0cec2827d2329095e0a8731"
+    },
+    "app/src/main/cpp/vortekrenderer/src/texture_decoder.c": {
+      "canonicalSha256": "d73902a8c0319d112fbd61eb4443b96c41370285c132007d4458a77e6bb0e718",
+      "publicSha256": "954492c8c42b37efb2e64c90a7b020702ff90ca8a11bb9f93300b214f3df47c0"
+    },
+    "app/src/main/cpp/vortekrenderer/src/timeline_semaphore.c": {
+      "canonicalSha256": "bd2c7ca0a2b57249a678ae6ff98be4a5698dce78a6878e0921ed5de64380753b",
+      "publicSha256": "8f82ee6b6e491590882d6cf47b7bc5dcbfa9b43f1b9ecb28758f13ffade18774"
+    },
+    "app/src/main/cpp/vortekrenderer/src/vk_context.c": {
+      "canonicalSha256": "93900ca5b49720df87f91a32847d32887b7c03316e4915e0cf6a73b4c1b7eb0f",
+      "publicSha256": "6973cdd64f75ad6a4ffb5d7f2a9e9f015025f276bcd8b61c28322a5467a3ff16"
+    },
+    "app/src/main/cpp/vortekrenderer/src/vk_object.c": {
+      "canonicalSha256": "d53dd4e0fed5080b87525e5425e6734bbb563becfbcceb0bf71e66ad53e2769e",
+      "publicSha256": "93e10df661f1174c3d31525f0adfcbd5381aa6b0459c4ad78844e48682b10c16"
+    },
+    "app/src/main/cpp/vortekrenderer/src/vulkan_helper.c": {
+      "canonicalSha256": "f17c567cd4ef2b3e441d668e999c505cb6fd35e3564e5836fb575698f08cf1ba",
+      "publicSha256": "a7520fc99ebf2d8659513c915da27848a2c7139de6a2b093a2b4eb2187ea4d83"
+    },
+    "app/src/main/cpp/vortekrenderer/src/xwindow_swapchain.c": {
+      "canonicalSha256": "2fe16c55fb880c708dc5523397a2cae2742d7b111fdbbb55a149a5ff900d554c",
+      "publicSha256": "aef732499f13a8dde3ce31fa642d81975a356663c7c9ec3af819ce2852adc70c"
+    },
+    "app/src/main/cpp/vortekrenderer/tests/extension_filter_test.c": {
+      "canonicalSha256": "7c70baf2b897495c394faa4c80574566a8fe606dbce0e045d4fc3b26c6e11537",
+      "publicSha256": "7c70baf2b897495c394faa4c80574566a8fe606dbce0e045d4fc3b26c6e11537"
+    },
+    "app/src/main/cpp/vortekrenderer/tests/memory_properties_wire.patch": {
+      "canonicalSha256": "04092bdb53c424b63f750f343d2904c6c83c7d3625747e49e8baadd55404acc1",
+      "publicSha256": "04092bdb53c424b63f750f343d2904c6c83c7d3625747e49e8baadd55404acc1"
+    },
+    "app/src/main/cpp/vortekrenderer/tests/memory_properties_wire_test.c": {
+      "canonicalSha256": "00a07ce12e73c4d577c02383dc0c7c1d7d67c1212de0e3ce8d4c3af27659ee08",
+      "publicSha256": "00a07ce12e73c4d577c02383dc0c7c1d7d67c1212de0e3ce8d4c3af27659ee08"
+    },
+    "app/src/main/cpp/vortekrenderer/tests/native_bc_test.c": {
+      "canonicalSha256": "592debe8c210f149e83977c4d360d610b4a2f9fe65dada9ac12101f6c745ad72",
+      "publicSha256": "592debe8c210f149e83977c4d360d610b4a2f9fe65dada9ac12101f6c745ad72"
+    },
+    "app/src/main/cpp/vortekrenderer/tests/README.txt": {
+      "canonicalSha256": "0f05c1dfcf1421e2982cfda124762efbf6a895f1a36e3fcf44b39aae0768dd40",
+      "publicSha256": "2d8fff5af4cf0e61f1e23d2482c5d975fcdc9c82ef29eb5cfbdaacb8a562ab6f"
+    },
+    "app/src/main/cpp/vortekrenderer/tests/texture_copy_test.c": {
+      "canonicalSha256": "bb394570c9a9e799ae621e1db455475ea74d74482bda26689760107aeea9193f",
+      "publicSha256": "bb394570c9a9e799ae621e1db455475ea74d74482bda26689760107aeea9193f"
+    },
+    "guest/CMakeLists.txt": {
+      "canonicalSha256": "6402f254011e433137c995c7581d18c7f9ec478f8ca6f4517cacae33f2be6c5b",
+      "publicSha256": "6402f254011e433137c995c7581d18c7f9ec478f8ca6f4517cacae33f2be6c5b",
+      "unchangedSince154": true
+    },
+    "guest/LICENSE": {
+      "canonicalSha256": "20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331",
+      "publicSha256": "20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331",
+      "unchangedSince154": true
+    },
+    "guest/README.md": {
+      "canonicalSha256": "43f86a084bb827fdced8f99bc65ce40d064417e7a438b2a26a03c1fecf4591a6",
+      "publicSha256": "43f86a084bb827fdced8f99bc65ce40d064417e7a438b2a26a03c1fecf4591a6",
+      "unchangedSince154": true
+    },
+    "guest/build.sh": {
+      "canonicalSha256": "bb705915550069e6c5b500e1b6d263455bc054731de28f85254d5feebe7e4063",
+      "publicSha256": "bb705915550069e6c5b500e1b6d263455bc054731de28f85254d5feebe7e4063",
+      "unchangedSince154": true
+    },
+    "guest/include/arrays.h": {
+      "canonicalSha256": "20a7edcd55e567363c0d6056b7fbaa1f8178b6b7d96becfa22eadf59c9eab88a",
+      "publicSha256": "20a7edcd55e567363c0d6056b7fbaa1f8178b6b7d96becfa22eadf59c9eab88a",
+      "unchangedSince154": true
+    },
+    "guest/include/descriptor_update_template.h": {
+      "canonicalSha256": "00477a65e03ef0f5c8a1c1ea9a80a59b08ea772a2c48571fd59a0514e0d26bce",
+      "publicSha256": "00477a65e03ef0f5c8a1c1ea9a80a59b08ea772a2c48571fd59a0514e0d26bce",
+      "unchangedSince154": true
+    },
+    "guest/include/events.h": {
+      "canonicalSha256": "6810a83ed690d54b1e79141be50338ecf1dbe922a384eb09bb1370bdfec65ae1",
+      "publicSha256": "6810a83ed690d54b1e79141be50338ecf1dbe922a384eb09bb1370bdfec65ae1",
+      "unchangedSince154": true
+    },
+    "guest/include/request_codes.h": {
+      "canonicalSha256": "836f9dbb5024d04d45bc32859f71fc2b9b483b084f0f280b992aafd1e6acf622",
+      "publicSha256": "836f9dbb5024d04d45bc32859f71fc2b9b483b084f0f280b992aafd1e6acf622",
+      "unchangedSince154": true
+    },
+    "guest/include/ring_buffer.h": {
+      "canonicalSha256": "8c33d5918155b405234bd7a5633d5b491422870ca76aea3bc16f51ca2e084639",
+      "publicSha256": "8c33d5918155b405234bd7a5633d5b491422870ca76aea3bc16f51ca2e084639",
+      "unchangedSince154": true
+    },
+    "guest/include/socket_utils.h": {
+      "canonicalSha256": "7f1627f10a9f922b713e19d96fb175871f1584b5c830cc0005708569e76a0168",
+      "publicSha256": "7f1627f10a9f922b713e19d96fb175871f1584b5c830cc0005708569e76a0168",
+      "unchangedSince154": true
+    },
+    "guest/include/string_utils.h": {
+      "canonicalSha256": "e4d4ee1d866997971093d0ab343ac0ebd1995f7bda1ce99256a71425afa3d85f",
+      "publicSha256": "e4d4ee1d866997971093d0ab343ac0ebd1995f7bda1ce99256a71425afa3d85f",
+      "unchangedSince154": true
+    },
+    "guest/include/thread_pool.h": {
+      "canonicalSha256": "c07653269d73fe428861d2ef9b00222217dc18455e344a2dcea99b474e828c9e",
+      "publicSha256": "c07653269d73fe428861d2ef9b00222217dc18455e344a2dcea99b474e828c9e",
+      "unchangedSince154": true
+    },
+    "guest/include/time_utils.h": {
+      "canonicalSha256": "854f36173ab6640b21a824ff38ba19530ef1fcaaca2146231f1886bd761cef43",
+      "publicSha256": "854f36173ab6640b21a824ff38ba19530ef1fcaaca2146231f1886bd761cef43",
+      "unchangedSince154": true
+    },
+    "guest/include/vk_object.h": {
+      "canonicalSha256": "95920f208b4c823190eede14e444f7656643081f9095cc580e28c15702d1de44",
+      "publicSha256": "95920f208b4c823190eede14e444f7656643081f9095cc580e28c15702d1de44",
+      "unchangedSince154": true
+    },
+    "guest/include/vk_object_pool.h": {
+      "canonicalSha256": "b4ff4109ecb73c148b8f48cdb1e38d3d6f6073e00339d82f2a2e0c9b36f1628e",
+      "publicSha256": "b4ff4109ecb73c148b8f48cdb1e38d3d6f6073e00339d82f2a2e0c9b36f1628e",
+      "unchangedSince154": true
+    },
+    "guest/include/vortek.h": {
+      "canonicalSha256": "cda7fea8e79290d085c00605afb4341ea86edd85baa57c247741459ce0752030",
+      "publicSha256": "8406c00270b707d59ca3daa0fcd3c9094e2010731fd790b7e794499649b5cbbb",
+      "unchangedSince154": true
+    },
+    "guest/include/vortek_serializer.h": {
+      "canonicalSha256": "83f7a6ff271dc1633f29e11b8970dd72a4f825f6fdb5d05c0d0e8cd75e4b42e5",
+      "publicSha256": "83f7a6ff271dc1633f29e11b8970dd72a4f825f6fdb5d05c0d0e8cd75e4b42e5",
+      "unchangedSince154": true
+    },
+    "guest/include/winlator.h": {
+      "canonicalSha256": "aafd39d8e42ed32c2385c5a4798587ed09d9b4d602b425bf0f52c2738c2f6cd1",
+      "publicSha256": "3e291877e8bf0eecc0f5b6460e060b9aed583b3b89d34f6b59f808067deff34b",
+      "unchangedSince154": true
+    },
+    "guest/src/arrays.c": {
+      "canonicalSha256": "8342a48f7e5eef1d982f7014e6ba610e4cc77f73e60434c569f5787b56406c6d",
+      "publicSha256": "8342a48f7e5eef1d982f7014e6ba610e4cc77f73e60434c569f5787b56406c6d",
+      "unchangedSince154": true
+    },
+    "guest/src/descriptor_update_template.c": {
+      "canonicalSha256": "c3ef5ea91a78feec9b53a15f15c4d5f0aa9d87e8f538d59ebc7e33ea02908384",
+      "publicSha256": "c3ef5ea91a78feec9b53a15f15c4d5f0aa9d87e8f538d59ebc7e33ea02908384",
+      "unchangedSince154": true
+    },
+    "guest/src/main.c": {
+      "canonicalSha256": "763b152ea3dfcd1e5c5076957e9f4a07d665a7f01a7e6ef00a3828e53053d574",
+      "publicSha256": "763b152ea3dfcd1e5c5076957e9f4a07d665a7f01a7e6ef00a3828e53053d574",
+      "unchangedSince154": true
+    },
+    "guest/src/ring_buffer.c": {
+      "canonicalSha256": "06d5a174b758db7ac5aa1f9e7d1a7181f7831095774719cc3f4a616c5f4f26a3",
+      "publicSha256": "06d5a174b758db7ac5aa1f9e7d1a7181f7831095774719cc3f4a616c5f4f26a3",
+      "unchangedSince154": true
+    },
+    "guest/src/vk_object.c": {
+      "canonicalSha256": "d53dd4e0fed5080b87525e5425e6734bbb563becfbcceb0bf71e66ad53e2769e",
+      "publicSha256": "d53dd4e0fed5080b87525e5425e6734bbb563becfbcceb0bf71e66ad53e2769e",
+      "unchangedSince154": true
+    },
+    "guest/src/vk_object_pool.c": {
+      "canonicalSha256": "32a270d35b5c5d3247e05501977f155f1a3ed04957a99a29fb05b4aee2251f28",
+      "publicSha256": "32a270d35b5c5d3247e05501977f155f1a3ed04957a99a29fb05b4aee2251f28",
+      "unchangedSince154": true
+    },
+    "guest/src/vulkan_calls.c": {
+      "canonicalSha256": "0741cb0d062e7cfbaa28c8afb91bd893efed585590eb3e513673991287e9f934",
+      "publicSha256": "0741cb0d062e7cfbaa28c8afb91bd893efed585590eb3e513673991287e9f934",
+      "unchangedSince154": true
+    },
+    "guest/vortek_icd.aarch64.json": {
+      "canonicalSha256": "f96553f9812ff28c9a9db8b3c1eb19e320f3155bb757e07e87d5a03a7f0ab3cf",
+      "publicSha256": "f96553f9812ff28c9a9db8b3c1eb19e320f3155bb757e07e87d5a03a7f0ab3cf",
+      "unchangedSince154": true
+    },
+    "app/src/main/java/com/winlator/renderer/GPUImage.java": {
+      "canonicalSha256": "5161e08d2e59a71499ec6cc4a3dbb585dd6e852d9a67d0fcc5842ece7c96398a",
+      "publicSha256": "5df7a1fc8f1c3982415d1a0f50571168c28c30ed3e828f2c38830fb2684dd419"
+    },
+    "app/src/main/java/com/winlator/xenvironment/components/VortekRendererComponent.java": {
+      "canonicalSha256": "b69994cf39745ff8162e38e7550479586c6863e796e06955a83b134a0d4c8183",
+      "publicSha256": "06d015a78e7f04abedc0016d4c8b4b52ebd6081ae6fef3eb5dde8d7ca729efcd"
+    },
+    "app/src/main/java/com/winlator/wowmobile/GameRuntimeEvidence.java": {
+      "canonicalSha256": "2d4806d840daccf9eecda8e81757f9c652c3219a6e92617fd591ddcab958a1ff",
+      "publicSha256": "2d4806d840daccf9eecda8e81757f9c652c3219a6e92617fd591ddcab958a1ff"
+    }
+  },
+  "incrementalHostPatchBase": {
+    "host/vortekrenderer/include/swapchain_layout.h": {
+      "baselineCanonicalSha256": null,
+      "baselinePublicLfSha256": null,
+      "currentPublicLfSha256": "2c4e333c806a4255a987a88df5c6465433464b2132b2fcd628ab7964333af707"
+    },
+    "host/vortekrenderer/include/vortek_serializer.h": {
+      "baselineCanonicalSha256": "7c5019471f9905b27cbd972b5979401e414604cf9bec38e683150f2a7aa83861",
+      "baselinePublicLfSha256": "3d431d801e3e684a5c8c26a04648a261fd255e735e021414b109fc995a63c219",
+      "currentPublicLfSha256": "0b331998bafafb77eb7ccf743e679e320764537f471d3773b2c72f120fb55baf"
+    },
+    "host/vortekrenderer/include/xwindow_swapchain.h": {
+      "baselineCanonicalSha256": "62cb3ccbef2a8d9a8a1fcdd816e1089c7541f64461437aa71b5bf4a89864a530",
+      "baselinePublicLfSha256": "4e3b1d1075828d12272b9dae29141433f0c9ef26ed4e53270b79dcec85023670",
+      "currentPublicLfSha256": "898815b04edfe3b781cc03a3398a8c26ef2deadc87eff85fc974925ec491e3af"
+    },
+    "host/vortekrenderer/src/request_handler.c": {
+      "baselineCanonicalSha256": "b2b73976c36ff1975b3535917730239dd0660ba948e1f238dc37422b78833c9d",
+      "baselinePublicLfSha256": "a827d41cc1fb454f9b707e8fc646cedd917d0a2e1fd397b094c0c228ea57b059",
+      "currentPublicLfSha256": "66c2f6cadbbf469e1abfa945b0e17106e11ec60738f09b5e85644706d223aaa2"
+    },
+    "host/vortekrenderer/src/vulkan_helper.c": {
+      "baselineCanonicalSha256": "32ae3eb175b462fcf09d16c3a5a9ae709729f47bef286ea90cf2f99af907d600",
+      "baselinePublicLfSha256": "e8720ee24c148ef818d3d7a2a9d3900b576dc8c4cab1c2fc59e9adf008604b52",
+      "currentPublicLfSha256": "a7520fc99ebf2d8659513c915da27848a2c7139de6a2b093a2b4eb2187ea4d83"
+    },
+    "host/vortekrenderer/src/xwindow_swapchain.c": {
+      "baselineCanonicalSha256": "8fca38100e67c43170b8a040a178b0d627f92298a3dadbf308a36462e9f1f0bb",
+      "baselinePublicLfSha256": "40f62589c7c494b439f5c56b675de98a597025de352589233c0c7105f3945def",
+      "currentPublicLfSha256": "aef732499f13a8dde3ce31fa642d81975a356663c7c9ec3af819ce2852adc70c"
+    }
+  },
+  "excludedLocalArtifacts": [
+    "tests/extension_filter_test.exe",
+    "tests/extension_filter_test.obj",
+    "tests/memory_properties_fixed.exe",
+    "tests/memory_properties_fixed.obj",
+    "tests/memory_properties_original.exe",
+    "tests/memory_properties_original.obj",
+    "tests/Run-ExtensionFilterTest.ps1",
+    "tests/Run-MemoryPropertiesTest.ps1",
+    "tests/Run-NativeBCTest.ps1",
+    "tests/Run-TextureCopyTest.ps1"
+  ],
+  "verificationScope": "Production-function fixtures with controlled native boundaries. No remote Mali hardware result, game FPS claim, guest protocol replacement or full GPU synchronization redesign.",
+  "files": {
+    "LICENSE-LGPL-2.1.txt": {
+      "bytes": 26526,
+      "sha256": "20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331"
+    },
+    "README.md": {
+      "bytes": 7526,
+      "sha256": "a556bcd730652785e781473c8bcd4daf2124c56ed5d59e0debd6a157d55575d7"
+    },
+    "build/linux-arm64.cmake": {
+      "bytes": 1297,
+      "sha256": "42f9605380b4d41b6d15ab0a12d4518fcf742456f8430ded2ef1cb16cbdf42eb"
+    },
+    "guest/CMakeLists.txt": {
+      "bytes": 529,
+      "sha256": "6402f254011e433137c995c7581d18c7f9ec478f8ca6f4517cacae33f2be6c5b"
+    },
+    "guest/LICENSE": {
+      "bytes": 26526,
+      "sha256": "20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331"
+    },
+    "guest/README.md": {
+      "bytes": 364,
+      "sha256": "43f86a084bb827fdced8f99bc65ce40d064417e7a438b2a26a03c1fecf4591a6"
+    },
+    "guest/build.sh": {
+      "bytes": 291,
+      "sha256": "bb705915550069e6c5b500e1b6d263455bc054731de28f85254d5feebe7e4063"
+    },
+    "guest/include/arrays.h": {
+      "bytes": 7387,
+      "sha256": "20a7edcd55e567363c0d6056b7fbaa1f8178b6b7d96becfa22eadf59c9eab88a"
+    },
+    "guest/include/descriptor_update_template.h": {
+      "bytes": 1011,
+      "sha256": "00477a65e03ef0f5c8a1c1ea9a80a59b08ea772a2c48571fd59a0514e0d26bce"
+    },
+    "guest/include/events.h": {
+      "bytes": 2521,
+      "sha256": "6810a83ed690d54b1e79141be50338ecf1dbe922a384eb09bb1370bdfec65ae1"
+    },
+    "guest/include/request_codes.h": {
+      "bytes": 22182,
+      "sha256": "836f9dbb5024d04d45bc32859f71fc2b9b483b084f0f280b992aafd1e6acf622"
+    },
+    "guest/include/ring_buffer.h": {
+      "bytes": 4193,
+      "sha256": "8c33d5918155b405234bd7a5633d5b491422870ca76aea3bc16f51ca2e084639"
+    },
+    "guest/include/socket_utils.h": {
+      "bytes": 2855,
+      "sha256": "7f1627f10a9f922b713e19d96fb175871f1584b5c830cc0005708569e76a0168"
+    },
+    "guest/include/string_utils.h": {
+      "bytes": 10393,
+      "sha256": "e4d4ee1d866997971093d0ab343ac0ebd1995f7bda1ce99256a71425afa3d85f"
+    },
+    "guest/include/thread_pool.h": {
+      "bytes": 4622,
+      "sha256": "c07653269d73fe428861d2ef9b00222217dc18455e344a2dcea99b474e828c9e"
+    },
+    "guest/include/time_utils.h": {
+      "bytes": 855,
+      "sha256": "854f36173ab6640b21a824ff38ba19530ef1fcaaca2146231f1886bd761cef43"
+    },
+    "guest/include/vk_object.h": {
+      "bytes": 592,
+      "sha256": "95920f208b4c823190eede14e444f7656643081f9095cc580e28c15702d1de44"
+    },
+    "guest/include/vk_object_pool.h": {
+      "bytes": 626,
+      "sha256": "b4ff4109ecb73c148b8f48cdb1e38d3d6f6073e00339d82f2a2e0c9b36f1628e"
+    },
+    "guest/include/vortek.h": {
+      "bytes": 7906,
+      "sha256": "8406c00270b707d59ca3daa0fcd3c9094e2010731fd790b7e794499649b5cbbb"
+    },
+    "guest/include/vortek_serializer.h": {
+      "bytes": 2035978,
+      "sha256": "83f7a6ff271dc1633f29e11b8970dd72a4f825f6fdb5d05c0d0e8cd75e4b42e5"
+    },
+    "guest/include/winlator.h": {
+      "bytes": 1683,
+      "sha256": "3e291877e8bf0eecc0f5b6460e060b9aed583b3b89d34f6b59f808067deff34b"
+    },
+    "guest/src/arrays.c": {
+      "bytes": 22105,
+      "sha256": "8342a48f7e5eef1d982f7014e6ba610e4cc77f73e60434c569f5787b56406c6d"
+    },
+    "guest/src/descriptor_update_template.c": {
+      "bytes": 4222,
+      "sha256": "c3ef5ea91a78feec9b53a15f15c4d5f0aa9d87e8f538d59ebc7e33ea02908384"
+    },
+    "guest/src/main.c": {
+      "bytes": 2377,
+      "sha256": "763b152ea3dfcd1e5c5076957e9f4a07d665a7f01a7e6ef00a3828e53053d574"
+    },
+    "guest/src/ring_buffer.c": {
+      "bytes": 7342,
+      "sha256": "06d5a174b758db7ac5aa1f9e7d1a7181f7831095774719cc3f4a616c5f4f26a3"
+    },
+    "guest/src/vk_object.c": {
+      "bytes": 2189,
+      "sha256": "d53dd4e0fed5080b87525e5425e6734bbb563becfbcceb0bf71e66ad53e2769e"
+    },
+    "guest/src/vk_object_pool.c": {
+      "bytes": 2446,
+      "sha256": "32a270d35b5c5d3247e05501977f155f1a3ed04957a99a29fb05b4aee2251f28"
+    },
+    "guest/src/vulkan_calls.c": {
+      "bytes": 185639,
+      "sha256": "0741cb0d062e7cfbaa28c8afb91bd893efed585590eb3e513673991287e9f934"
+    },
+    "guest/vortek_icd.aarch64.json": {
+      "bytes": 179,
+      "sha256": "f96553f9812ff28c9a9db8b3c1eb19e320f3155bb757e07e87d5a03a7f0ab3cf"
+    },
+    "host/java/com/winlator/renderer/GPUImage.java": {
+      "bytes": 8415,
+      "sha256": "5df7a1fc8f1c3982415d1a0f50571168c28c30ed3e828f2c38830fb2684dd419"
+    },
+    "host/java/com/winlator/wowmobile/GameRuntimeEvidence.java": {
+      "bytes": 20433,
+      "sha256": "2d4806d840daccf9eecda8e81757f9c652c3219a6e92617fd591ddcab958a1ff"
+    },
+    "host/java/com/winlator/xenvironment/components/VortekRendererComponent.java": {
+      "bytes": 9736,
+      "sha256": "06d015a78e7f04abedc0016d4c8b4b52ebd6081ae6fef3eb5dde8d7ca729efcd"
+    },
+    "host/vortekrenderer/CMakeLists.txt": {
+      "bytes": 866,
+      "sha256": "69435fb9f798089b8a9d8d701574eb9226617387a0076bd1a19042060e2799ba"
+    },
+    "host/vortekrenderer/include/async_pipeline_creator.h": {
+      "bytes": 288,
+      "sha256": "bc4ea88e2a4ecc92b2a9a50021c2d6fc7294fe0986fa1468864f2dba7d3b2b15"
+    },
+    "host/vortekrenderer/include/bc_decoder.h": {
+      "bytes": 9323,
+      "sha256": "44c601971d1711b0b5855bf0a55833fe95a29be3342a58452b5fa7ada6e82a6e"
+    },
+    "host/vortekrenderer/include/extension_filter.h": {
+      "bytes": 917,
+      "sha256": "12c95f380c267cd8e70716f7539f69cf35012ce617aca378957fcb0b9c7c084f"
+    },
+    "host/vortekrenderer/include/request_codes.h": {
+      "bytes": 22182,
+      "sha256": "836f9dbb5024d04d45bc32859f71fc2b9b483b084f0f280b992aafd1e6acf622"
+    },
+    "host/vortekrenderer/include/request_handler.h": {
+      "bytes": 17415,
+      "sha256": "e8d8bce64a4cc17dc16b9a87765a553d7546f8bdf5074f9422ba8b6fcc1d7e83"
+    },
+    "host/vortekrenderer/include/resource_memory.h": {
+      "bytes": 735,
+      "sha256": "e63337949d70b34260bda53136b8690f0086e038a7f3e994517e8df44db574b1"
+    },
+    "host/vortekrenderer/include/shader_inspector.h": {
+      "bytes": 1434,
+      "sha256": "6cd2bb5ecfefb32f12b27687b532a0be8d19687a34ff4f94b1eec59056bfe13d"
+    },
+    "host/vortekrenderer/include/spirv.h": {
+      "bytes": 33460,
+      "sha256": "2d5012f7c72d90550f288d9a8f7d8bf4fab85522d42b9e25240d68bac5bbda7b"
+    },
+    "host/vortekrenderer/include/swapchain_layout.h": {
+      "bytes": 705,
+      "sha256": "2c4e333c806a4255a987a88df5c6465433464b2132b2fcd628ab7964333af707"
+    },
+    "host/vortekrenderer/include/texture_copy_layout.h": {
+      "bytes": 4519,
+      "sha256": "25d3e363d02eaa917b04d8cf0532e893667d52ee8e0bd2c233d582fcedc5d854"
+    },
+    "host/vortekrenderer/include/texture_decoder.h": {
+      "bytes": 3637,
+      "sha256": "280f1fd4d58c39f4100a2d08a9d538f47791eaa3ae9541d5fc8be1380718b447"
+    },
+    "host/vortekrenderer/include/timeline_semaphore.h": {
+      "bytes": 298,
+      "sha256": "908080d5189c75d2fa0f8465e3a4e6a989c233b3c5d670cd9a4d9d0a15bc3683"
+    },
+    "host/vortekrenderer/include/vk_context.h": {
+      "bytes": 1874,
+      "sha256": "76f554064d37f0ef76fb4fba1533996f43a3cc1a0412c760ec2dba56d99a067b"
+    },
+    "host/vortekrenderer/include/vk_object.h": {
+      "bytes": 570,
+      "sha256": "dd59f38487c8a8d31728fbfeb8df81e017f3e41b7add3f23779c5cbf6c076297"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_av1std.h": {
+      "bytes": 16670,
+      "sha256": "2cb85e3e1e12b79d67986202031f903be99af372831c29cf83386d329f47c78d"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_av1std_decode.h": {
+      "bytes": 4250,
+      "sha256": "96f923dc01cd3e266c081d88fa020525a20d63ffe4ce09a4c807a04ef3aaf97e"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_av1std_encode.h": {
+      "bytes": 5979,
+      "sha256": "27d12241ff1659f764a075f738905fcc00f0fff7291b7492e9f9c9dec503ca99"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_h264std.h": {
+      "bytes": 13853,
+      "sha256": "072ee6eac80e73d93bb4bfe0059f99e581fc8b55b1437236185bb4ff377914b1"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_h264std_decode.h": {
+      "bytes": 2722,
+      "sha256": "e1708b3996a740eeedb79f51d0f0e379f9bcae13566538375acaf73301023b58"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_h264std_encode.h": {
+      "bytes": 6878,
+      "sha256": "052a6e357be8d88bf4be0db1b3da5a9cc1a6011cf4b3533759ff588e1e26f9f1"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_h265std.h": {
+      "bytes": 23416,
+      "sha256": "0cbdfd6c45ee8ca902e9c961cd7e49a4d601d443ea0ef2a60a8496b127ed397c"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_h265std_decode.h": {
+      "bytes": 2428,
+      "sha256": "800946aa19d83d305d504e2e4141bc938f989e0cf8872cef97480238eefef1ea"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codec_h265std_encode.h": {
+      "bytes": 7462,
+      "sha256": "7239f9f4e811546639111e562a8be1ec73ad5bef1c23d5fad80889f35e125e9c"
+    },
+    "host/vortekrenderer/include/vk_video/vulkan_video_codecs_common.h": {
+      "bytes": 660,
+      "sha256": "78cf3c99d3d57afa7ab1782ec6018b4bcdbe273f2843d76e3375282db875b71e"
+    },
+    "host/vortekrenderer/include/vortek.h": {
+      "bytes": 7622,
+      "sha256": "e4ab88d7a94d8fd6e59e9deb9ea6b224df7c9ead0fe79f974aa45fef548771f0"
+    },
+    "host/vortekrenderer/include/vortek_serializer.h": {
+      "bytes": 1990597,
+      "sha256": "0b331998bafafb77eb7ccf743e679e320764537f471d3773b2c72f120fb55baf"
+    },
+    "host/vortekrenderer/include/vulkan/vk_platform.h": {
+      "bytes": 2828,
+      "sha256": "c4cabbcf699c90cde344095ae54da9435d117951aad114ba3a540c5997d7906f"
+    },
+    "host/vortekrenderer/include/vulkan/vulkan.h": {
+      "bytes": 1555,
+      "sha256": "52297513cc6b6cc8db2921aa849f72e3f55d678b3a58a2c3eb297c02ded7a837"
+    },
+    "host/vortekrenderer/include/vulkan/vulkan_android.h": {
+      "bytes": 6201,
+      "sha256": "f815593b7d20f291850b8d85e21e3d47fb123932805ba3606df631bdff4cb1e7"
+    },
+    "host/vortekrenderer/include/vulkan/vulkan_core.h": {
+      "bytes": 1060766,
+      "sha256": "c274cdac1e77755ad2c9e12a1d4d24a91e1f72dad138bfcd8b4a54279b9c2e71"
+    },
+    "host/vortekrenderer/include/vulkan_helper.h": {
+      "bytes": 4742,
+      "sha256": "500262fbe3ff0be271509741cba182337ad25f695402102d66c1399c7bcc17b8"
+    },
+    "host/vortekrenderer/include/vulkan_wrapper.h": {
+      "bytes": 47206,
+      "sha256": "14a9315ecf96e00fce969c2dad483a1c112bf1bf2de3682b2787ccacfc70b664"
+    },
+    "host/vortekrenderer/include/xwindow_swapchain.h": {
+      "bytes": 2224,
+      "sha256": "898815b04edfe3b781cc03a3398a8c26ef2deadc87eff85fc974925ec491e3af"
+    },
+    "host/vortekrenderer/src/async_pipeline_creator.c": {
+      "bytes": 8052,
+      "sha256": "f69e67f91e6729900314d265808482fc04edcff7ceda357a1357f4a2a1c84997"
+    },
+    "host/vortekrenderer/src/main.c": {
+      "bytes": 2630,
+      "sha256": "3ccd6498287a69a12f83c26385dda0ec515d67c71037d2dc4570547fffe358d7"
+    },
+    "host/vortekrenderer/src/request_handler.c": {
+      "bytes": 175117,
+      "sha256": "66c2f6cadbbf469e1abfa945b0e17106e11ec60738f09b5e85644706d223aaa2"
+    },
+    "host/vortekrenderer/src/resource_memory.c": {
+      "bytes": 12490,
+      "sha256": "a8d4a2bc6bec30520ba11c9321f75f6cbf7e5924853928e62fdd28c059e2ce3d"
+    },
+    "host/vortekrenderer/src/shader_inspector.c": {
+      "bytes": 42771,
+      "sha256": "5a6b01a54762fae4ad95284952d3f62cc415f63ed0cec2827d2329095e0a8731"
+    },
+    "host/vortekrenderer/src/texture_decoder.c": {
+      "bytes": 30114,
+      "sha256": "954492c8c42b37efb2e64c90a7b020702ff90ca8a11bb9f93300b214f3df47c0"
+    },
+    "host/vortekrenderer/src/timeline_semaphore.c": {
+      "bytes": 6545,
+      "sha256": "8f82ee6b6e491590882d6cf47b7bc5dcbfa9b43f1b9ecb28758f13ffade18774"
+    },
+    "host/vortekrenderer/src/vk_context.c": {
+      "bytes": 10294,
+      "sha256": "6973cdd64f75ad6a4ffb5d7f2a9e9f015025f276bcd8b61c28322a5467a3ff16"
+    },
+    "host/vortekrenderer/src/vk_object.c": {
+      "bytes": 2114,
+      "sha256": "93e10df661f1174c3d31525f0adfcbd5381aa6b0459c4ad78844e48682b10c16"
+    },
+    "host/vortekrenderer/src/vulkan_helper.c": {
+      "bytes": 28299,
+      "sha256": "a7520fc99ebf2d8659513c915da27848a2c7139de6a2b093a2b4eb2187ea4d83"
+    },
+    "host/vortekrenderer/src/xwindow_swapchain.c": {
+      "bytes": 15677,
+      "sha256": "aef732499f13a8dde3ce31fa642d81975a356663c7c9ec3af819ce2852adc70c"
+    },
+    "host/vortekrenderer/tests/README.txt": {
+      "bytes": 2244,
+      "sha256": "2d8fff5af4cf0e61f1e23d2482c5d975fcdc9c82ef29eb5cfbdaacb8a562ab6f"
+    },
+    "host/vortekrenderer/tests/extension_filter_test.c": {
+      "bytes": 1794,
+      "sha256": "7c70baf2b897495c394faa4c80574566a8fe606dbce0e045d4fc3b26c6e11537"
+    },
+    "host/vortekrenderer/tests/memory_properties_wire.patch": {
+      "bytes": 1000,
+      "sha256": "04092bdb53c424b63f750f343d2904c6c83c7d3625747e49e8baadd55404acc1"
+    },
+    "host/vortekrenderer/tests/memory_properties_wire_test.c": {
+      "bytes": 2835,
+      "sha256": "00a07ce12e73c4d577c02383dc0c7c1d7d67c1212de0e3ce8d4c3af27659ee08"
+    },
+    "host/vortekrenderer/tests/native_bc_test.c": {
+      "bytes": 3070,
+      "sha256": "592debe8c210f149e83977c4d360d610b4a2f9fe65dada9ac12101f6c745ad72"
+    },
+    "host/vortekrenderer/tests/texture_copy_test.c": {
+      "bytes": 5265,
+      "sha256": "bb394570c9a9e799ae621e1db455475ea74d74482bda26689760107aeea9193f"
+    },
+    "imito155-host.patch": {
+      "bytes": 18084,
+      "sha256": "b2a2327a92b117f089fe4944c9279cf7ce00a526e54a5cbe1c1bbf409b331725"
+    },
+    "verification/test-vortek-ahb-format.py": {
+      "bytes": 9805,
+      "sha256": "0f3fe9e58a7e3a4330bb44844608f17f683e0c1d16c127904aed0f274b2d1f26"
+    },
+    "verification/test-vortek-device-extensions.py": {
+      "bytes": 9854,
+      "sha256": "3856cd93efb655acfe606ba51cb878bf00694fc1f3f7d6d4d7b4219def362abd"
+    },
+    "verification/test-vortek-swapchain-contract.py": {
+      "bytes": 7910,
+      "sha256": "efe963f2e145f32abe4fbc787a215c7e50d0e5f6e584cdad167a08499cf3ba26"
+    }
+  },
+  "sourceArchiveSha256": "f2cec9f73afc7fbd1faed30edb1c5bf663bea80a02c1cad2083cab7627d1fd18",
+  "sourceArchiveBytes": 587423
+}

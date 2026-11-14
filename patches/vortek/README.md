@@ -1,3 +1,67 @@
+# Vortek fixes in WoW Imito 1.5.5
+
+`vortek-imito6-1.5.5-source.zip` contains the complete current Vortek host
+production subtree, matching unchanged revision-6 guest sources, the changed
+Java buffer integration and runtime diagnostics, retained licenses, and focused
+verification fixtures. `provenance155.json` records canonical and public source
+hashes. `imito155-host.patch` is incremental to the host snapshot in the
+preserved `vortek-imito6-source.zip`, rather than to pristine upstream Vortek.
+
+The guest originates from [brunodev85/vortek at b1730c5](https://github.com/brunodev85/vortek/tree/b1730c5).
+The Android host and Java integration come from the application's
+[Winlator](https://github.com/brunodev85/winlator) /
+[WoW Mobile](https://github.com/marcocastignoli/wow-mobile) tree.
+Original copyright notices and LGPL 2.1 license texts are retained. The new
+integration modifications and supplied fixtures use the same license.
+
+## 1.5.5 changes
+
+- Filter native window-system extensions that this virtual swapchain does not
+  implement; preserve supported device capabilities and their reported versions.
+- Record precise native device-creation errors before a game window exists.
+- Translate virtual `PRESENT_SRC_KHR` layouts to native `GENERAL` layouts when
+  decoding image barriers, render-pass attachments, dynamic rendering and other
+  image-layout fields. The guest protocol and other layouts are unchanged.
+- Check Android hardware-buffer dimensions, layers and channel format before
+  image import. Replace a cached RGBA/BGRA buffer when the requested format
+  changes, allocating its replacement before retiring the previous texture.
+
+The focused tests execute production decoding/extension functions with
+controlled boundaries. They do not demonstrate that every Mali device-loss
+report is fixed or establish game FPS on the reporting hardware. The paired
+queue/fence protocol introduced in 1.5.4 remains in place.
+
+## Build and verification
+
+The host still builds in the Android app with NDK 24.0.8215888, CMake 3.22.1,
+the matching `winlator`/`libadrenotools` targets, Android and log dependencies.
+The archive includes its CMake project and Vulkan headers; it is a component
+source snapshot rather than a standalone APK project. Java source paths under
+`host/java/` correspond to `app/src/main/java/` in that application.
+The unchanged guest uses the ARM64 glibc sysroot and development headers
+described in the preserved 1.5.4 section below. Public source substitutions are
+listed in the manifest. Existing source notices are retained.
+
+After extracting the archive, run the focused native fixtures with Python 3.9+
+and a C compiler. Set `CC` to its executable, or put `cc`, `clang`, `gcc` or
+`zig` on PATH; Zig is invoked with `zig cc`.
+
+```sh
+python verification/test-vortek-device-extensions.py
+python verification/test-vortek-swapchain-contract.py
+python verification/test-vortek-ahb-format.py
+```
+
+The second accepts `--baseline` to reproduce the invalid old layout decoding
+and is expected to fail in that mode. Generated fixture output stays under the
+extracted archive's `verification/results/` directory. The public package omits
+local compiled test binaries and operator-specific test launchers from the
+host's `tests/` directory; its C test sources are retained.
+The AHB fixture also executes the production Java buffer-replacement methods;
+it requires JDK 17, available through `JAVA_HOME` or `java`/`javac` on PATH.
+
+## Preserved 1.5.4 source history
+
 # Vortek paired presentation changes
 
 Vortek is by brunodev85 and contributors, licensed under LGPL 2.1. The guest source is based on [brunodev85/vortek at b1730c5](https://github.com/brunodev85/vortek/tree/b1730c5). The Android host is the Vortek renderer in the application's Winlator/WoW Mobile source tree. Original license texts and source copyright notices are retained.
