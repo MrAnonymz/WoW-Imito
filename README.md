@@ -2,15 +2,18 @@
 
 If you enjoy WoW Imito, you can help keep development going: **[Buy Me a Coffee](https://buymeacoffee.com/mranonymz)** · **[Donate via Stripe](https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01)**
 
-<img width="220" height="220" alt="Donation QR code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" />
+<p align="center">
+  <img width="220" height="220" alt="Donation QR code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" />
+</p>
 
-### Supporter thanks
+<h3 align="center">Supporter thanks</h3>
 
-Thank you for supporting WoW Imito! A good latte makes fixing bugs a little more enjoyable and a little less stressful.
+<p align="center">Thank you for supporting WoW Imito! A good latte makes fixing bugs a little more enjoyable and a little less stressful.</p>
 
-| Supporter | Thanks |
-| --- | --- |
-| **Amunkyinatuxedo9** | Thank you for your donation and support! |
+<table align="center">
+  <thead><tr><th>Supporter</th><th>Thanks</th></tr></thead>
+  <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td><td>Thank you for your donation and support!</td></tr></tbody>
+</table>
 
 ![WoW Imito — Your Azeroth. Anywhere.](assets/wow-imito-banner.jpg)
 
