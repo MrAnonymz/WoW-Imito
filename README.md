@@ -1,3 +1,17 @@
+## ☕ Support development
+
+If you enjoy WoW Imito, you can help keep development going: **[Buy Me a Coffee](https://buymeacoffee.com/mranonymz)** · **[Donate via Stripe](https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01)**
+
+<img width="220" height="220" alt="Donation QR code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" />
+
+### Supporter thanks
+
+Thank you for supporting WoW Imito! A good latte makes fixing bugs a little more enjoyable and a little less stressful.
+
+| Supporter | Thanks |
+| --- | --- |
+| **Amunkyinatuxedo9** | Thank you for your donation and support! |
+
 ![WoW Imito — Your Azeroth. Anywhere.](assets/wow-imito-banner.jpg)
 
 # WoW Imito
@@ -155,25 +169,6 @@ On Wrath, choose **Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Inp
 ![WoW Imito inventory](assets/screenshots/gameplay-03.png)
 
 </details>
-
-## ☕ Support development
-
-If you enjoy WoW Imito, you can help keep development going: **[Buy Me a Coffee](https://buymeacoffee.com/mranonymz)** · **[Donate via Stripe](https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01)**
-
-<details>
-<summary>Donation QR code</summary>
-
-<img width="220" height="220" alt="Donation QR code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" />
-
-</details>
-
-### Supporter thanks
-
-Thank you for supporting WoW Imito! A good latte makes fixing bugs a little more enjoyable and a little less stressful.
-
-| Supporter | Thanks |
-| --- | --- |
-| **Amunkyinatuxedo9** | Thank you for your donation and support! |
 
 ---
 
