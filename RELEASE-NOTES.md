@@ -7,6 +7,7 @@
 - Reused graphics command buffers to reduce repeated memory allocations.
 - Fixed a crash when uploading graphics buffers after a failed memory mapping.
 - Fixed Vanilla resolutions falling back to a narrow image with black bars.
+- Reduced redundant interface layout work and repeated redraws of the same game frame.
 
 ## Touch UI
 
