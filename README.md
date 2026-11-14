@@ -1,8 +1,8 @@
-[English](README.md) · [Deutsch](docs/readme/README.de.md) · [Čeština](docs/readme/README.cs.md) · [Polski](docs/readme/README.pl.md) · [Русский](docs/readme/README.ru.md) · [Italiano](docs/readme/README.it.md) · [Español](docs/readme/README.es.md) · [简体中文](docs/readme/README.zh-CN.md) · [日本語](docs/readme/README.ja.md) · [Türkçe](docs/readme/README.tr.md) · [العربية](docs/readme/README.ar.md)
+<h3 align="center">[English](README.md) · [Deutsch](docs/readme/README.de.md) · [Čeština](docs/readme/README.cs.md) · [Polski](docs/readme/README.pl.md) · [Русский](docs/readme/README.ru.md) · [Italiano](docs/readme/README.it.md) · [Español](docs/readme/README.es.md) · [简体中文](docs/readme/README.zh-CN.md) · [日本語](docs/readme/README.ja.md) · [Türkçe](docs/readme/README.tr.md) · [العربية](docs/readme/README.ar.md)</h3>
 
 <h3 align="center">☕ Support development</h3>
 
-If you enjoy WoW Imito, you can help keep development going: **[Buy Me a Coffee](https://buymeacoffee.com/mranonymz)** · **[Donate via Stripe](https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01)**
+<h3 align="center">If you enjoy WoW Imito, you can help keep development going: **[Buy Me a Coffee](https://buymeacoffee.com/mranonymz)** · **[Donate via Stripe](https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01)**</h3>
 
 <table align="center">
   <tbody><tr>
