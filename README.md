@@ -1,18 +1,23 @@
+[English](README.md) · [Deutsch](docs/readme/README.de.md) · [Čeština](docs/readme/README.cs.md) · [Polski](docs/readme/README.pl.md) · [Русский](docs/readme/README.ru.md) · [Italiano](docs/readme/README.it.md) · [Español](docs/readme/README.es.md) · [简体中文](docs/readme/README.zh-CN.md) · [日本語](docs/readme/README.ja.md) · [Türkçe](docs/readme/README.tr.md) · [العربية](docs/readme/README.ar.md)
+
 ## ☕ Support development
 
 If you enjoy WoW Imito, you can help keep development going: **[Buy Me a Coffee](https://buymeacoffee.com/mranonymz)** · **[Donate via Stripe](https://buy.stripe.com/fZu7sM8Gm4UA2XGaOIbII01)**
 
-<p align="center">
-  <img width="220" height="220" alt="Donation QR code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" />
-</p>
+<table align="center">
+  <tbody><tr>
+    <td align="center"><img width="180" height="180" alt="Donation QR code" src="https://github.com/user-attachments/assets/03e67232-7b00-475d-a5e5-cfd65cc6d4d7" /></td>
+    <td align="center"><img width="158" height="180" alt="QR" src="https://github.com/user-attachments/assets/5fa4f4ed-4d05-4425-9198-6bd32894773e" /></td>
+  </tr></tbody>
+</table>
 
 <h3 align="center">Supporter thanks</h3>
 
 <p align="center">Thank you for supporting WoW Imito! A good latte makes fixing bugs a little more enjoyable and a little less stressful.</p>
 
 <table align="center">
-  <thead><tr><th>Supporter</th><th>Thanks</th></tr></thead>
-  <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td><td>Thank you for your donation and support!</td></tr></tbody>
+  <thead><tr><th>Supporter</th></tr></thead>
+  <tbody><tr><td><strong>Amunkyinatuxedo9</strong></td></tr></tbody>
 </table>
 
 ![WoW Imito — Your Azeroth. Anywhere.](assets/wow-imito-banner.jpg)
@@ -21,19 +26,23 @@ If you enjoy WoW Imito, you can help keep development going: **[Buy Me a Coffee]
 
 **Your Azeroth. Your character. Now on Android.**
 
-Play **World of Warcraft — Vanilla, The Burning Crusade, Wrath of the Lich King and Forever** on Android phones, tablets and handhelds, with **touchscreen or controller controls**. Join the same server as your friends on PC — no PC needed while you play.
+Run original and custom **World of Warcraft** clients on Android phones, tablets and handhelds — including **WoW Forever with official Battle.net login and updates**. Use **Imito Touch UI or a controller**, with a **live second-screen HUD** on dual-screen handhelds. See the [supported clients](#compatibility) for Vanilla, TBC, WotLK and server-specific versions. No PC is needed while playing.
 
 **[Download APK](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[Latest patch notes](https://github.com/MrAnonymz/WoW-Imito/releases/latest)** · **[All releases](https://github.com/MrAnonymz/WoW-Imito/releases)**
 
 > [!IMPORTANT]
-> **Bugs and requests: Settings > Report problem.** This includes device and game diagnostics. Choose **Other** for feature requests. If the app cannot open, [create a GitHub issue](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose).
+> **Found a bug? Open Settings > Report problem in WoW Imito.** Describe what happened and what you were doing when the problem occurred. The app includes device and game details in the report to help investigate the cause.
+>
+> For **feature requests or support for another device or game client**, choose **Other** and describe what you would like added.
+>
+> If WoW Imito cannot open, [create a GitHub issue](https://github.com/MrAnonymz/WoW-Imito/issues/new/choose) and include your device model, Android version, app version and the error you see.
 
 ## Start playing
 
 **Requires Android 12+, an ARM64 processor and 64-bit Android. Forever requires 8 GB RAM or more.** Game files and server accounts are not included.
 
 1. Install WoW Imito and open it.
-2. Copy your complete compatible client to internal storage or an SD card, or download a ZIP through **Game files**. For **Forever**, select it in the client list; official Battle.net handles sign-in, downloads and updates. First setup may take a few minutes.
+2. Copy the complete client required by your server to internal storage or an SD card, or download a ZIP through **Game files**. For **Forever**, select it in the client list; official Battle.net handles sign-in, downloads and updates. First setup may take a few minutes.
 3. Select the detected client and confirm its server address when prompted. Use **Game files** to select a folder manually or **Settings > Set realm** to change the server.
 4. Tap **PLAY**, sign in and choose your character.
 
@@ -42,7 +51,7 @@ App updates are offered automatically, using smaller delta downloads when availa
 <details>
 <summary><strong>Hardware & storage</strong></summary>
 
-**Snapdragon 888-class performance and 6 GB RAM** are suggested starting points for classic clients. Graphics-driver compatibility and performance vary by device.
+**Snapdragon 888-class performance and 6 GB RAM** are suggested starting points for classic clients. Graphics support and performance vary by device.
 
 | Client | Suggested free storage before installation |
 | --- | --- |
@@ -58,15 +67,17 @@ Storage needs vary by client and updates. Use the complete client required by yo
 ## Features & controls
 
 - **Imito Touch UI:** movable, resizable controls and pinnable chat. Open **Menu > Touch UI > Show tutorial** to learn the controls; **Save & reload** keeps your layout.
-- **Controllers & addons:** ConsolePort and optional addons for compatible clients; setup details below.
+- **Controllers & addons:** ConsolePort and optional addons, with availability depending on the game client; setup details below.
 - **Dual-screen handhelds:** live minimap, chat, quests and player/target information on a separate display. Enable **Options > Controller > Second-screen controls**; use **Displays** to reconnect. Trackpad and keyboard views are also available.
-- **Performance options:** ECO limits of **30, 40, 50 or 60 FPS**, **Low specs**, and compatible Android Vulkan driver imports (**.zip / .wcp**) under **Options > Graphics > Graphics driver** for classic clients. **Automatic** remains the default.
+- **Performance options:** ECO limits of **30, 40, 50 or 60 FPS**, **Low specs**, and Android Vulkan driver imports (**.zip / .wcp**) under **Options > Graphics > Graphics driver** for classic clients. The app checks the driver before applying it. **Automatic** remains the default.
 - **Languages:** English, German, Czech, Polish, Russian, Italian, Spanish, Simplified Chinese, Japanese, Turkish and Arabic. **Options > Game > Language** changes the app, Touch UI and offline patch notes. English is the default; AI-assisted translations may contain mistakes — please report them.
 
 > [!TIP]
 > **ECO 30–40 FPS is strongly recommended for Forever** to reduce CPU/GPU load and temperatures. Performance depends on your device, settings and scene.
 
-## Compatibility
+<a name="compatibility"></a>
+
+## Supported clients & devices
 
 <details>
 <summary><strong>Supported & tested clients</strong></summary>
@@ -94,7 +105,7 @@ For supported game updates, use **PLAY** or **Settings > Update [client name]**.
 <details>
 <summary><strong>Supported & confirmed devices</strong></summary>
 
-Check marks indicate successful in-game testing, not guaranteed FPS. Other compatible devices may work too.
+Check marks indicate successful in-game testing, not guaranteed FPS. Other devices may work too.
 
 | Device | Confirmed working |
 | :--- | :---: |
@@ -162,8 +173,7 @@ On Wrath, choose **Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Inp
 
 </details>
 
-<details>
-<summary><strong>Gameplay screenshots</strong></summary>
+## Gameplay screenshots
 
 ![WoW Imito gameplay](assets/screenshots/gameplay-01.png)
 
@@ -171,7 +181,6 @@ On Wrath, choose **Imito Touch UI** or **ConsolePort**, and keep **WoW Imito Inp
 
 ![WoW Imito inventory](assets/screenshots/gameplay-03.png)
 
-</details>
 
 ---
 
