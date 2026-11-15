@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> <h3 align="center"> **Some players report crashes/freezes in Vanilla,TBC,WotLK after update 1.5.0 (Forever).** If you are **_not playing WoW Forever_** and are having problems with latest version 1.5.5 (1.5+) try using version [1.4.1](https://github.com/MrAnonymz/WoW-Imito/releases#release-v1.4.1) (before Forever) as it may help. Until further notice please stay patient, Im trying my best.</h3>
+> **Some players report crashes/freezes in Vanilla,TBC,WotLK after update 1.5.0 (Forever).** If you are **_not playing WoW Forever_** and are having problems with latest version 1.5.5 (1.5+) try using version [1.4.1](https://github.com/MrAnonymz/WoW-Imito/releases#release-v1.4.1) (before Forever) as it may help. Until further notice please stay patient, Im trying my best.
 
 
 
