@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> **Some players report crashes/freezes in Vanilla,TBC,WotLK after update 1.5.0 (Forever).** If you are not play WoW Forever and is having problems with latest version 1.5.5 (1.5+) try using version 1.4.1 (before Forever) https://github.com/MrAnonymz/WoW-Imito/releases#release-v1.4.1 as it may help.
+
+
+
+
 <p align="center"><a href="README.md">English</a> · <a href="docs/readme/README.de.md">Deutsch</a> · <a href="docs/readme/README.cs.md">Čeština</a> · <a href="docs/readme/README.pl.md">Polski</a> · <a href="docs/readme/README.ru.md">Русский</a> · <a href="docs/readme/README.it.md">Italiano</a> · <a href="docs/readme/README.es.md">Español</a> · <a href="docs/readme/README.zh-CN.md">简体中文</a> · <a href="docs/readme/README.ja.md">日本語</a> · <a href="docs/readme/README.tr.md">Türkçe</a> · <a href="docs/readme/README.ar.md">العربية</a></p>
 
 <h3 align="center">☕ Support development</h3>
