@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> Version [1.5.6](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.5.6) fixes several graphics and startup regressions in Vanilla, TBC and WotLK. If a classic client still crashes or freezes, please report the device and client. Players who need the older classic build can download [1.4.1](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.4.1).
+> Version [1.5.7](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.5.7) updates graphics, startup and touch controls. If an issue persists, retry the steps and send a new in-app report from 1.5.7 with the earlier issue number. The older [1.4.1 classic build](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.4.1) remains available.
 
 
 

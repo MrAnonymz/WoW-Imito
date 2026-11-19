@@ -81,3 +81,7 @@ The paired Vortek revision 7 sources, Android buffer import and texture consumer
 patches/vortek/vortek-imito7-1.5.6-source.zip. The VirGL renderer and Android server
 are in patches/virgl/virgl-imito-1.5.6-source.zip. Each archive identifies the exact
 signed release and its native libraries by SHA-256.
+
+WoW Imito 1.5.7 graphics components
+Vortek revision 8 guest and Android host sources: patches/vortek/vortek-imito8-1.5.7-source.zip.
+VirGL renderer and Android server: patches/virgl/virgl-imito-1.5.7-source.zip. Both archives include the release binary hashes and source notices.
