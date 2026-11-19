@@ -141,6 +141,8 @@ Android のスマートフォン、タブレット、携帯型ゲーム機で、
 | **POCO X6 5G (23122PCD1G)** | ✅ |
 | **HONOR X8d (LNA-LX3)** | ✅ |
 | **AYN Thor** | ✅ |
+| **Nubia Neo 2 5G (Z2352N)** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/241) |
+| **Motorola g100** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/284) |
 
 [お使いのデバイスの動作報告](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml)にご協力ください。リストの充実に役立ちます。Pixel 10 Pro XL の動作確認では、プレイヤー独自のグラフィックス設定が使用されています。
 

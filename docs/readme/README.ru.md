@@ -141,6 +141,8 @@
 | **POCO X6 5G (23122PCD1G)** | ✅ |
 | **HONOR X8d (LNA-LX3)** | ✅ |
 | **AYN Thor** | ✅ |
+| **Nubia Neo 2 5G (Z2352N)** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/241) |
+| **Motorola g100** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/284) |
 
 [Подтвердите работу своего устройства](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml), чтобы помочь расширить список. Работа Pixel 10 Pro XL была подтверждена с собственными настройками графики игрока.
 

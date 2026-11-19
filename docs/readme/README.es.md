@@ -141,6 +141,8 @@ Las marcas indican que se ha probado el juego con éxito; no garantizan una cant
 | **POCO X6 5G (23122PCD1G)** | ✅ |
 | **HONOR X8d (LNA-LX3)** | ✅ |
 | **AYN Thor** | ✅ |
+| **Nubia Neo 2 5G (Z2352N)** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/241) |
+| **Motorola g100** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/284) |
 
 [Confirma tu dispositivo](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml) para ayudar a ampliar esta lista. La confirmación del Pixel 10 Pro XL se realizó con los ajustes gráficos personalizados del jugador.
 

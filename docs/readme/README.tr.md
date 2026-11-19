@@ -141,6 +141,8 @@ Onay işaretleri başarılı oyun içi testleri gösterir; belirli bir FPS garan
 | **POCO X6 5G (23122PCD1G)** | ✅ |
 | **HONOR X8d (LNA-LX3)** | ✅ |
 | **AYN Thor** | ✅ |
+| **Nubia Neo 2 5G (Z2352N)** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/241) |
+| **Motorola g100** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/284) |
 
 Bu listenin büyümesine yardımcı olmak için [cihazınızın çalıştığını doğrulayın](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml). Pixel 10 Pro XL için doğrulama, oyuncunun özelleştirdiği grafik ayarlarıyla yapıldı.
 

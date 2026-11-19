@@ -141,6 +141,8 @@
 | **POCO X6 5G (23122PCD1G)** | ✅ |
 | **HONOR X8d (LNA-LX3)** | ✅ |
 | **AYN Thor** | ✅ |
+| **Nubia Neo 2 5G (Z2352N)** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/241) |
+| **Motorola g100** | [WotLK 3.3.5a](https://github.com/MrAnonymz/WoW-Imito/issues/284) |
 
 欢迎[提交你的设备运行确认](https://github.com/MrAnonymz/WoW-Imito/issues/new?template=device-confirmation.yml)，帮助扩充此列表。Pixel 10 Pro XL 的运行确认使用了该玩家自定义的图形设置。
 
