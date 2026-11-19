@@ -42,7 +42,7 @@
 - On the tested Adreno 829 driver, Forever can pass texture uploads directly to Vulkan when the driver and graphics layers both support the compressed formats.
 - Fixed audio playback position overflowing after roughly three hours of stereo sound.
 
-## Using a second screen
+## Dual-screen devices
 
-- Connect the second display before starting the game. The HUD shows the live minimap, chat, quest log and player and target information.
-- Switch to Targets to select party members, Trackpad to move the pointer or scroll with two fingers, or Keyboard to type.
+- On dual-screen devices, the game stays on the main screen while the second screen shows the live minimap, chat, quest log, and details about your character and current target.
+- On a touch-enabled second screen, you can select party members, use the trackpad to move the pointer or scroll with two fingers, and type with the on-screen keyboard.
