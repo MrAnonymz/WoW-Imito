@@ -3,6 +3,7 @@
 ## Graphics and startup
 
 - Fixed WotLK startup on Mali-G52 r1 when the bundled Vulkan driver passes its initial check but cannot open a Direct3D display. The launcher selects the working graphics profile automatically.
+- Fixed black tiles on the WotLK login screen with the affected Mali-G925 driver. The launcher automatically selects the working graphics profile.
 - Fixed a black screen before the first frame on Mali-G57. Vanilla now reaches the world on the Galaxy A15 with the bundled PanVK driver.
 - Corrected swapped red and blue channels on Mali-G615.
 - If PanVK loses the device after the first frame, the launcher tests another buffer layout. If it also fails the check, the next launch uses the next compatibility profile.
