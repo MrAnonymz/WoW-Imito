@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> **Some players report crashes/freezes in Vanilla,TBC,WotLK after update 1.5.0 (Forever).** If you are **_not playing WoW Forever_** and are having problems with latest version 1.5.5 (1.5+) try using version [1.4.1](https://github.com/MrAnonymz/WoW-Imito/releases#release-v1.4.1) (before Forever) as it may help. Until further notice please stay patient, Im trying my best.
+> Version [1.5.6](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.5.6) fixes several graphics and startup regressions in Vanilla, TBC and WotLK. If a classic client still crashes or freezes, please report the device and client. Players who need the older classic build can download [1.4.1](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.4.1).
 
 
 

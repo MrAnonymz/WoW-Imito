@@ -75,3 +75,9 @@ The 1.5.5 nonblocking output, partial-write preservation, Java buffer-slice
 and failed-connection cleanup changes are in patches/x11/.
 That directory contains complete modified source, supporting headers/interfaces,
 portable regression fixtures, original license text and source provenance.
+
+WoW Imito 1.5.6 graphics components
+The paired Vortek revision 7 sources, Android buffer import and texture consumer are in
+patches/vortek/vortek-imito7-1.5.6-source.zip. The VirGL renderer and Android server
+are in patches/virgl/virgl-imito-1.5.6-source.zip. Each archive identifies the exact
+signed release and its native libraries by SHA-256.
