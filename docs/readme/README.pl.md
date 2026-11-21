@@ -125,6 +125,10 @@ Znaczniki potwierdzają pomyślne testy w grze, a nie gwarantowaną liczbę FPS.
 | :--- | :---: |
 | **Samsung Galaxy S26 (SM-S942B)** | ✅ |
 | **Samsung Galaxy S21 FE (SM-G990B2)** | ✅ |
+| **Samsung Galaxy A05 (SM-A055F)** | ✅ |
+| **Samsung Galaxy A15 LTE (SM-A155F)** | ✅ |
+| **Samsung Galaxy A26 5G (SM-A266B)** | ✅ |
+| **Samsung Galaxy Tab S10+ (SM-X820)** | ✅ |
 | **Samsung Galaxy S23 Ultra** | ✅ |
 | **Samsung Galaxy S26 Ultra** | ✅ |
 | **Motorola Edge 70 Max** | ✅ |
