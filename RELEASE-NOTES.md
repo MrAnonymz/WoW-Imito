@@ -1,7 +1,13 @@
-# WoW Imito 1.5.8
+# WoW Imito 1.5.9
 
-- A short launcher guide shows where to add or switch clients, read patch notes and report problems. Replay it from Options.
-- The guide highlights the client folder, direct ZIP downloads and the recommended 40 FPS Eco setting.
-- Updated the three touch icons for autorun, walking and sheathing a weapon across all clients.
-- Fixed missing touch controls in Forever, including the joystick, game menu and chat.
-- Vanilla and OctoWoW now follow the crafting buttons when another window moves Alchemy. Repeated taps on quantity and Create use normal left clicks.
+- The joystick, auto-run and walk/run buttons now return together as soon as gameplay is confirmed after a brief interruption. A single damaged pixel in the control signal no longer hides them.
+- Wrath restores quest markers when you reopen the map in the same zone.
+- Forever action buttons keep their spell page in combat when a hidden UI frame becomes inaccessible.
+- Battle.net setup keeps small dialogs and the first sign-in window visible. Existing launcher preferences are preserved.
+- Adjusted texture decoding on Immortalis-G720 tablets in Forever and frame presentation on affected Mali-G720 drivers in Wrath.
+- On the classic Vortek and DXVK 1.10.3 path, shader compilation leaves more CPU time for gameplay when entering busy areas.
+- Chat starts closed when you enter the world. After you open chat, your saved pin setting takes effect.
+- Game files can find unpacked clients in deep folders and on SD cards. The launcher guide explains how to use a client where it already is.
+- Wrath and other classic clients now create their Wine connection in the active Android profile, including Samsung Secure Folder.
+
+If a problem persists in 1.5.9, send a new in-app report immediately after it happens and mention the earlier issue number.

@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> [WoW Imito 1.5.8 - Quick Fixes](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.5.8) restores Forever touch controls, improves Vanilla and OctoWoW crafting taps, and adds a replayable launcher guide. The [1.4.1 classic build](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.4.1) remains available.
+> [WoW Imito 1.5.9](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.5.9) restores touch controls after interruptions, fixes classic client startup in secondary Android profiles, and improves client discovery on phones and SD cards. The [1.4.1 classic build](https://github.com/MrAnonymz/WoW-Imito/releases/tag/v1.4.1) remains available.
 
 
 
