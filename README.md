@@ -56,7 +56,7 @@ Run original and custom **World of Warcraft** clients on Android phones, tablets
 **Requires Android 12+,4 GB RAM, an ARM64 processor, GPU with Vulkan (runs at OpenGL too but its worse) and 64-bit Android. Forever requires 8 GB RAM or more.** Game files and server accounts are not included.
 
 1. Install WoW Imito and open it.
-2. Copy the complete client required by your server to internal storage or an SD card, or download a ZIP through **Game files**. For **Forever**, select it in the client list; official Battle.net handles sign-in, downloads and updates. First setup may take a few minutes.
+2. In **Game files > Download client**, download OctoWoW, Triumvirate or Grimfall from its official source. Existing copies on your phone or SD card are offered first. You can also copy a complete client yourself or download its ZIP through **Game files**. For **Forever**, select it in the client list; official Battle.net handles sign-in, downloads and updates. First setup may take a few minutes.
 3. Select the detected client and confirm its server address when prompted. Use **Game files** to select a folder manually or **Settings > Set realm** to change the server.
 4. Tap **PLAY**, sign in and choose your character.
 
@@ -106,9 +106,9 @@ Storage needs vary by client and updates. Use the complete client required by yo
 | **[CoA / Descension community client](https://coa-development.org/)** | ✅ Tested on a local test realm | Direct updates in WoW Imito |
 | **[Wrath Rebuffed](https://whitemane.gg/en)** | ✅ Tested | Direct updates in WoW Imito |
 | **[Project Epoch Reborn (3.3.5a)](https://project-epoch.org/)** | ✅ Tested | Direct updates in WoW Imito |
-| **Grimfall (3.3.5a)** | ✅ Tested | Direct updates in WoW Imito |
-| **OctoWoW (Vanilla)** | ✅ Tested in game | Direct updates in WoW Imito |
-| **Triumvirate (3.3.5a)** | ✅ Tested in game | Direct updates in WoW Imito |
+| **Grimfall (3.3.5a)** | ✅ Tested | Full downloads and updates in WoW Imito |
+| **OctoWoW (Vanilla)** | ✅ Tested in game | Full downloads and updates in WoW Imito |
+| **Triumvirate (3.3.5a)** | ✅ Tested in game | Full downloads and updates in WoW Imito |
 
 Use your server's complete client. The CoA entry refers to the community distribution, not a confirmed test of the official Ascension service.
 
