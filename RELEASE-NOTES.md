@@ -1,10 +1,10 @@
-# WoW Imito 1.5.13
+# WoW Imito 1.5.14
 
-- Fixed interrupted camera and pointer input when unrelated launcher windows close.
-- Forever: touch controls restore input when the game loses keyboard focus.
-- Moved or enlarged touch buttons now take priority over the quest tracker beneath them.
-- Triumvirate: faster installation and checking of thousands of small files; interrupted downloads keep completed files.
-- Client downloads now show completed file counts and no longer switch back to storage checks after every file.
-- Triumvirate downloads and updates now use the current official CDN, fixing the missing QuestLogExt.dll that prevented completion.
-- Fixed a VirGL/Gladio image freeze caused by earlier OpenGL errors incorrectly discarding valid new frames.
-- Reports now retain failed graphics-check states and filtered Battle.net installation errors, without account details.
+- Fixed the joystick stopping when loot or bags close during a movement gesture.
+- Fixed action bar 4 moving to the right after mounting or changing pet state; custom positions and sizes are preserved.
+- Added Turnip compatibility settings for Adreno 710/720/732 and Samsung devices with Adreno 740.
+- Adjusted texture decoding on Qualcomm GPUs and Box64 memory mappings on Mali, while retaining existing GPU-specific fixes.
+- Fixed audio-buffer recovery that could worsen crackling after an underrun; playback now has room to adapt under load.
+- Problem reports retain the latest touch-control readback failure details without adding continuous logging.
+- Forever reports now retain recent launcher errors and observed startup phase timings, including failures after a long login.
+- If a problem persists in 1.5.14, send a fresh in-app report immediately after it occurs, with the screen or error you see.
