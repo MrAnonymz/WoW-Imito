@@ -1,0 +1,58 @@
+--- a/app/src/main/java/com/winlator/alsaserver/ALSAClient.java
++++ b/app/src/main/java/com/winlator/alsaserver/ALSAClient.java
+@@ -33,7 +33,7 @@
+     private long position;
+     private int bufferSize;
+     private byte frameBytes;
+-    private short previousUnderrunCount = 0;
++    private int previousUnderrunCount = 0;
+     private int bufferCapacity;
+     private ByteBuffer sharedBuffer;
+     private ByteBuffer auxBuffer;
+@@ -121,13 +121,22 @@
+             .setChannelMask(getChannelConfig(channels))
+             .build();
+ 
++        // The negotiated buffer belongs to the PCM transport and must never
++        // change while its shared mapping is in use. Reserve playback headroom
++        // separately, but start at the existing requested/platform minimum.
++        int minimumBytes = AudioTrack.getMinBufferSize(sampleRate,
++                getChannelConfig(channels), getPCMEncoding(dataType));
++        int initialFrames = Math.max(bufferSize,
++                minimumBytes > 0 ? (minimumBytes + frameBytes - 1) / frameBytes : bufferSize);
++        int capacityFrames = Math.max(initialFrames, sampleRate / 10);
+         audioTrack = new AudioTrack.Builder()
+             .setPerformanceMode(options.performanceMode)
+             .setAudioFormat(format)
+-            .setBufferSizeInBytes(getBufferSizeInBytes())
++            .setBufferSizeInBytes(capacityFrames * frameBytes)
+             .build();
+ 
+         bufferCapacity = audioTrack.getBufferCapacityInFrames();
++        audioTrack.setBufferSizeInFrames(Math.min(initialFrames, bufferCapacity));
+         if (options.volume != 1.0f) audioTrack.setVolume(options.volume);
+         audioTrack.play();
+     }
+@@ -184,11 +193,17 @@
+ 
+     private void increaseBufferSizeIfUnderrunOccurs() {
+         int underrunCount = audioTrack.getUnderrunCount();
+-        if (underrunCount > previousUnderrunCount && bufferSize < bufferCapacity) {
+-            previousUnderrunCount = (short)underrunCount;
+-            bufferSize += framesPerBuffer;
+-            audioTrack.setBufferSizeInFrames(bufferSize);
+-        }
++        if (underrunCount > previousUnderrunCount) {
++            // Android can allocate more than requested or change the capacity
++            // after output routing. Growing from the protocol size could SHRINK
++            // its actual playback buffer, making the next underrun more likely.
++            bufferCapacity = audioTrack.getBufferCapacityInFrames();
++            int currentFrames = audioTrack.getBufferSizeInFrames();
++            if (currentFrames > 0 && currentFrames < bufferCapacity)
++                audioTrack.setBufferSizeInFrames(Math.min(bufferCapacity,
++                        currentFrames + Math.max(1, framesPerBuffer)));
++        }
++        previousUnderrunCount = underrunCount;
+     }
+ 
+     public int pointer() {

@@ -85,3 +85,12 @@ signed release and its native libraries by SHA-256.
 WoW Imito 1.5.7 graphics components
 Vortek revision 8 guest and Android host sources: patches/vortek/vortek-imito8-1.5.7-source.zip.
 VirGL renderer and Android server: patches/virgl/virgl-imito-1.5.7-source.zip. Both archives include the release binary hashes and source notices.
+
+Android audio playback adapter
+Winlator/WoW Mobile contributors, LGPL-2.1.
+Complete modified source and preceding-version patch: patches/audio/.
+
+Wine runtime module provenance
+WineHQ Wine 10.0 i386 patch library and matching Wine OLE DB prefix module:
+source links, binary identities and integration scope in patches/runtime/.
+Original third-party licences remain in force.

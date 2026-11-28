@@ -1,0 +1,3 @@
+2d47d8eec9ebbe5c73eb70381d61e69bd1eeec3d5036abbfed85a9ac371df8cb  ALSAClient.java
+d3c1a8fd03fedafd7e3ffe544dc937b1415c9d8f64bf385c0dc11083d4d2942d  ALSAClient.before.java
+98b9385e42644b6567cd8426ffb71bcd5af401aec939e536dcb3cd1913897a95  playback-buffer.patch
